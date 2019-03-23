@@ -1,10 +1,10 @@
 <?php
 
-namespace Swarfarm\Monster;
+namespace Swarfarm\Game;
 
 use Illuminate\Database\Eloquent\Model;
 
-class MonsterClass extends Model
+class GameClass extends Model
 {
     public $fillable = [
         'id',

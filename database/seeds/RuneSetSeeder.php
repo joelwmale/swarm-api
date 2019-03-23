@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 class RuneSetSeeder extends Seeder
 {
     /**
-     * Seed the attributes table.
+     * Seed the rune sets table.
      *
      * @return void
      */

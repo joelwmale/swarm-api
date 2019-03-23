@@ -25,7 +25,7 @@ class CreateWizardsTable extends Migration
             $table->bigInteger('wizard_crystal')->nullable();
 
             $table->integer('energy_max')->nullable();
-            $table->integer('energy_per_min')->nullable();
+            $table->double('energy_per_min', 2, 1)->nullable();
 
             $table->bigInteger('rep_unit_id')->nullable();
 

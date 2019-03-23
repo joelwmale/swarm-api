@@ -14,40 +14,34 @@ class MonsterImporter
             // Turn into collection
             $unit = collect($unit);
 
+            // @TODO validate each unit
+
             // Make a new unit or update an exisiting
             $wizard->units()->updateOrCreate(
-                ['unit_id' => $unit->get('unit_id')],
-                [
-                    'unit_id' => $unit->get('unit_id'),
-                    'monster_id' => $unit->get('unit_master_id'),
-                    'class_id' => $unit->get('class'),
-                    'attribute_id' => $unit->get('attribute'),
-                    'level' => $unit->get('unit_level'),
-                    'stats' => [
-                        'con' => $unit->get('con'),
-                        'attack' => $unit->get('atk'),
-                        'defefence' => $unit->get('def'),
-                        'speed' => $unit->get('spd'),
-                        'resist' => $unit->get('resist'),
-                        'critical_rate' => $unit->get('critical_rate'),
-                        'critical_damage' => $unit->get('critical_damage'),
-                    ],
-                    'skills' => $unit->get('skills'),
-                    'create_time' => $unit->get('create_time'),
-                ]
-            );
+                ['unit_id' => $unit->get('unit_id')], [
+                'unit_id' => $unit->get('unit_id'),
+                'monster_id' => $unit->get('unit_master_id'),
+                'class_id' => $unit->get('class'),
+                'attribute_id' => $unit->get('attribute'),
+                'level' => $unit->get('unit_level'),
+                'stats' => [
+                    'con' => $unit->get('con'),
+                    'attack' => $unit->get('atk'),
+                    'defefence' => $unit->get('def'),
+                    'speed' => $unit->get('spd'),
+                    'resist' => $unit->get('resist'),
+                    'critical_rate' => $unit->get('critical_rate'),
+                    'critical_damage' => $unit->get('critical_damage'),
+                ],
+                'skills' => $unit->get('skills'),
+                'unlocked' => $unit->get('create_time'),
+            ]);
+
+            // Import the runes for the unit
+            $runeImporter = resolve('Swarfarm\Support\RuneImporter');
+            $runeImporter->import($wizard, collect($unit->get('runes')));
         });
+
+        return true;
     }
 }
-
-/*
- * important information:
- *
- * for each unit, they have the following values:
- *
- * unit_id => the monster id for the user (unique)
- * wizard_id => the user id that owns this monster
- * unit_master_id => the games monster id
- *
- *
- */

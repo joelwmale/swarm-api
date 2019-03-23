@@ -20,12 +20,4 @@ class Monster extends Model
     {
         return $this->belongsTo(Attribute::class);
     }
-
-    /**
-     * The class this monster belongs to.
-     */
-    public function class(): BelongsTo
-    {
-        return $this->belongsTo(MonsterClass::class);
-    }
 }

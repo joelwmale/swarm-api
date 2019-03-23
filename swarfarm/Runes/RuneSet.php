@@ -8,6 +8,6 @@ class RuneSet extends Model
 {
     protected $fillable = [
         'id',
-        'name'
+        'name',
     ];
 }

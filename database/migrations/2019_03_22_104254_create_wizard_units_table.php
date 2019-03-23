@@ -32,14 +32,15 @@ class CreateWizardUnitsTable extends Migration
             // 0 = skill_id, 1 = level
             $table->json('skills');
 
-            // @TODO what name for when someone got a monster?
-            $table->datetime('create_time');
+            $table->datetime('unlocked')->nullable();
 
             $table->timestamps();
 
             $table->foreign('wizard_id')
                 ->references('id')->on('wizards')
                 ->onDelete('cascade');
+
+            $table->index(['wizard_id', 'monster_id']);
         });
     }
 

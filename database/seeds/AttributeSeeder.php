@@ -6,7 +6,7 @@ use Swarfarm\Attributes\Attribute;
 class AttributeSeeder extends Seeder
 {
     /**
-     * Seed the attributes table
+     * Seed the attributes table.
      *
      * @return void
      */
@@ -26,7 +26,7 @@ class AttributeSeeder extends Seeder
             ['id' => 2, 'name' => 'Fire'],
             ['id' => 3, 'name' => 'Wind'],
             ['id' => 4, 'name' => 'Light'],
-            ['id' => 5, 'name' => 'Dark']
+            ['id' => 5, 'name' => 'Dark'],
         ];
     }
 }

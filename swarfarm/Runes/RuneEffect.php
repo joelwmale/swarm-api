@@ -8,6 +8,6 @@ class RuneEffect extends Model
 {
     protected $fillable = [
         'id',
-        'name'
+        'name',
     ];
 }

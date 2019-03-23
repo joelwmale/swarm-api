@@ -2,10 +2,10 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Storage;
-use Swarfarm\Services\ImportService;
 use Swarfarm\Users\User;
+use Illuminate\Console\Command;
+use Swarfarm\Services\ImportService;
+use Illuminate\Support\Facades\Storage;
 
 class ImportTest extends Command
 {
@@ -53,7 +53,7 @@ class ImportTest extends Command
         // Conver the data into a collection
         $importData = collect(json_decode($rawJson, true));
 
-        // Import
+        // Import test
         $this->importService->import(User::first(), $importData);
     }
 }

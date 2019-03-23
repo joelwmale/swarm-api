@@ -2,18 +2,18 @@
 
 namespace Swarfarm\Attributes;
 
-use Illuminate\Database\Eloquent\Model;
 use Swarfarm\Summoners\Summoner;
+use Illuminate\Database\Eloquent\Model;
 
 class Attribute extends Model
 {
     public $fillable = [
         'id',
-        'name'
+        'name',
     ];
 
     /**
-     * Get the summoners that have this attribute
+     * Get the summoners that have this attribute.
      */
     public function summoners()
     {

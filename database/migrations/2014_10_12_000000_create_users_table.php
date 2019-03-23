@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
 
             // @TODO add a username field
+            $table->string('username');
 
             $table->timestamp('email_verified_at')->nullable();
 

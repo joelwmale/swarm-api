@@ -1,14 +1,16 @@
 <?php
 
-namespace App;
+namespace Swarfarm\Wizards;
 
 use Illuminate\Support\Arr;
+use Swarfarm\Game\GameClass;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class WizardUnit extends Model
 {
     public $fillable = [
-        'id',
         'wizard_id',
         'unit_id',
         'monster_id',
@@ -19,6 +21,24 @@ class WizardUnit extends Model
         'skills',
         'create_time',
     ];
+
+    /**
+     * The class this unit belongs to.
+     */
+    public function class(): BelongsTo
+    {
+        return $this->belongsTo(GameClass::class);
+    }
+
+    public function runes(): HasMany
+    {
+        return $this->hasMany(WizardRune::class);
+    }
+
+    public function wizard(): BelongsTo
+    {
+        return $this->belongsTo(Wizard::class);
+    }
 
     /**
      * Format the stats.

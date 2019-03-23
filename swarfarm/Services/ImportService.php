@@ -2,9 +2,11 @@
 
 namespace Swarfarm\Services;
 
-use Illuminate\Support\Collection;
 use Swarfarm\Users\User;
+use Illuminate\Support\Collection;
+use Swarfarm\Support\RuneImporter;
 use Swarfarm\Support\MonsterImporter;
+use Swarfarm\Support\InventoryImporter;
 
 class ImportService
 {
@@ -13,20 +15,35 @@ class ImportService
      */
     protected $monsterImporter;
 
-    public function __construct(MonsterImporter $monsterImporter)
+    /**
+     * @var RuneImporter
+     */
+    protected $runeImporter;
+
+    /**
+     * @var InventoryImporter
+     */
+    protected $inventoryImporter;
+
+    public function __construct(MonsterImporter $monsterImporter, RuneImporter $runeImporter, InventoryImporter $inventoryImporter)
     {
         $this->monsterImporter = $monsterImporter;
+        $this->runeImporter = $runeImporter;
+        $this->inventoryImporter = $inventoryImporter;
     }
 
     public function import(User $user, Collection $data)
     {
-        // Check to see if the user has a wizard
-        if (! $user->wizard) {
-            // Get wizard data
-            $wizardData = collect($data->get('wizard_info'));
+        // Get wizard data
+        $wizardData = collect($data->get('wizard_info'));
+        $wizardId = $wizardData->get('wizard_id');
 
+        $wizard = null;
+
+        // Check to see if the user has a wizard
+        if (! $wizard = $user->wizards->where('wizard_id', $wizardId)->first()) {
             // Create a new wizard
-            $user->wizard()->create([
+            $wizard = $user->wizards()->create([
                 'wizard_id' => $wizardData->get('wizard_id'),
                 'wizard_name' => $wizardData->get('wizard_name'),
                 'wizard_level' => $wizardData->get('wizard_level'),
@@ -40,7 +57,13 @@ class ImportService
         }
 
         // Import monsters
-        $this->monsterImporter->import($user->wizard, collect($data->get('unit_list')));
+        $this->monsterImporter->import($wizard, collect($data->get('unit_list')));
+
+        // Import runes
+        $this->runeImporter->import($wizard, collect($data->get('runes')));
+
+        // Import inventory
+        $this->inventoryImporter->import($wizard, collect($data->get('inventory_info')));
 
         return true;
     }

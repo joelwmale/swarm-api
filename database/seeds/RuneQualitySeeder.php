@@ -1,12 +1,12 @@
 <?php
 
-use Swarfarm\Runes\RuneQuality;
 use Illuminate\Database\Seeder;
+use Swarfarm\Runes\RuneQuality;
 
 class RuneQualitySeeder extends Seeder
 {
     /**
-     * Seed the attributes table.
+     * Seed the rune qualities table.
      *
      * @return void
      */
@@ -26,7 +26,7 @@ class RuneQualitySeeder extends Seeder
             ['id' => 2, 'name' => 'Magic'],
             ['id' => 3, 'name' => 'Rare'],
             ['id' => 4, 'name' => 'Hero'],
-            ['id' => 5, 'name' => 'Legend']
+            ['id' => 5, 'name' => 'Legend'],
         ];
     }
 }

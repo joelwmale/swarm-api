@@ -2,12 +2,11 @@
 
 namespace Swarfarm\Wizards;
 
+use Swarfarm\Users\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Swarfarm\Users\User;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use App\WizardUnit;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Wizard extends Model
 {
@@ -27,7 +26,7 @@ class Wizard extends Model
     ];
 
     /**
-     * The user this wizard belongs to
+     * The user this wizard belongs to.
      *
      * @return BelongsTo
      */
@@ -39,5 +38,15 @@ class Wizard extends Model
     public function units(): HasMany
     {
         return $this->hasMany(WizardUnit::class);
+    }
+
+    public function inventoryItems(): HasMany
+    {
+        return $this->hasMany(WizardInventoryItem::class);
+    }
+
+    public function runes(): HasMany
+    {
+        return $this->hasMany(WizardRune::class);
     }
 }

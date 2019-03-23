@@ -2,11 +2,11 @@
 
 namespace Swarfarm\Users;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 use Swarfarm\Wizards\Wizard;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class User extends Authenticatable
 {
@@ -41,12 +41,12 @@ class User extends Authenticatable
     ];
 
     /**
-     * Get the users wizard
+     * Get the users wizard.
      *
      * @return HasOne
      */
-    public function wizard(): HasOne
+    public function wizards(): HasMany
     {
-        return $this->hasOne(Wizard::class);
+        return $this->hasMany(Wizard::class);
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMonsterClassesTable extends Migration
+class CreateRuneSubstatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateMonsterClassesTable extends Migration
      */
     public function up()
     {
-        Schema::create('monster_classes', function (Blueprint $table) {
-            $table->bigInteger('id')->unsigned();
-
-            $table->string('name');
+        Schema::create('rune_substats', function (Blueprint $table) {
+            $table->bigInteger('effect_id');
+            $table->integer('rank');
+            $table->bigInteger('max_value');
 
             $table->timestamps();
         });
@@ -29,6 +29,6 @@ class CreateMonsterClassesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('monster_classes');
+        Schema::dropIfExists('rune_substats');
     }
 }

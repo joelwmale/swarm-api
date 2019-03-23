@@ -1,12 +1,12 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Swarfarm\Runes\RuneEffect;
+use Illuminate\Database\Seeder;
 
 class RuneEffectSeeder extends Seeder
 {
     /**
-     * Seed the attributes table.
+     * Seed the rune effects table.
      *
      * @return void
      */

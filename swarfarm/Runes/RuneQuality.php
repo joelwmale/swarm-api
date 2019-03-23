@@ -8,6 +8,6 @@ class RuneQuality extends Model
 {
     protected $fillable = [
         'id',
-        'name'
+        'name',
     ];
 }

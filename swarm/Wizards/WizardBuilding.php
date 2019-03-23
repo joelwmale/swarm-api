@@ -13,7 +13,7 @@ class WizardBuilding extends Model
         'wizard_id',
         'deco_id',
         'building_id',
-        'level'
+        'level',
     ];
 
     public function building(): BelongsTo

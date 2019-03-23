@@ -2,9 +2,9 @@
 
 namespace Swarm\Importers;
 
-use Swarm\Wizards\Wizard;
 use Illuminate\Support\Collection;
 use Swarm\Mappers\InventoryMapper;
+use Swarm\Wizards\Wizard;
 
 class InventoryImporter
 {
@@ -31,7 +31,7 @@ class InventoryImporter
             // Get the models associated with this inventory item
             $model = InventoryMapper::getGameClassFor($item->get('item_master_type'));
 
-            if (! empty($model)) {
+            if (!empty($model)) {
                 // Make a new game class
                 $inventorable = $model::find($item->get('item_master_id'));
 
@@ -40,9 +40,9 @@ class InventoryImporter
                     // Add the items to the inventory
                     $wizard->inventoryItems()->updateOrCreate(
                         ['inventorable_id' => $inventorable->id], [
-                            'inventorable_id' => $inventorable->id,
+                            'inventorable_id'   => $inventorable->id,
                             'inventorable_type' => get_class($inventorable),
-                            'quantity' => $item->get('item_quantity'),
+                            'quantity'          => $item->get('item_quantity'),
                         ]);
                 }
             } else {

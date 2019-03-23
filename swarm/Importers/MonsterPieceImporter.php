@@ -2,14 +2,13 @@
 
 namespace Swarm\Importers;
 
-use Swarm\Wizards\Wizard;
 use Illuminate\Support\Collection;
 use Swarm\Attributes\Attribute;
 use Swarm\Monsters\Monster;
+use Swarm\Wizards\Wizard;
 
 class MonsterPieceImporter
 {
-
     public function import(Wizard $wizard, Collection $monsterPieces)
     {
         // Loop through each item
@@ -30,9 +29,9 @@ class MonsterPieceImporter
             if ($monster && $attribute) {
                 // Create this monster piece
                 $wizard->unitPieces()->create([
-                    'monster_id' => $monster->id,
+                    'monster_id'   => $monster->id,
                     'attribute_id' => $attribute->id,
-                    'quantity' => $piece->get('item_quantity')
+                    'quantity'     => $piece->get('item_quantity'),
                 ]);
             } else {
                 // error, couldnt find a matching monster

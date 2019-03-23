@@ -2,8 +2,8 @@
 
 namespace Swarm\Services;
 
-use Swarm\Users\User;
 use Illuminate\Support\Collection;
+use Swarm\Users\User;
 
 class SWExportImportService
 {
@@ -44,18 +44,18 @@ class SWExportImportService
         $wizard = null;
 
         // Check to see if the user has a wizard
-        if (! $wizard = $user->wizards->where('wizard_id', $wizardId)->first()) {
+        if (!$wizard = $user->wizards->where('wizard_id', $wizardId)->first()) {
             // Create a new wizard
             $wizard = $user->wizards()->create([
-                'wizard_id' => $wizardData->get('wizard_id'),
-                'wizard_name' => $wizardData->get('wizard_name'),
-                'wizard_level' => $wizardData->get('wizard_level'),
-                'wizard_mana' => $wizardData->get('wizard_mana'),
+                'wizard_id'      => $wizardData->get('wizard_id'),
+                'wizard_name'    => $wizardData->get('wizard_name'),
+                'wizard_level'   => $wizardData->get('wizard_level'),
+                'wizard_mana'    => $wizardData->get('wizard_mana'),
                 'wizard_crystal' => $wizardData->get('wizard_crystal'),
-                'energy_max' => $wizardData->get('energy_max'),
+                'energy_max'     => $wizardData->get('energy_max'),
                 'energy_per_min' => $wizardData->get('energy_per_min'),
-                'rep_unit_id' => $wizardData->get('rep_unit_id'),
-                'last_login' => $wizardData->get('wizard_last_login'),
+                'rep_unit_id'    => $wizardData->get('rep_unit_id'),
+                'last_login'     => $wizardData->get('wizard_last_login'),
             ]);
         }
 

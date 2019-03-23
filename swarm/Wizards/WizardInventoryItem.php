@@ -2,10 +2,10 @@
 
 namespace Swarm\Wizards;
 
-use Swarm\Game\Essence;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Swarm\Game\Essence;
 
 class WizardInventoryItem extends Model
 {

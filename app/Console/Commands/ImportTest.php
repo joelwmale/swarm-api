@@ -2,10 +2,10 @@
 
 namespace App\Console\Commands;
 
-use Swarm\Users\User;
 use Illuminate\Console\Command;
-use Swarm\Services\SWExportImportService;
 use Illuminate\Support\Facades\Storage;
+use Swarm\Services\SWExportImportService;
+use Swarm\Users\User;
 
 class ImportTest extends Command
 {

@@ -1,7 +1,7 @@
 <?php
 
-use Swarm\Users\User;
 use Illuminate\Database\Seeder;
+use Swarm\Users\User;
 
 class UserSeeder extends Seeder
 {
@@ -13,7 +13,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'email' => 'joel@joelmale.com',
+            'email'    => 'joel@joelmale.com',
             'password' => Hash::make('abcd1234!'),
 
             'username' => 'squid',

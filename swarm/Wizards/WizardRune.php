@@ -2,11 +2,11 @@
 
 namespace Swarm\Wizards;
 
-use Illuminate\Support\Arr;
-use Swarm\Runes\RuneSet;
-use Swarm\Game\GameClass;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Arr;
+use Swarm\Game\GameClass;
+use Swarm\Runes\RuneSet;
 
 class WizardRune extends Model
 {
@@ -73,11 +73,11 @@ class WizardRune extends Model
         if (is_array($value)) {
             array_push($effects, [
                 'effect_id' => Arr::get($value, 0),
-                'value' => Arr::get($value, 1),
+                'value'     => Arr::get($value, 1),
             ]);
         }
 
-        $this->attributes['primary_effect'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['primary_effect'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 
     /**
@@ -93,11 +93,11 @@ class WizardRune extends Model
         if (is_array($value)) {
             array_push($effects, [
                 'effect_id' => Arr::get($value, 0),
-                'value' => Arr::get($value, 1),
+                'value'     => Arr::get($value, 1),
             ]);
         }
 
-        $this->attributes['prefix_effect'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['prefix_effect'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 
     /**
@@ -113,12 +113,12 @@ class WizardRune extends Model
         if (is_array($value)) {
             array_push($effects, [
                 'effect_id' => Arr::get($value, 0),
-                'value' => Arr::get($value, 1),
+                'value'     => Arr::get($value, 1),
                 'substat_1' => Arr::get($value, 2),
                 'substat_2' => Arr::get($value, 3),
             ]);
         }
 
-        $this->attributes['secondary_effect'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['secondary_effect'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 }

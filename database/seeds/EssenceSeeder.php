@@ -1,7 +1,7 @@
 <?php
 
-use Swarm\Game\Essence;
 use Illuminate\Database\Seeder;
+use Swarm\Game\Essence;
 
 class EssenceSeeder extends Seeder
 {

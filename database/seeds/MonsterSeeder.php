@@ -1,7 +1,7 @@
 <?php
 
-use Swarm\Monsters\Monster;
 use Illuminate\Database\Seeder;
+use Swarm\Monsters\Monster;
 
 class MonsterSeeder extends Seeder
 {

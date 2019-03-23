@@ -2,11 +2,11 @@
 
 namespace Swarm\Users;
 
-use Swarm\Wizards\Wizard;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Notifications\Notifiable;
+use Swarm\Wizards\Wizard;
 
 class User extends Authenticatable
 {

@@ -2,11 +2,11 @@
 
 namespace Swarm\Wizards;
 
-use Swarm\Users\User;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Swarm\Users\User;
 
 class Wizard extends Model
 {

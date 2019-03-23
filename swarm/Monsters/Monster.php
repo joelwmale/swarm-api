@@ -2,9 +2,9 @@
 
 namespace Swarm\Monsters;
 
-use Swarm\Attributes\Attribute;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Swarm\Attributes\Attribute;
 
 class Monster extends Model
 {

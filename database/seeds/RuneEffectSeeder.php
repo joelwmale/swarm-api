@@ -1,7 +1,7 @@
 <?php
 
-use Swarm\Runes\RuneEffect;
 use Illuminate\Database\Seeder;
+use Swarm\Runes\RuneEffect;
 
 class RuneEffectSeeder extends Seeder
 {

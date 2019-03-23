@@ -2,8 +2,8 @@
 
 namespace Swarm\Importers;
 
-use Swarm\Wizards\Wizard;
 use Illuminate\Support\Collection;
+use Swarm\Wizards\Wizard;
 
 class BuildingImporter
 {
@@ -19,9 +19,9 @@ class BuildingImporter
             $wizard->buildings()->updateOrCreate(
                     ['deco_id' => $building->get('deco_id')],
                     [
-                        'deco_id' => $building->get('deco_id'),
+                        'deco_id'     => $building->get('deco_id'),
                         'building_id' => $building->get('master_id'),
-                        'level' => $building->get('level')
+                        'level'       => $building->get('level'),
                     ]
                 );
         });

@@ -2,8 +2,8 @@
 
 namespace Swarm\Attributes;
 
-use Swarm\Summoners\Summoner;
 use Illuminate\Database\Eloquent\Model;
+use Swarm\Summoners\Summoner;
 
 class Attribute extends Model
 {

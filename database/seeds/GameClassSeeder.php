@@ -1,7 +1,7 @@
 <?php
 
-use Swarm\Game\GameClass;
 use Illuminate\Database\Seeder;
+use Swarm\Game\GameClass;
 
 class GameClassSeeder extends Seeder
 {

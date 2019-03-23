@@ -15,7 +15,7 @@ class Essence extends Model
     ];
 
     /**
-     * Get all essences
+     * Get all essences.
      *
      * @return HasMany
      */

@@ -2,8 +2,8 @@
 
 namespace Swarm\Importers;
 
-use Swarm\Wizards\Wizard;
 use Illuminate\Support\Collection;
+use Swarm\Wizards\Wizard;
 
 class MonsterImporter
 {
@@ -19,21 +19,21 @@ class MonsterImporter
             // Make a new unit or update an exisiting
             $wizard->units()->updateOrCreate(
                 ['unit_id' => $unit->get('unit_id')], [
-                'unit_id' => $unit->get('unit_id'),
-                'monster_id' => $unit->get('unit_master_id'),
-                'class_id' => $unit->get('class'),
+                'unit_id'      => $unit->get('unit_id'),
+                'monster_id'   => $unit->get('unit_master_id'),
+                'class_id'     => $unit->get('class'),
                 'attribute_id' => $unit->get('attribute'),
-                'level' => $unit->get('unit_level'),
-                'stats' => [
-                    'con' => $unit->get('con'),
-                    'attack' => $unit->get('atk'),
-                    'defefence' => $unit->get('def'),
-                    'speed' => $unit->get('spd'),
-                    'resist' => $unit->get('resist'),
-                    'critical_rate' => $unit->get('critical_rate'),
+                'level'        => $unit->get('unit_level'),
+                'stats'        => [
+                    'con'             => $unit->get('con'),
+                    'attack'          => $unit->get('atk'),
+                    'defefence'       => $unit->get('def'),
+                    'speed'           => $unit->get('spd'),
+                    'resist'          => $unit->get('resist'),
+                    'critical_rate'   => $unit->get('critical_rate'),
                     'critical_damage' => $unit->get('critical_damage'),
                 ],
-                'skills' => $unit->get('skills'),
+                'skills'   => $unit->get('skills'),
                 'unlocked' => $unit->get('create_time'),
             ]);
 

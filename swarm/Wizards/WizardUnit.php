@@ -2,11 +2,11 @@
 
 namespace Swarm\Wizards;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Arr;
 use Swarm\Game\GameClass;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class WizardUnit extends Model
 {
@@ -45,7 +45,7 @@ class WizardUnit extends Model
      */
     public function setStatsAttribute($value)
     {
-        $this->attributes['stats'] = ! empty($value) ? json_encode($value) : null;
+        $this->attributes['stats'] = !empty($value) ? json_encode($value) : null;
     }
 
     /**
@@ -60,11 +60,11 @@ class WizardUnit extends Model
             foreach ($value as $skill) {
                 array_push($skills, [
                 'skill_id' => Arr::get($skill, 0),
-                'rank' => Arr::get($skill, 1),
+                'rank'     => Arr::get($skill, 1),
             ]);
             }
         }
 
-        $this->attributes['skills'] = ! empty($value) && is_array($value) ? json_encode($skills) : null;
+        $this->attributes['skills'] = !empty($value) && is_array($value) ? json_encode($skills) : null;
     }
 }

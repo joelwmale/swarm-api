@@ -15,7 +15,7 @@ class CraftMaterial extends Model
     ];
 
     /**
-     * Get all craft materials in the system
+     * Get all craft materials in the system.
      *
      * @return HasMany
      */

@@ -13,7 +13,7 @@ class WizardUnitPiece extends Model
         'wizard_id',
         'monster_id',
         'attribute_id',
-        'quantity'
+        'quantity',
     ];
 
     public function attribute(): BelongsTo

@@ -1,7 +1,7 @@
 <?php
 
-use Swarm\Runes\RuneSet;
 use Illuminate\Database\Seeder;
+use Swarm\Runes\RuneSet;
 
 class RuneSetSeeder extends Seeder
 {

@@ -34,7 +34,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Swarfarm\Users\User::class,
+        'model' => Swarm\Users\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
         'webhook' => [

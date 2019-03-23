@@ -1,6 +1,6 @@
 <?php
 
-use Swarfarm\Users\User;
+use Swarm\Users\User;
 use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 

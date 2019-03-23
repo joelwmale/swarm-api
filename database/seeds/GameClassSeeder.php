@@ -1,6 +1,6 @@
 <?php
 
-use Swarfarm\Game\GameClass;
+use Swarm\Game\GameClass;
 use Illuminate\Database\Seeder;
 
 class GameClassSeeder extends Seeder

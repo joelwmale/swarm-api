@@ -1,6 +1,6 @@
 <?php
 
-use Swarfarm\Users\User;
+use Swarm\Users\User;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder

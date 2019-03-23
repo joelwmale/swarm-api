@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Swarfarm\Runes\RuneMainstat;
+use Swarm\Runes\RuneMainstat;
 
 class RuneMainstatSeeder extends Seeder
 {

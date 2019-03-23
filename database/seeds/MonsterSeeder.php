@@ -1,6 +1,6 @@
 <?php
 
-use Swarfarm\Monsters\Monster;
+use Swarm\Monsters\Monster;
 use Illuminate\Database\Seeder;
 
 class MonsterSeeder extends Seeder

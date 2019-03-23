@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Swarfarm\Runes\RuneQuality;
+use Swarm\Runes\RuneQuality;
 
 class RuneQualitySeeder extends Seeder
 {

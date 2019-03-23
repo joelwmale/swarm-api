@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Swarfarm\Game\CraftMaterial;
+use Swarm\Game\CraftMaterial;
 
 class CraftMaterialSeeder extends Seeder
 {

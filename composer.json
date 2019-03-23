@@ -34,7 +34,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Swarfarm\\": "swarfarm/"
+            "Swarm\\": "Swarm/"
         },
         "classmap": [
             "database/seeds",

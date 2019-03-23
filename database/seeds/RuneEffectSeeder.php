@@ -1,6 +1,6 @@
 <?php
 
-use Swarfarm\Runes\RuneEffect;
+use Swarm\Runes\RuneEffect;
 use Illuminate\Database\Seeder;
 
 class RuneEffectSeeder extends Seeder

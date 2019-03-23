@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Swarfarm\Users\User;
+use Swarm\Users\User;
 use Illuminate\Console\Command;
-use Swarfarm\Services\ImportService;
+use Swarm\Services\SWExportImportService;
 use Illuminate\Support\Facades\Storage;
 
 class ImportTest extends Command
@@ -33,7 +33,7 @@ class ImportTest extends Command
      *
      * @return void
      */
-    public function __construct(ImportService $importService)
+    public function __construct(SWExportImportService $importService)
     {
         parent::__construct();
 

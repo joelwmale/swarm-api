@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Swarfarm\Users\User;
+use Swarm\Users\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -61,7 +61,7 @@ class RegisterController extends Controller
      *
      * @param array $data
      *
-     * @return \Swarfarm\Users\User
+     * @return \Swarm\Users\User
      */
     protected function create(array $data)
     {

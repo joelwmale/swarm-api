@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Swarfarm\Attributes\Attribute;
+use Swarm\Attributes\Attribute;
 
 class AttributeSeeder extends Seeder
 {

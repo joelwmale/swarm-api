@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(GameClassSeeder::class);
         $this->call(EssenceSeeder::class);
         $this->call(CraftMaterialSeeder::class);
+        $this->call(BuildingSeeder::class);
 
         // Monsters
         $this->call(MonsterSeeder::class);

@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Swarfarm\Users\User::class,
+            'model' => Swarm\Users\User::class,
         ],
 
         // 'users' => [

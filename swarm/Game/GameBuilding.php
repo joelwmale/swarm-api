@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class GameBuilding extends Model
 {
     public $fillable = [
-        'id',
+        'game_id',
         'raw_name',
         'name',
         'asset',

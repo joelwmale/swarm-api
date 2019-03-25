@@ -3,9 +3,8 @@
 namespace Swarm\Importers;
 
 use Illuminate\Support\Collection;
-use Swarm\Players\Player;
 use Swarm\Game\GameMonster;
-use Swarm\Game\GameAttribute;
+use Swarm\Players\Player;
 
 class MonsterImporter
 {
@@ -22,6 +21,7 @@ class MonsterImporter
             if (!$monster) {
                 // Skip import
                 logger('Could not find game monster for import.', $unit->toArray());
+
                 return true;
             }
 
@@ -32,12 +32,12 @@ class MonsterImporter
                 ['unit_id' => $unit->get('unit_id')], [
                 'unit_id'      => $unit->get('unit_id'),
                 'monster_id'   => $monster->id,
-                'rank'     => $unit->get('class'),
+                'rank'         => $unit->get('class'),
                 'level'        => $unit->get('unit_level'),
                 'stats'        => [
                     'con'             => $unit->get('con'),
                     'attack'          => $unit->get('atk'),
-                    'defence'       => $unit->get('def'),
+                    'defence'         => $unit->get('def'),
                     'speed'           => $unit->get('spd'),
                     'resist'          => $unit->get('resist'),
                     'critical_rate'   => $unit->get('critical_rate'),

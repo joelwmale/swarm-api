@@ -22,7 +22,7 @@ class RuneImporter
                         'rune_id'  => $rune->get('rune_id'),
                         'set_id'   => $rune->get('set_id'),
 
-                        'class' => intval($rune->get('class')), // rune class (e.g 1, 2, 3 stars)
+                        'class'          => intval($rune->get('class')), // rune class (e.g 1, 2, 3 stars)
                         'occupied'       => $rune->get('occupied_id') ? true : false,
                         'player_unit_id' => $rune->get('occupied_id'),
 

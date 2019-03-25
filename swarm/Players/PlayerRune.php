@@ -2,10 +2,10 @@
 
 namespace Swarm\Players;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Arr;
 use Swarm\Game\GameRuneSet;
 
 class PlayerRune extends Model
@@ -40,7 +40,7 @@ class PlayerRune extends Model
     ];
 
     /**
-     * The set this rune belongs to
+     * The set this rune belongs to.
      */
     public function set(): BelongsTo
     {
@@ -48,7 +48,7 @@ class PlayerRune extends Model
     }
 
     /**
-     * The player this rune belongs to
+     * The player this rune belongs to.
      */
     public function player(): BelongsTo
     {
@@ -56,7 +56,7 @@ class PlayerRune extends Model
     }
 
     /**
-     * The unit that owns this rune
+     * The unit that owns this rune.
      */
     public function unit(): BelongsTo
     {

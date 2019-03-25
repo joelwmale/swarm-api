@@ -2,12 +2,10 @@
 
 namespace Swarm\Players;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Swarm\Players\Player;
-use Swarm\Game\GameMonster;
-use Swarm\Game\GameAttribute;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Swarm\Game\GameMonster;
 
 class PlayerUnitPiece extends Model
 {

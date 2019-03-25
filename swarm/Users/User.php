@@ -3,10 +3,10 @@
 namespace Swarm\Users;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 use Swarm\Auth\ApiToken;
 use Swarm\Players\Player;
 
@@ -46,7 +46,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * The api token the user owns
+     * The api token the user owns.
      */
     public function token(): HasOne
     {

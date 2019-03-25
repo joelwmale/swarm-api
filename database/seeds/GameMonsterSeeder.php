@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Swarm\Game\GameMonster;
 use Swarm\Game\GameAttribute;
+use Swarm\Game\GameMonster;
 
 class GameMonsterSeeder extends Seeder
 {
@@ -31,8 +31,8 @@ class GameMonsterSeeder extends Seeder
                 foreach ($attributes as $attribute) {
                     GameMonster::create([
                         'attribute_id' => $attribute->id,
-                        'game_id' => ($monster['game_id']. 0 .$attribute->game_id),
-                        'name' => $monster['name'].' ('.$attribute->name.')',
+                        'game_id'      => ($monster['game_id']. 0 .$attribute->game_id),
+                        'name'         => $monster['name'].' ('.$attribute->name.')',
                     ]);
                 }
             } else {

@@ -2,9 +2,9 @@
 
 namespace Swarm\Importers;
 
-use Swarm\Players\Player;
 use Illuminate\Support\Collection;
 use Swarm\Mappers\InventoryMapper;
+use Swarm\Players\Player;
 
 class InventoryImporter
 {
@@ -31,7 +31,7 @@ class InventoryImporter
             // Get the models associated with this inventory item
             $model = InventoryMapper::getGameClassFor($item->get('item_master_type'));
 
-            if (! empty($model)) {
+            if (!empty($model)) {
                 // Make a new game class
                 $inventorable = $model::find($item->get('item_master_id'));
 

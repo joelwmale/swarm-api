@@ -2,11 +2,11 @@
 
 namespace Swarm\Players;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Swarm\Users\User;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Swarm\Users\User;
 
 class Player extends Model
 {

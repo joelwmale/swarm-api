@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Swarm\Users\User;
 use Illuminate\Http\Request;
 use Swarm\Services\SWExportImportService;
+use Swarm\Users\User;
 
 class SWExporterController extends Controller
 {
@@ -40,11 +40,11 @@ class SWExporterController extends Controller
                     'wizard_id',
                     'item_no',
                     'item_master_type',
-                    'item_master_id'
+                    'item_master_id',
                 ],
                 'response' => [
-                    'unit_info'
-                ]
+                    'unit_info',
+                ],
             ],
         ], 200);
     }

@@ -2,11 +2,11 @@
 
 namespace Swarm\Players;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Swarm\Game\Essence;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Swarm\Game\Essence;
 
 class PlayerInventoryItem extends Model
 {

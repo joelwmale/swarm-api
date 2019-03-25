@@ -3,8 +3,8 @@
 namespace Swarm\Importers;
 
 use Illuminate\Support\Collection;
-use Swarm\Players\Player;
 use Swarm\Game\GameBuilding;
+use Swarm\Players\Player;
 
 class BuildingImporter
 {

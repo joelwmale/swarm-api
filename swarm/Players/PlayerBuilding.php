@@ -4,7 +4,6 @@ namespace Swarm\Players;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Swarm\Players\Player;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class PlayerBuilding extends Model
@@ -21,7 +20,7 @@ class PlayerBuilding extends Model
 
     public function building(): BelongsTo
     {
-        return $this->belongsTo(PlayerBuilding::class);
+        return $this->belongsTo(self::class);
     }
 
     public function player(): BelongsTo

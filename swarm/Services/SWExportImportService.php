@@ -37,7 +37,7 @@ class SWExportImportService
 
     public function import(User $user, Collection $data)
     {
-        logger('Importing new user data for: ' . $user->username);
+        logger('Importing new user data for: '.$user->username);
 
         // Get wizard data
         $playerData = collect($data->get('wizard_info'));

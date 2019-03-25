@@ -2,9 +2,9 @@
 
 namespace Swarm\Importers;
 
-use Swarm\Players\Player;
-use Swarm\Game\GameMonster;
 use Illuminate\Support\Collection;
+use Swarm\Game\GameMonster;
+use Swarm\Players\Player;
 
 class MonsterPieceImporter
 {
@@ -18,7 +18,7 @@ class MonsterPieceImporter
             // Get the monster
             $monster = GameMonster::where('game_id', $piece->get('item_master_id'))->first();
 
-            if (! $monster) {
+            if (!$monster) {
                 logger('Could not find monster for unit piece.', $piece->toArray());
             }
 

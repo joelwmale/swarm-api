@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
 
         // Make a test api token
         $user->token()->create([
-            'token' => 'o3eBa0J3s3kBtqAmHv2JMPrUUhgZ6jrRdv9wU67yrTgm7GqC4BlKmKg1l2ks'
+            'token' => 'o3eBa0J3s3kBtqAmHv2JMPrUUhgZ6jrRdv9wU67yrTgm7GqC4BlKmKg1l2ks',
         ]);
     }
 }

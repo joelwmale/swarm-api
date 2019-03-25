@@ -2,9 +2,9 @@
 
 namespace Swarm\Auth;
 
-use Swarm\Users\User;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Swarm\Users\User;
 
 class ApiToken extends Model
 {
@@ -36,7 +36,7 @@ class ApiToken extends Model
     }
 
     /**
-     * Generate a random api token
+     * Generate a random api token.
      *
      * @param length $length
      *
@@ -47,7 +47,7 @@ class ApiToken extends Model
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
         $randomString = '';
-        for ($i = 0; $i < $length; ++$i) {
+        for ($i = 0; $i < $length; $i++) {
             $randomString .= $characters[rand(0, $charactersLength - 1)];
         }
 

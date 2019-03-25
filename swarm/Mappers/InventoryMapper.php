@@ -20,9 +20,9 @@ class InventoryMapper
     public static function classMap()
     {
         return [
-            11 => \Swarm\Game\Essence::class,
+            11 => \Swarm\Game\GameEssence::class,
             // 12 => monster piece handled by MonsterPieceImporter
-            29 => \Swarm\Game\CraftMaterial::class,
+            29 => \Swarm\Game\GameCraftMaterial::class,
         ];
     }
 }

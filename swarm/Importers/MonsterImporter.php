@@ -3,31 +3,41 @@
 namespace Swarm\Importers;
 
 use Illuminate\Support\Collection;
-use Swarm\Wizards\Wizard;
+use Swarm\Players\Player;
+use Swarm\Game\GameMonster;
+use Swarm\Game\GameAttribute;
 
 class MonsterImporter
 {
-    public function import(Wizard $wizard, Collection $units)
+    public function import(Player $player, Collection $units)
     {
         // Loop through each unit
-        $units->each(function ($unit) use ($wizard) {
+        $units->each(function ($unit) use ($player) {
             // Turn into collection
             $unit = collect($unit);
 
             // @TODO validate each unit
+            $monster = GameMonster::where('game_id', $unit->get('unit_master_id'))->first();
+
+            if (!$monster) {
+                // Skip import
+                logger('Could not find game monster for import.', $unit->toArray());
+                return true;
+            }
+
+            // @TODO validate monster
 
             // Make a new unit or update an exisiting
-            $wizard->units()->updateOrCreate(
+            $player->units()->updateOrCreate(
                 ['unit_id' => $unit->get('unit_id')], [
                 'unit_id'      => $unit->get('unit_id'),
-                'monster_id'   => $unit->get('unit_master_id'),
-                'class_id'     => $unit->get('class'),
-                'attribute_id' => $unit->get('attribute'),
+                'monster_id'   => $monster->id,
+                'rank'     => $unit->get('class'),
                 'level'        => $unit->get('unit_level'),
                 'stats'        => [
                     'con'             => $unit->get('con'),
                     'attack'          => $unit->get('atk'),
-                    'defefence'       => $unit->get('def'),
+                    'defence'       => $unit->get('def'),
                     'speed'           => $unit->get('spd'),
                     'resist'          => $unit->get('resist'),
                     'critical_rate'   => $unit->get('critical_rate'),
@@ -39,7 +49,7 @@ class MonsterImporter
 
             // Import the runes for the unit
             $runeImporter = resolve('Swarm\Importers\RuneImporter');
-            $runeImporter->import($wizard, collect($unit->get('runes')));
+            $runeImporter->import($player, collect($unit->get('runes')));
         });
 
         return true;

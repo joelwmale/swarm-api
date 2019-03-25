@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Swarm\Wizards\Wizard;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Swarm\Auth\ApiToken;
+use Swarm\Players\Player;
 
 class User extends Authenticatable
 {
@@ -19,7 +21,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'email',
+        'password',
     ];
 
     /**
@@ -28,7 +32,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password',
+        'remember_token',
     ];
 
     /**
@@ -41,12 +46,20 @@ class User extends Authenticatable
     ];
 
     /**
-     * Get the users wizard.
+     * The api token the user owns
+     */
+    public function token(): HasOne
+    {
+        return $this->hasOne(ApiToken::class);
+    }
+
+    /**
+     * Get the users players.
      *
      * @return HasOne
      */
-    public function wizards(): HasMany
+    public function players(): HasMany
     {
-        return $this->hasMany(Wizard::class);
+        return $this->hasMany(Player::class);
     }
 }

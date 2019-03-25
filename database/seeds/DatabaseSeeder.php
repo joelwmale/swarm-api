@@ -11,23 +11,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(AttributeSeeder::class);
-
+        // Attributes
+        $this->call(GameAttributeSeeder::class);
         // Misc
-        $this->call(GameClassSeeder::class);
-        $this->call(EssenceSeeder::class);
-        $this->call(CraftMaterialSeeder::class);
-        $this->call(BuildingSeeder::class);
-
+        $this->call(GameEssenceSeeder::class);
+        $this->call(GameCraftMaterialSeeder::class);
+        $this->call(GameBuildingSeeder::class);
         // Monsters
-        $this->call(MonsterSeeder::class);
-
+        $this->call(GameMonsterSeeder::class);
         // Runes
-        $this->call(RuneMainstatSeeder::class);
-        $this->call(RuneSubstateeder::class);
-        $this->call(RuneEffectSeeder::class);
-        $this->call(RuneQualitySeeder::class);
-        $this->call(RuneSetSeeder::class);
+        $this->call(GameRuneMainstatSeeder::class);
+        $this->call(GameRuneSubstateeder::class);
+        $this->call(GameRuneEffectSeeder::class);
+        $this->call(GameRuneQualitySeeder::class);
+        $this->call(GameRuneSetSeeder::class);
 
         // Users
         $this->call(UserSeeder::class);

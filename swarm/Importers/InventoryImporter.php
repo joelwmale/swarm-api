@@ -2,15 +2,15 @@
 
 namespace Swarm\Importers;
 
+use Swarm\Players\Player;
 use Illuminate\Support\Collection;
 use Swarm\Mappers\InventoryMapper;
-use Swarm\Wizards\Wizard;
 
 class InventoryImporter
 {
     const MONSTER_PIECE_ID = 12;
 
-    public function import(Wizard $wizard, Collection $items)
+    public function import(Player $player, Collection $items)
     {
         // Take monster pieces out of the inventory items
         $monsterPieces = clone $items;
@@ -21,24 +21,24 @@ class InventoryImporter
 
         // Import monster pieces
         $monsterPieceImporter = resolve('Swarm\Importers\MonsterPieceImporter');
-        $monsterPieceImporter->import($wizard, $monsterPieces);
+        $monsterPieceImporter->import($player, $monsterPieces);
 
         // Loop through each item
-        $items->each(function ($item) use ($wizard) {
+        $items->each(function ($item) use ($player) {
             // Turn into collection
             $item = collect($item);
 
             // Get the models associated with this inventory item
             $model = InventoryMapper::getGameClassFor($item->get('item_master_type'));
 
-            if (!empty($model)) {
+            if (! empty($model)) {
                 // Make a new game class
                 $inventorable = $model::find($item->get('item_master_id'));
 
-                // If we successfully created a wizard class
+                // If we successfully found a model
                 if ($inventorable) {
                     // Add the items to the inventory
-                    $wizard->inventoryItems()->updateOrCreate(
+                    $player->inventoryItems()->updateOrCreate(
                         ['inventorable_id' => $inventorable->id], [
                             'inventorable_id'   => $inventorable->id,
                             'inventorable_type' => get_class($inventorable),

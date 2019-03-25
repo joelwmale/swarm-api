@@ -12,11 +12,16 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
-            'email'    => 'joel@joelmale.com',
+        // Make a test user
+        $user = User::create([
+            'email'    => 'test@test.com',
             'password' => Hash::make('abcd1234!'),
+            'username' => 'test_user',
+        ]);
 
-            'username' => 'squid',
+        // Make a test api token
+        $user->token()->create([
+            'token' => 'o3eBa0J3s3kBtqAmHv2JMPrUUhgZ6jrRdv9wU67yrTgm7GqC4BlKmKg1l2ks'
         ]);
     }
 }

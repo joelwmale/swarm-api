@@ -3,28 +3,28 @@
 namespace Swarm\Importers;
 
 use Illuminate\Support\Collection;
-use Swarm\Wizards\Wizard;
+use Swarm\Players\Player;
 
 class RuneImporter
 {
-    public function import(Wizard $wizard, Collection $runes)
+    public function import(Player $player, Collection $runes)
     {
         // Loop through each rune
-        $runes->each(function ($rune) use ($wizard) {
+        $runes->each(function ($rune) use ($player) {
             // Turn into collection
             $rune = collect($rune);
 
             // @TODO validate each rune
 
-            $wizard->runes()->updateOrCreate(
+            $player->runes()->updateOrCreate(
                     ['rune_id' => $rune->get('rune_id')],
                     [
                         'rune_id'  => $rune->get('rune_id'),
-                        'class_id' => $rune->get('class'),
                         'set_id'   => $rune->get('set_id'),
 
+                        'class' => intval($rune->get('class')), // rune class (e.g 1, 2, 3 stars)
                         'occupied'       => $rune->get('occupied_id') ? true : false,
-                        'wizard_unit_id' => $rune->get('occupied_id'),
+                        'player_unit_id' => $rune->get('occupied_id'),
 
                         'slot' => $rune->get('slot_no'),
                         'rank' => $rune->get('rank'), // @TODO maybe make a rune ranks table?

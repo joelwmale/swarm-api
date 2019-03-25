@@ -1,0 +1,66 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreatePlayerRunesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('player_runes', function (Blueprint $table) {
+            $table->increments('id');
+            $table->bigInteger('rune_id');
+            $table->unsignedInteger('player_id');
+
+            // Set
+            $table->unsignedInteger('set_id');
+
+            // Class & Rune usage
+            $table->tinyInteger('class');
+            $table->boolean('occupied');
+            $table->unsignedBigInteger('player_unit_id');
+
+            // Slots & ranks
+            $table->enum('slot', [1, 2, 3, 4, 5, 6]);
+            $table->tinyInteger('rank');
+
+            // Upgrades
+            $table->integer('upgrade_max');
+            $table->integer('upgrade_current');
+
+            // Shop values
+            $table->bigInteger('base_value');
+            $table->bigInteger('sell_value');
+
+            // Effects
+            $table->json('primary_effect');
+            $table->json('prefix_effect')->nullable();
+            $table->json('secondary_effect')->nullable();
+
+            $table->timestamps();
+            $table->softDeletes();
+
+            $table->foreign('player_id')
+                ->references('id')->on('players')
+                ->onDelete('cascade');
+
+            $table->index(['player_id', 'player_unit_id']);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('player_runes');
+    }
+}

@@ -2,41 +2,31 @@
 
 namespace Swarm\Importers;
 
+use Swarm\Players\Player;
+use Swarm\Game\GameMonster;
 use Illuminate\Support\Collection;
-use Swarm\Attributes\Attribute;
-use Swarm\Monsters\Monster;
-use Swarm\Wizards\Wizard;
 
 class MonsterPieceImporter
 {
-    public function import(Wizard $wizard, Collection $monsterPieces)
+    public function import(Player $player, Collection $monsterPieces)
     {
         // Loop through each item
-        $monsterPieces->each(function ($piece) use ($wizard) {
+        $monsterPieces->each(function ($piece) use ($player) {
             // Turn into collection
             $piece = collect($piece);
 
-            $attributeId = substr($piece->get('item_master_id'), -1);
-            // Get the monster by removing the attribute, and the 0 between
-            $monsterId = substr($piece->get('item_master_id'), 0, -2);
-
-            // Get the attribute
-            $attribute = Attribute::find($attributeId);
-
             // Get the monster
-            $monster = Monster::find($monsterId);
+            $monster = GameMonster::where('game_id', $piece->get('item_master_id'))->first();
 
-            if ($monster && $attribute) {
-                // Create this monster piece
-                $wizard->unitPieces()->create([
+            if (! $monster) {
+                logger('Could not find monster for unit piece.', $piece->toArray());
+            }
+
+            // Create this monster piece
+            $player->unitPieces()->create([
                     'monster_id'   => $monster->id,
-                    'attribute_id' => $attribute->id,
                     'quantity'     => $piece->get('item_quantity'),
                 ]);
-            } else {
-                // error, couldnt find a matching monster
-                // @TODO
-            }
         });
 
         return true;

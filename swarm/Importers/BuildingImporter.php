@@ -3,20 +3,20 @@
 namespace Swarm\Importers;
 
 use Illuminate\Support\Collection;
-use Swarm\Wizards\Wizard;
+use Swarm\Players\Player;
 
 class BuildingImporter
 {
-    public function import(Wizard $wizard, Collection $buildings)
+    public function import(Player $player, Collection $buildings)
     {
         // Loop through each rune
-        $buildings->each(function ($building) use ($wizard) {
+        $buildings->each(function ($building) use ($player) {
             // Turn into collection
             $building = collect($building);
 
             // @TODO validate each building
 
-            $wizard->buildings()->updateOrCreate(
+            $player->buildings()->updateOrCreate(
                     ['deco_id' => $building->get('deco_id')],
                     [
                         'deco_id'     => $building->get('deco_id'),

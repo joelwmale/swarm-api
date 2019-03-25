@@ -37,39 +37,41 @@ class SWExportImportService
 
     public function import(User $user, Collection $data)
     {
+        logger('Importing new user data for: ' . $user->username);
+
         // Get wizard data
-        $wizardData = collect($data->get('wizard_info'));
-        $wizardId = $wizardData->get('wizard_id');
+        $playerData = collect($data->get('wizard_info'));
+        $playerId = $playerData->get('wizard_id');
 
-        $wizard = null;
+        $player = null;
 
-        // Check to see if the user has a wizard
-        if (!$wizard = $user->wizards->where('wizard_id', $wizardId)->first()) {
+        // Check to see if the user has a player
+        if (!$player = $user->players->where('player_id', $playerId)->first()) {
             // Create a new wizard
-            $wizard = $user->wizards()->create([
-                'wizard_id'      => $wizardData->get('wizard_id'),
-                'wizard_name'    => $wizardData->get('wizard_name'),
-                'wizard_level'   => $wizardData->get('wizard_level'),
-                'wizard_mana'    => $wizardData->get('wizard_mana'),
-                'wizard_crystal' => $wizardData->get('wizard_crystal'),
-                'energy_max'     => $wizardData->get('energy_max'),
-                'energy_per_min' => $wizardData->get('energy_per_min'),
-                'rep_unit_id'    => $wizardData->get('rep_unit_id'),
-                'last_login'     => $wizardData->get('wizard_last_login'),
+            $player = $user->players()->create([
+                'player_id'      => $playerData->get('wizard_id'),
+                'player_name'    => $playerData->get('wizard_name'),
+                'player_level'   => $playerData->get('wizard_level'),
+                'player_mana'    => $playerData->get('wizard_mana'),
+                'player_crystal' => $playerData->get('wizard_crystal'),
+                'energy_max'     => $playerData->get('energy_max'),
+                'energy_per_min' => $playerData->get('energy_per_min'),
+                'rep_unit_id'    => $playerData->get('rep_unit_id'),
+                'last_login'     => $playerData->get('wizard_last_login'),
             ]);
         }
 
         // Import monsters
-        $this->monsterImporter->import($wizard, collect($data->get('unit_list')));
+        $this->monsterImporter->import($player, collect($data->get('unit_list')));
 
         // Import runes
-        $this->runeImporter->import($wizard, collect($data->get('runes')));
+        $this->runeImporter->import($player, collect($data->get('runes')));
 
         // Import inventory
-        $this->inventoryImporter->import($wizard, collect($data->get('inventory_info')));
+        $this->inventoryImporter->import($player, collect($data->get('inventory_info')));
 
         // Import buildings
-        $this->buildingImporter->import($wizard, collect($data->get('deco_list')));
+        $this->buildingImporter->import($player, collect($data->get('deco_list')));
 
         return true;
     }

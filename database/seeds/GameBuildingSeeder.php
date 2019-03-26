@@ -23,144 +23,144 @@ class GameBuildingSeeder extends Seeder
     {
         return [
             [
-                'game_id' => 4,
+                'game_id'   => 4,
                 'game_name' => 'guardstone',
-                'name' => 'Guardstone',
+                'name'      => 'Guardstone',
                 'max_level' => 10,
-                'asset' => 'guardstone.png'
+                'asset'     => 'guardstone.png',
             ],
             [
-                'game_id' => 5,
+                'game_id'   => 5,
                 'game_name' => 'mana_fountain',
-                'name' => 'Mana Fountain',
+                'name'      => 'Mana Fountain',
                 'max_level' => 10,
-                'asset' => 'mana_fountain.png'
+                'asset'     => 'mana_fountain.png',
             ],
             [
-                'game_id' => 6,
+                'game_id'   => 6,
                 'game_name' => 'sky_tribe_totem',
-                'name' => 'Sky Tribe Totem',
+                'name'      => 'Sky Tribe Totem',
                 'max_level' => 10,
-                'asset' => 'sky_tribe_totem.png'
+                'asset'     => 'sky_tribe_totem.png',
             ],
             [
-                'game_id' => 7,
+                'game_id'   => 7,
                 'game_name' => 'arcane_booster_tower',
-                'name' => 'Arcane Booster Tower',
+                'name'      => 'Arcane Booster Tower',
                 'max_level' => 10,
-                'asset' => 'arcane_booster_tower.png'
+                'asset'     => 'arcane_booster_tower.png',
             ],
             [
-                'game_id' => 8,
+                'game_id'   => 8,
                 'game_name' => 'crystal_altar',
-                'name' => 'Crystal Altar',
+                'name'      => 'Crystal Altar',
                 'max_level' => 10,
-                'asset' => 'crystal_altar.png'
+                'asset'     => 'crystal_altar.png',
             ],
             [
-                'game_id' => 9,
+                'game_id'   => 9,
                 'game_name' => 'ancient_sword',
-                'name' => 'Ancient Sword',
+                'name'      => 'Ancient Sword',
                 'max_level' => 10,
-                'asset' => 'ancient_sword.png'
+                'asset'     => 'ancient_sword.png',
             ],
             [
-                'game_id' => 10,
+                'game_id'   => 10,
                 'game_name' => 'sanctum_of_energy',
-                'name' => 'Sanctum of Energy',
+                'name'      => 'Sanctum of Energy',
                 'max_level' => 10,
-                'asset' => 'sanctum_of_energy.png'
+                'asset'     => 'sanctum_of_energy.png',
             ],
             [
-                'game_id' => 11,
+                'game_id'   => 11,
                 'game_name' => 'mysterious_plant',
-                'name' => 'Mysterious Plant',
+                'name'      => 'Mysterious Plant',
                 'max_level' => 10,
-                'asset' => 'mysterious_plant.png'
+                'asset'     => 'mysterious_plant.png',
             ],
             [
-                'game_id' => 15,
+                'game_id'   => 15,
                 'game_name' => 'fire_sanctuary',
-                'name' => 'Fire Santuary',
+                'name'      => 'Fire Santuary',
                 'max_level' => 10,
-                'asset' => 'fire_sanctuary.png'
+                'asset'     => 'fire_sanctuary.png',
             ],
             [
-                'game_id' => 16,
+                'game_id'   => 16,
                 'game_name' => 'water_sanctuary',
-                'name' => 'Water Santuary',
+                'name'      => 'Water Santuary',
                 'max_level' => 10,
-                'asset' => 'water_sanctuary.png'
+                'asset'     => 'water_sanctuary.png',
             ],
             [
-                'game_id' => 17,
+                'game_id'   => 17,
                 'game_name' => 'wind_sanctuary',
-                'name' => 'Wind Santuary',
+                'name'      => 'Wind Santuary',
                 'max_level' => 10,
-                'asset' => 'wind_sanctuary.png'
+                'asset'     => 'wind_sanctuary.png',
             ],
             [
-                'game_id' => 18,
+                'game_id'   => 18,
                 'game_name' => 'light_sanctuary',
-                'name' => 'Light Santuary',
+                'name'      => 'Light Santuary',
                 'max_level' => 10,
-                'asset' => 'light_sanctuary.png'
+                'asset'     => 'light_sanctuary.png',
             ],
             [
-                'game_id' => 19,
+                'game_id'   => 19,
                 'game_name' => 'dark_sanctuary',
-                'name' => 'Dark Santuary',
+                'name'      => 'Dark Santuary',
                 'max_level' => 10,
-                'asset' => 'dark_sanctuary.png'
+                'asset'     => 'dark_sanctuary.png',
             ],
             [
-                'game_id' => 31,
+                'game_id'   => 31,
                 'game_name' => 'fallen_ancient_guardian',
-                'name' => 'Fallen Ancient Guardian',
+                'name'      => 'Fallen Ancient Guardian',
                 'max_level' => 10,
-                'asset' => 'fallen_ancient_guardian.png'
+                'asset'     => 'fallen_ancient_guardian.png',
             ],
             [
-                'game_id' => 34,
+                'game_id'   => 34,
                 'game_name' => 'crystal_rock',
-                'name' => 'Crystal Rock',
+                'name'      => 'Crystal Rock',
                 'max_level' => 10,
-                'asset' => 'crystal_rock.png'
+                'asset'     => 'crystal_rock.png',
             ],
             [
-                'game_id' => 35,
+                'game_id'   => 35,
                 'game_name' => 'fairy_tree',
-                'name' => 'Fairy Tree',
+                'name'      => 'Fairy Tree',
                 'max_level' => 10,
-                'asset' => 'fairy_tree.png'
+                'asset'     => 'fairy_tree.png',
             ],
             [
-                'game_id' => 36,
+                'game_id'   => 36,
                 'game_name' => 'flag_of_battle',
-                'name' => 'Flag of Battle',
+                'name'      => 'Flag of Battle',
                 'max_level' => 10,
-                'asset' => 'flag_of_battle.png'
+                'asset'     => 'flag_of_battle.png',
             ],
             [
-                'game_id' => 37,
+                'game_id'   => 37,
                 'game_name' => 'flag_of_rage',
-                'name' => 'Flag of Rage',
+                'name'      => 'Flag of Rage',
                 'max_level' => 10,
-                'asset' => 'flag_of_rage.png'
+                'asset'     => 'flag_of_rage.png',
             ],
             [
-                'game_id' => 38,
+                'game_id'   => 38,
                 'game_name' => 'flag_of_hope',
-                'name' => 'Flag of Hope',
+                'name'      => 'Flag of Hope',
                 'max_level' => 10,
-                'asset' => 'flag_of_hope.png'
+                'asset'     => 'flag_of_hope.png',
             ],
             [
-                'game_id' => 39,
+                'game_id'   => 39,
                 'game_name' => 'flag_of_will',
-                'name' => 'Flag of Will',
+                'name'      => 'Flag of Will',
                 'max_level' => 10,
-                'asset' => 'flag_of_will.png'
+                'asset'     => 'flag_of_will.png',
             ],
         ];
     }

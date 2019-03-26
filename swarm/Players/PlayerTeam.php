@@ -22,6 +22,6 @@ class PlayerTeam extends Model
      */
     public function setTeamUnitsAttribute($value)
     {
-        $this->attributes['team_units'] = ! empty($value) ? json_encode($value) : null;
+        $this->attributes['team_units'] = !empty($value) ? json_encode($value) : null;
     }
 }

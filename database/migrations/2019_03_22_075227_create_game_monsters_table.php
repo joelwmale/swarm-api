@@ -14,9 +14,9 @@ class CreateGameMonstersTable extends Migration
     public function up()
     {
         Schema::create('game_monsters', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
 
-            $table->unsignedInteger('attribute_id');
+            $table->unsignedBigInteger('attribute_id');
 
             $table->bigInteger('game_id')->unsigned();
             $table->string('name');

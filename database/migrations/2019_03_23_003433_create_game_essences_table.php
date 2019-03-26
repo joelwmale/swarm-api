@@ -16,7 +16,7 @@ class CreateGameEssencesTable extends Migration
         Schema::create('game_essences', function (Blueprint $table) {
             $table->bigInteger('id')->unsigned();
 
-            $table->string('raw_name');
+            $table->string('game_name');
             $table->string('name');
             $table->string('asset');
 

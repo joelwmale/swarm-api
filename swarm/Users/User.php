@@ -46,7 +46,9 @@ class User extends Authenticatable
     ];
 
     /**
-     * The api token the user owns.
+     * Get the token the user owns
+     *
+     * @return HasOne
      */
     public function token(): HasOne
     {

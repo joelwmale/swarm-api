@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Swarm\Users\User;
+use App\PlayerTeams;
 
 class Player extends Model
 {
@@ -58,5 +59,10 @@ class Player extends Model
     public function runes(): HasMany
     {
         return $this->hasMany(PlayerRune::class);
+    }
+
+    public function teams(): HasMany
+    {
+        return $this->hasMany(PlayerTeam::class);
     }
 }

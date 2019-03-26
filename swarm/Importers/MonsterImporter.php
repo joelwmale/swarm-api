@@ -44,7 +44,7 @@ class MonsterImporter
                     'critical_damage' => $unit->get('critical_damage'),
                 ],
                 'skills'   => $unit->get('skills'),
-                'unlocked' => $unit->get('create_time'),
+                'summoned' => $unit->get('create_time'),
             ]);
 
             // Import the runes for the unit

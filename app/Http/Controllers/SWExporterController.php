@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Swarm\Services\SWExportImportService;
-use Swarm\Users\User;
+use Illuminate\Support\Facades\Storage;
+use App\Jobs\ImportProfileJob;
+use Imtigger\LaravelJobStatus\JobStatus;
+use Illuminate\Http\File;
 
 class SWExporterController extends Controller
 {
@@ -20,10 +23,20 @@ class SWExporterController extends Controller
 
     public function profile(Request $request)
     {
-        // @TODO hits a memory issue.
-        // @TODO should save the file and import it later with a queue
-        // $request->all() is the same as the .json import
-        $this->swExportImportService->import($request->user(), collect($request->all()));
+        // Get the user
+        $user = $request->user();
+
+        // Store the file
+        $path = '/tmp/' . now()->timestamp . '.json';
+        file_put_contents($path, json_encode($request->input('profile')));
+        $fileUrl = Storage::putFile(config('filesystems.profiles') . "/{$user->id}", new File($path));
+
+        // Dispatch the job
+        ImportProfileJob::dispatch($user, $fileUrl, 'sw_proxy_import')->delay(5);
+
+        return response()->json([
+            'status' => 'queued'
+        ], 200);
     }
 
     public function log(Request $request)
@@ -35,7 +48,7 @@ class SWExporterController extends Controller
     public function acceptedCommands()
     {
         return response()->json([
-            'BuyBlacKMarketItem' => [
+            'BuyBlackMarketItem' => [
                 'request' => [
                     'wizard_id',
                     'item_no',

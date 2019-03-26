@@ -14,8 +14,8 @@ class CreatePlayerInventoryItemsTable extends Migration
     public function up()
     {
         Schema::create('player_inventory_items', function (Blueprint $table) {
-            $table->increments('id');
-            $table->unsignedInteger('player_id');
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('player_id');
 
             // The inventorable
             $table->bigInteger('inventorable_id');

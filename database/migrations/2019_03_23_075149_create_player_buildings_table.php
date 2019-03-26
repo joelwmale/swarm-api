@@ -15,8 +15,8 @@ class CreatePlayerBuildingsTable extends Migration
     {
         Schema::create('player_buildings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('player_id');
-            $table->unsignedInteger('building_id');
+            $table->unsignedBigInteger('player_id');
+            $table->unsignedBigInteger('building_id');
 
             $table->bigInteger('deco_id');
 

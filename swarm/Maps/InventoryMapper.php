@@ -1,6 +1,6 @@
 <?php
 
-namespace Swarm\Mappers;
+namespace Swarm\Maps;
 
 class InventoryMapper
 {

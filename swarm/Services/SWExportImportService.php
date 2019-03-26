@@ -13,6 +13,11 @@ class SWExportImportService
     protected $monsterImporter;
 
     /**
+     * @var \Swarm\Importers\TeamImporter
+     */
+    protected $teamImporter;
+
+    /**
      * @var \Swarm\Importers\RuneImporter
      */
     protected $runeImporter;
@@ -30,6 +35,7 @@ class SWExportImportService
     public function __construct()
     {
         $this->monsterImporter = resolve('Swarm\Importers\MonsterImporter');
+        $this->teamImporter = resolve('Swarm\Importers\TeamImporter');
         $this->runeImporter = resolve('Swarm\Importers\RuneImporter');
         $this->inventoryImporter = resolve('Swarm\Importers\InventoryImporter');
         $this->buildingImporter = resolve('Swarm\Importers\BuildingImporter');
@@ -63,6 +69,9 @@ class SWExportImportService
 
         // Import monsters
         $this->monsterImporter->import($player, collect($data->get('unit_list')));
+
+        // Import teams
+        $this->teamImporter->import($player, collect($data->get('deck_recent_list')));
 
         // Import runes
         $this->runeImporter->import($player, collect($data->get('runes')));

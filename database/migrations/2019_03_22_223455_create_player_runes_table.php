@@ -14,12 +14,12 @@ class CreatePlayerRunesTable extends Migration
     public function up()
     {
         Schema::create('player_runes', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->bigInteger('rune_id');
-            $table->unsignedInteger('player_id');
+            $table->unsignedBigInteger('player_id');
 
             // Set
-            $table->unsignedInteger('set_id');
+            $table->unsignedBigInteger('set_id');
 
             // Class & Rune usage
             $table->tinyInteger('class');

@@ -8,8 +8,9 @@ class GameBuilding extends Model
 {
     public $fillable = [
         'game_id',
-        'raw_name',
+        'game_name',
         'name',
+        'max_level',
         'asset',
     ];
 }

@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-class CreatePlayerUnitPiecesTable extends Migration
+class CreatePlayerTeamsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,23 +13,21 @@ class CreatePlayerUnitPiecesTable extends Migration
      */
     public function up()
     {
-        Schema::create('player_unit_pieces', function (Blueprint $table) {
+        Schema::create('player_teams', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('player_id');
 
-            $table->unsignedBigInteger('monster_id');
+            $table->integer('type');
+            $table->integer('sub_type');
 
-            $table->bigInteger('quantity');
+            $table->unsignedBigInteger('leader_unit_id');
+            $table->json('team_units');
 
             $table->timestamps();
             $table->softDeletes();
 
             $table->foreign('player_id')
                 ->references('id')->on('players')
-                ->onDelete('cascade');
-
-            $table->foreign('monster_id')
-                ->references('id')->on('game_monsters')
                 ->onDelete('cascade');
         });
     }
@@ -41,6 +39,6 @@ class CreatePlayerUnitPiecesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('player_unit_pieces');
+        Schema::dropIfExists('player_teams');
     }
 }

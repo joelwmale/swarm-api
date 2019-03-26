@@ -14,10 +14,10 @@ class CreatePlayerUnitsTable extends Migration
     public function up()
     {
         Schema::create('player_units', function (Blueprint $table) {
-            $table->increments('id');
-            $table->unsignedInteger('player_id');
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('player_id');
             $table->bigInteger('unit_id');
-            $table->unsignedInteger('monster_id');
+            $table->unsignedBigInteger('monster_id');
 
             // Misc
             $table->tinyInteger('rank'); // 1,2,3 stars etc
@@ -30,7 +30,7 @@ class CreatePlayerUnitsTable extends Migration
             // 0 = skill_id, 1 = level
             $table->json('skills');
 
-            $table->datetime('unlocked')->nullable();
+            $table->datetime('summoned')->nullable();
 
             $table->timestamps();
             $table->softDeletes();

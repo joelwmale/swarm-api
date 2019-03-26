@@ -21,7 +21,9 @@ class ApiToken extends Model
 
         static::creating(function ($model) {
             // Create unique token
-            $model->token = static::generateRandomString();
+            if (!$model->token) {
+                $model->token = static::generateRandomString();
+            }
         });
     }
 

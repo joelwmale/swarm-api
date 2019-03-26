@@ -14,11 +14,12 @@ class CreateGameBuildingsTable extends Migration
     public function up()
     {
         Schema::create('game_buildings', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
 
             $table->bigInteger('game_id')->unsigned();
-            $table->string('raw_name');
+            $table->string('game_name');
             $table->string('name');
+            $table->tinyInteger('max_level');
             $table->string('asset');
 
             $table->timestamps();

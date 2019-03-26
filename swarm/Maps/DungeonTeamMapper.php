@@ -12,7 +12,7 @@ class DungeonTeamMapper
     }
 
     /**
-     * Dungeon id maps
+     * Dungeon id maps.
      */
     public static function dungeonMap()
     {
@@ -20,11 +20,11 @@ class DungeonTeamMapper
             // seems to be scenario dungeons
             1 => [
                 2 => 'Garen Forst (Normal)', // only allows for 2 monsters
-                4 => 'Scenario Dungeon'
+                4 => 'Scenario Dungeon',
             ],
             // Arena
             2 => [
-                4 => 'Arena'
+                4 => 'Arena',
             ],
             // Cairos dungeons
             3 => [
@@ -43,11 +43,11 @@ class DungeonTeamMapper
             ],
             // Secret dungeon
             4 => [
-                5 => 'Fire Imp Dungeon' // fire imp or all?
+                5 => 'Fire Imp Dungeon', // fire imp or all?
             ],
             // TOA
             5 => [
-                5 => 'Trial of Ascension' // @TODO verify if normal and hard
+                5 => 'Trial of Ascension', // @TODO verify if normal and hard
             ],
             // Rift dungeon
             8 => [
@@ -56,7 +56,7 @@ class DungeonTeamMapper
                 3001 => 'Wind Beast',
                 4001 => 'Light Beast',
                 5001 => 'Dark Beast',
-            ]
+            ],
         ];
     }
 }

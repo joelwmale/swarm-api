@@ -46,7 +46,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * Get the token the user owns
+     * Get the token the user owns.
      *
      * @return HasOne
      */

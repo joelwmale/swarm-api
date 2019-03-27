@@ -25,9 +25,9 @@ class RuneImporter
                         'occupied'       => $rune->get('occupied_id') ? true : false,
                         'player_unit_id' => $rune->get('occupied_id'),
 
-                        'slot' => $rune->get('slot_no'),
+                        'slot'             => $rune->get('slot_no'),
                         'quality'          => intval($rune->get('rank')), // rune quality (e.g 1 = common, 2 = magic)
-                        'rank' => $rune->get('class'), // class is actually the rank (star count)
+                        'rank'             => $rune->get('class'), // class is actually the rank (star count)
 
                         'current_level' => $rune->get('upgrade_curr'),
                         'max_level'     => $rune->get('upgrade_limit'),

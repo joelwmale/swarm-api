@@ -7,10 +7,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
-use Swarm\Traits\HasResource;
 use Swarm\Game\GameMonster;
-use Swarm\Game\GameRuneEffect;
 use Swarm\Game\GameRuneSet;
+use Swarm\Traits\HasResource;
 
 class PlayerUnit extends Model
 {
@@ -82,7 +81,7 @@ class PlayerUnit extends Model
     public function getStatsAttribute($value)
     {
         // Decode the stats and return it
-        return ! empty($value) ? json_decode($value, true) : null;
+        return !empty($value) ? json_decode($value, true) : null;
     }
 
     public function setStatsAttribute($value)
@@ -90,7 +89,7 @@ class PlayerUnit extends Model
         // Create an empty stats array
         $stats = collect();
 
-        if (! empty($value)) {
+        if (!empty($value)) {
             foreach ($value as $stat => $v) {
                 // Rename con to health
                 if ($stat === 'con') {
@@ -112,7 +111,7 @@ class PlayerUnit extends Model
     public function getSkillsAttribute($value)
     {
         // Decode the stats and return it
-        return ! empty($value) ? json_decode($value, true) : null;
+        return !empty($value) ? json_decode($value, true) : null;
     }
 
     public function setSkillsAttribute($value)

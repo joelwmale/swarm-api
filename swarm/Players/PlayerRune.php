@@ -2,13 +2,13 @@
 
 namespace Swarm\Players;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 use Swarm\Game\GameRuneSet;
-use Swarm\Traits\HasResource;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Swarm\Maps\RuneEffectMapper;
+use Swarm\Traits\HasResource;
 
 class PlayerRune extends Model
 {
@@ -112,7 +112,7 @@ class PlayerRune extends Model
             ]);
         }
 
-        $this->attributes['primary_effects'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['primary_effects'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 
     public function getPrefixEffectsAttribute($value)
@@ -147,7 +147,7 @@ class PlayerRune extends Model
             ]);
         }
 
-        $this->attributes['prefix_effects'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['prefix_effects'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 
     public function getSecondaryEffectsAttribute($value)
@@ -189,6 +189,6 @@ class PlayerRune extends Model
             }
         }
 
-        $this->attributes['secondary_effects'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['secondary_effects'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 }

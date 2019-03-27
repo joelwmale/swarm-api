@@ -10,15 +10,16 @@ class PlayerTeamResource extends JsonResource
     /**
      * Transform the resource into an array.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
+     *
      * @return array
      */
     public function toArray($request)
     {
         return [
             'dungeon' => DungeonTeamMapper::getDungeonForTeam($this->type, $this->sub_type),
-            'leader' => $this->leader->getResource(),
-            'units' => $this->team_units,
+            'leader'  => $this->leader->getResource(),
+            'units'   => $this->team_units,
         ];
     }
 }

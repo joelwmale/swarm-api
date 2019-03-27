@@ -2,14 +2,14 @@
 
 namespace App\Jobs;
 
-use Swarm\Users\User;
 use Illuminate\Bus\Queueable;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Queue\InteractsWithQueue;
-use Imtigger\LaravelJobStatus\Trackable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Storage;
+use Imtigger\LaravelJobStatus\Trackable;
+use Swarm\Users\User;
 
 class ImportProfileJob implements ShouldQueue
 {
@@ -61,7 +61,7 @@ class ImportProfileJob implements ShouldQueue
         // Get the file
         $file = Storage::get($this->fileUrl);
 
-        if (! $file) {
+        if (!$file) {
             // @TODO log an error
             logger('Unable to find file for import.', $this->user->toArray());
         }

@@ -3,9 +3,9 @@
 namespace Swarm\Players;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Swarm\Traits\HasResource;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class PlayerTeam extends Model
 {
@@ -34,9 +34,10 @@ class PlayerTeam extends Model
 
         $units->transform(function ($monsterId, $pos) {
             $unit = PlayerUnit::whereUnitId($monsterId)->first();
+
             return [
                 'position' => $pos,
-                'unit' => $unit ? $unit->getResource() : null
+                'unit'     => $unit ? $unit->getResource() : null,
             ];
         });
 
@@ -45,6 +46,6 @@ class PlayerTeam extends Model
 
     public function setTeamUnitsAttribute($value)
     {
-        $this->attributes['team_units'] = ! empty($value) ? json_encode($value) : null;
+        $this->attributes['team_units'] = !empty($value) ? json_encode($value) : null;
     }
 }

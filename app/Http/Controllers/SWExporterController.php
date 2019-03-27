@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Swarm\Services\SWExportImportService;
-use Illuminate\Support\Facades\Storage;
 use App\Jobs\ImportProfileJob;
-use Imtigger\LaravelJobStatus\JobStatus;
 use Illuminate\Http\File;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Swarm\Services\SWExportImportService;
 
 class SWExporterController extends Controller
 {
@@ -27,15 +26,15 @@ class SWExporterController extends Controller
         $user = $request->user();
 
         // Store the file
-        $path = '/tmp/' . now()->timestamp . '.json';
+        $path = '/tmp/'.now()->timestamp.'.json';
         file_put_contents($path, json_encode($request->input('profile')));
-        $fileUrl = Storage::putFile(config('filesystems.profiles') . "/{$user->id}", new File($path));
+        $fileUrl = Storage::putFile(config('filesystems.profiles')."/{$user->id}", new File($path));
 
         // Dispatch the job
         ImportProfileJob::dispatch($user, $fileUrl, 'sw_proxy_import')->delay(5);
 
         return response()->json([
-            'status' => 'queued'
+            'status' => 'queued',
         ], 200);
     }
 

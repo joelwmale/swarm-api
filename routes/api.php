@@ -11,6 +11,6 @@
 |
 */
 
-Route::group(['prefix' => 'me'], function() {
+Route::group(['prefix' => 'me'], function () {
     Route::get('teams', 'TeamController@index');
 });

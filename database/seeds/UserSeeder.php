@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Swarm\Users\User;
 use Swarm\Auth\ApiToken;
+use Swarm\Users\User;
 
 class UserSeeder extends Seeder
 {
@@ -23,8 +23,8 @@ class UserSeeder extends Seeder
         // Make a test api token
         ApiToken::create([
             'user_id' => $user->id,
-            'token' => 'test',
-            'enabled' => true
+            'token'   => 'test',
+            'enabled' => true,
         ]);
     }
 }

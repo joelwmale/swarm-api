@@ -21,7 +21,7 @@ class GameRuneMainstatSeeder extends Seeder
 
     protected function getRuneMainstats(): array
     {
-        /**
+        /*
          * so if the effect id is 6, then the array is talking
          * about defence %,
          * in the main stat array, it means as a main stat

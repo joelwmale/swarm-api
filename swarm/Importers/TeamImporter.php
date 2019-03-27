@@ -19,10 +19,10 @@ class TeamImporter
             // Make a new unit or update an exisiting
             $player->teams()->updateOrCreate(
                 ['type' => $team->get('type'), 'sub_type' => $team->get('sub_type')], [
-                'type'      => $team->get('type'),
-                'sub_type'      => $team->get('sub_type'),
+                'type'           => $team->get('type'),
+                'sub_type'       => $team->get('sub_type'),
                 'leader_unit_id' => $team->get('leader_unit_id'),
-                'team_units' => $team->get('unit_id_list'),
+                'team_units'     => $team->get('unit_id_list'),
             ]);
         });
 

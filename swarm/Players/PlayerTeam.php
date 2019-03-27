@@ -4,10 +4,13 @@ namespace Swarm\Players;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Swarm\Traits\HasResource;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class PlayerTeam extends Model
 {
     use SoftDeletes;
+    use HasResource;
 
     public $fillable = [
         'player_id',
@@ -17,9 +20,29 @@ class PlayerTeam extends Model
         'team_units',
     ];
 
+    public function leader(): BelongsTo
+    {
+        return $this->belongsTo(PlayerUnit::class, 'leader_unit_id', 'unit_id');
+    }
+
     /**
      * Format the team units.
      */
+    public function getTeamUnitsAttribute($value)
+    {
+        $units = collect(json_decode($value, true));
+
+        $units->transform(function ($monsterId, $pos) {
+            $unit = PlayerUnit::whereUnitId($monsterId)->first();
+            return [
+                'position' => $pos,
+                'unit' => $unit ? $unit->getResource() : null
+            ];
+        });
+
+        return $units->toArray();
+    }
+
     public function setTeamUnitsAttribute($value)
     {
         $this->attributes['team_units'] = ! empty($value) ? json_encode($value) : null;

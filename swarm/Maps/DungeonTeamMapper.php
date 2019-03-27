@@ -8,7 +8,7 @@ class DungeonTeamMapper
     {
         $map = static::dungeonMap();
 
-        return array_get($map, "$type.$subType");
+        return array_get($map, "$type.$subType") ?: 'Unknown';
     }
 
     /**
@@ -19,7 +19,7 @@ class DungeonTeamMapper
         return [
             // seems to be scenario dungeons
             1 => [
-                2 => 'Garen Forst (Normal)', // only allows for 2 monsters
+                2 => 'Garen Forest (Normal)', // only allows for 2 monsters
                 4 => 'Scenario Dungeon'
             ],
             // Arena

@@ -7,10 +7,15 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
+use Swarm\Traits\HasResource;
+use Swarm\Game\GameMonster;
+use Swarm\Game\GameRuneEffect;
+use Swarm\Game\GameRuneSet;
 
 class PlayerUnit extends Model
 {
     use SoftDeletes;
+    use HasResource;
 
     public $fillable = [
         'player_id',
@@ -33,17 +38,83 @@ class PlayerUnit extends Model
         return $this->belongsTo(Player::class);
     }
 
+    public function monster(): BelongsTo
+    {
+        return $this->belongsTo(GameMonster::class);
+    }
+
+    // Get the rune effects that are active
+    public function getActiveRuneSetsAttribute(): array
+    {
+        // Active effects starts blank
+        $activeEffects = collect();
+
+        // Runes equipped
+        $runesEquipped = collect();
+
+        foreach ($this->runes as $rune) {
+            // Get the rune set
+            $set = $rune->set;
+            // Push the runes name to the runes equipped array
+            $runesEquipped->push(strtolower($set->name));
+        }
+
+        // Returns the amount of occurences of each rune name
+        $runeEquippedCount = $runesEquipped->countBy();
+
+        $runeEquippedCount->each(function ($count, $name) use ($activeEffects) {
+            // Get the rune
+            $rune = GameRuneSet::whereName(ucfirst($name))->first();
+
+            if ($count >= $rune->set_pieces) {
+                // This effect is active
+                $activeEffects->push($name);
+            }
+        });
+
+        // Return the active effects
+        return $activeEffects->toArray();
+    }
+
     /**
      * Format the stats.
      */
+    public function getStatsAttribute($value)
+    {
+        // Decode the stats and return it
+        return ! empty($value) ? json_decode($value, true) : null;
+    }
+
     public function setStatsAttribute($value)
     {
-        $this->attributes['stats'] = !empty($value) ? json_encode($value) : null;
+        // Create an empty stats array
+        $stats = collect();
+
+        if (! empty($value)) {
+            foreach ($value as $stat => $v) {
+                // Rename con to health
+                if ($stat === 'con') {
+                    $stat = 'health';
+                }
+
+                // Put the stat and the value into the array
+                $stats->put($stat, $v);
+            }
+        }
+
+        // Set the stats attribute
+        $this->attributes['stats'] = $stats->isNotEmpty() ? json_encode($stats->toArray()) : null;
     }
 
     /**
      * Format the skills.
      */
+    public function getSkillsAttribute($value)
+    {
+        // Decode the stats and return it
+        return ! empty($value) ? json_decode($value, true) : null;
+    }
+
     public function setSkillsAttribute($value)
     {
         $skills = [];

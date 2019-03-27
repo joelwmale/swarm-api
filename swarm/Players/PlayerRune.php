@@ -2,37 +2,40 @@
 
 namespace Swarm\Players;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 use Swarm\Game\GameRuneSet;
+use Swarm\Traits\HasResource;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Swarm\Maps\RuneEffectMapper;
 
 class PlayerRune extends Model
 {
     use SoftDeletes;
+    use HasResource;
 
     protected $fillable = [
         'rune_id',
         'player_id',
         'set_id',
 
-        'class',
         'occupied',
         'player_unit_id',
 
         'slot',
+        'quality',
         'rank',
 
-        'upgrade_max',
-        'upgrade_current',
+        'current_level',
+        'max_level',
 
         'base_value',
         'sell_value',
 
-        'primary_effect',
-        'prefix_effect',
-        'secondary_effect',
+        'primary_effects',
+        'prefix_effects',
+        'secondary_effects',
     ];
 
     protected $casts = [
@@ -60,7 +63,36 @@ class PlayerRune extends Model
      */
     public function unit(): BelongsTo
     {
-        return $this->belongsTo(PlayerUnit::class, 'unit_id', 'player_unit_id');
+        return $this->belongsTo(PlayerUnit::class, 'player_unit_id', 'unit_id');
+    }
+
+    public function getQualityAttribute($value)
+    {
+        $runeQualities = [
+            '',
+            'Common',
+            'Magic',
+            'Rare',
+            'Hero',
+            'Legend',
+        ];
+
+        return $runeQualities[$value];
+    }
+
+    public function getPrimaryEffectsAttribute($value)
+    {
+        $primaryEffects = collect();
+
+        // Decode the effect
+        $effects = collect(json_decode($value, true));
+
+        $effects->each(function ($effect) use ($primaryEffects) {
+            $effect = collect($effect);
+            $primaryEffects->push(RuneEffectMapper::getEffect($effect->get('effect_id'), $effect->get('value')));
+        });
+
+        return $primaryEffects;
     }
 
     /**
@@ -68,7 +100,7 @@ class PlayerRune extends Model
      *
      * @param mixed $value
      */
-    public function setPrimaryEffectAttribute($value)
+    public function setPrimaryEffectsAttribute($value)
     {
         $effects = [];
 
@@ -80,7 +112,22 @@ class PlayerRune extends Model
             ]);
         }
 
-        $this->attributes['primary_effect'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['primary_effects'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
+    }
+
+    public function getPrefixEffectsAttribute($value)
+    {
+        $prefixEffects = collect();
+
+        // Decode the effect
+        $effects = collect(json_decode($value, true));
+
+        $effects->each(function ($effect) use ($prefixEffects) {
+            $effect = collect($effect);
+            $prefixEffects->push(RuneEffectMapper::getEffect($effect->get('effect_id'), $effect->get('value')));
+        });
+
+        return $prefixEffects;
     }
 
     /**
@@ -88,7 +135,7 @@ class PlayerRune extends Model
      *
      * @param mixed $value
      */
-    public function setPrefixEffectAttribute($value)
+    public function setPrefixEffectsAttribute($value)
     {
         $effects = [];
 
@@ -100,7 +147,22 @@ class PlayerRune extends Model
             ]);
         }
 
-        $this->attributes['prefix_effect'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['prefix_effects'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
+    }
+
+    public function getSecondaryEffectsAttribute($value)
+    {
+        $secondaryEffects = collect();
+
+        // Decode the effect
+        $effects = collect(json_decode($value, true));
+
+        $effects->each(function ($effect) use ($secondaryEffects) {
+            $effect = collect($effect);
+            $secondaryEffects->push(RuneEffectMapper::getEffect($effect->get('effect_id'), $effect->get('value')));
+        });
+
+        return $secondaryEffects;
     }
 
     /**
@@ -108,20 +170,25 @@ class PlayerRune extends Model
      *
      * @param mixed $value
      */
-    public function setSecondaryEffectAttribute($value)
+    public function setSecondaryEffectsAttribute($value)
     {
         $effects = [];
 
-        // $value is an array of [0] = effect id, [1] = value
+        // @TODO this is incorrect
+
+        // $value is an array of arrays
         if (is_array($value)) {
-            array_push($effects, [
-                'effect_id' => Arr::get($value, 0),
-                'value'     => Arr::get($value, 1),
-                'substat_1' => Arr::get($value, 2),
-                'substat_2' => Arr::get($value, 3),
-            ]);
+            foreach ($value as $effect) {
+                // effect is an array of [0] = effect id, [1] = value
+                array_push($effects, [
+                    'effect_id' => Arr::get($effect, 0),
+                    'value'     => Arr::get($effect, 1),
+                    // 'substat_1' => Arr::get($effect, 2), // @TODO what are these substats?
+                    // 'substat_2' => Arr::get($effect, 3),
+                ]);
+            }
         }
 
-        $this->attributes['secondary_effect'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['secondary_effects'] = ! empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 }

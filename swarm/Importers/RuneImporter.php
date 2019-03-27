@@ -22,22 +22,22 @@ class RuneImporter
                         'rune_id'  => $rune->get('rune_id'),
                         'set_id'   => $rune->get('set_id'),
 
-                        'class'          => intval($rune->get('class')), // rune class (e.g 1, 2, 3 stars)
                         'occupied'       => $rune->get('occupied_id') ? true : false,
                         'player_unit_id' => $rune->get('occupied_id'),
 
                         'slot' => $rune->get('slot_no'),
-                        'rank' => $rune->get('rank'), // @TODO maybe make a rune ranks table?
+                        'quality'          => intval($rune->get('rank')), // rune quality (e.g 1 = common, 2 = magic)
+                        'rank' => $rune->get('class'), // class is actually the rank (star count)
 
-                        'upgrade_max'     => $rune->get('upgrade_limit'),
-                        'upgrade_current' => $rune->get('upgrade_curr'),
+                        'current_level' => $rune->get('upgrade_curr'),
+                        'max_level'     => $rune->get('upgrade_limit'),
 
                         'base_value' => $rune->get('base_value'),
                         'sell_value' => $rune->get('sell_value'),
 
-                        'primary_effect'   => $rune->get('pri_eff'),
-                        'prefix_effect'    => $rune->get('prefix_eff'),
-                        'secondary_effect' => $rune->get('sec_eff'),
+                        'primary_effects'   => $rune->get('pri_eff'),
+                        'prefix_effects'    => $rune->get('prefix_eff'),
+                        'secondary_effects' => $rune->get('sec_eff'),
                     ]
                 );
         });

@@ -21,6 +21,12 @@ class GameRuneMainstatSeeder extends Seeder
 
     protected function getRuneMainstats(): array
     {
+        /**
+         * so if the effect id is 6, then the array is talking
+         * about defence %,
+         * in the main stat array, it means as a main stat
+         * defence, at 6 stars, can have a maximum roll of 63%.
+         */
         return [
             // HP Flat
             ['effect_id' => 1, 'rank' => 1, 'max_value' => 804],

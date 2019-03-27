@@ -18,30 +18,30 @@ class CreatePlayerRunesTable extends Migration
             $table->bigInteger('rune_id');
             $table->unsignedBigInteger('player_id');
 
-            // Set
+            // Rune set
             $table->unsignedBigInteger('set_id');
 
             // Class & Rune usage
-            $table->tinyInteger('class');
             $table->boolean('occupied');
             $table->unsignedBigInteger('player_unit_id');
 
-            // Slots & ranks
+            // Slot, quality & rank
             $table->enum('slot', [1, 2, 3, 4, 5, 6]);
+            $table->tinyInteger('quality');
             $table->tinyInteger('rank');
 
             // Upgrades
-            $table->integer('upgrade_max');
-            $table->integer('upgrade_current');
+            $table->integer('current_level');
+            $table->integer('max_level');
 
             // Shop values
             $table->bigInteger('base_value');
             $table->bigInteger('sell_value');
 
             // Effects
-            $table->json('primary_effect');
-            $table->json('prefix_effect')->nullable();
-            $table->json('secondary_effect')->nullable();
+            $table->json('primary_effects');
+            $table->json('prefix_effects')->nullable();
+            $table->json('secondary_effects')->nullable();
 
             $table->timestamps();
             $table->softDeletes();

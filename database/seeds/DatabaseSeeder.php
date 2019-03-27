@@ -21,9 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(GameMonsterSeeder::class);
         // Runes
         $this->call(GameRuneMainstatSeeder::class);
-        $this->call(GameRuneSubstateeder::class);
-        $this->call(GameRuneEffectSeeder::class);
-        $this->call(GameRuneQualitySeeder::class);
+        $this->call(GameRuneSubstatSeeder::class);
         $this->call(GameRuneSetSeeder::class);
 
         // Users

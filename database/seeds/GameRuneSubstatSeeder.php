@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Swarm\Game\GameRuneSubstat;
 
-class GameRuneSubstateeder extends Seeder
+class GameRuneSubstatSeeder extends Seeder
 {
     /**
      * Seed the rune substats table.

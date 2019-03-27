@@ -10,3 +10,7 @@
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::group(['prefix' => 'me'], function() {
+    Route::get('teams', 'TeamController@index');
+});

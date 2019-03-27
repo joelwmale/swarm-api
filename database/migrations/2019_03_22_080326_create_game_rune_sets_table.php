@@ -17,6 +17,10 @@ class CreateGameRuneSetsTable extends Migration
             $table->bigInteger('id')->unsigned();
 
             $table->string('name');
+            $table->tinyInteger('set_pieces');
+            $table->string('effect');
+            $table->string('effect_percent');
+            $table->string('effect_special')->nullable();
 
             $table->timestamps();
         });

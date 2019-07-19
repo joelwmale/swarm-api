@@ -12,5 +12,5 @@
 */
 
 Route::group(['prefix' => 'me'], function () {
-    Route::get('teams', 'TeamController@index');
+    Route::apiResource('teams', 'PlayerTeamController')->only(['index', 'show']);
 });

@@ -24,6 +24,8 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->boolean('active')->default(true);
 
+            $table->boolean('admin')->default(false);
+
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();

@@ -170,6 +170,13 @@ class GameRuneSetSeeder extends Seeder
                 'effect'         => 'Allies\' Resistance',
                 'effect_percent' => 10,
             ],
+            [
+                'id' => 99,
+                'name' => 'Immemorial',
+                'set_pieces' => 0,
+                'effect' => null,
+                'effect_percent' => 0
+            ]
         ];
     }
 }

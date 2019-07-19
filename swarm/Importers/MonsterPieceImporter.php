@@ -16,7 +16,7 @@ class MonsterPieceImporter
             $piece = collect($piece);
 
             // Get the monster
-            $monster = GameMonster::where('game_id', $piece->get('item_master_id'))->first();
+            $monster = GameMonster::find($piece->get('item_master_id'));
 
             if (!$monster) {
                 logger('Could not find monster for unit piece.', $piece->toArray());

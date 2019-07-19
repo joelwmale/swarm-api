@@ -10,6 +10,8 @@ use Illuminate\Support\Arr;
 use Swarm\Game\GameMonster;
 use Swarm\Game\GameRuneSet;
 use Swarm\Traits\HasResource;
+use Swarm\Game\GameMonsterSkill;
+use Swarm\Maps\RuneEffectMapper;
 
 class PlayerUnit extends Model
 {
@@ -76,6 +78,43 @@ class PlayerUnit extends Model
     }
 
     /**
+     * Takes the units base stats and applies the rune stats
+     *
+     * @return array
+     */
+    public function getCalculatedStatsAttribute(): array
+    {
+        // Start with the base stats
+        $calculatedStats = $this->stats;
+        // Units runes
+        $runes = $this->runes;
+
+        // Loop through each rune
+        $runes->each(function ($rune) use ($calculatedStats) {
+            // Calculate the primary effects
+            $rune->primary_effects->each(function ($pe) use ($calculatedStats) {
+                $stat = RuneEffectMapper::getStatForEffect($pe->effect_id);
+
+                if (isset($calculatedStats[$stat])) {
+                    $calculatedStats[$stat] += $pe->value;
+                }
+            });
+
+            // Calculate the secondary effects
+            $rune->secondary_effects->each(function ($se) use ($calculatedStats) {
+                $stat = RuneEffectMapper::getStatForEffect($se->effect_id);
+
+                if (isset($calculatedStats[$stat])) {
+                    $calculatedStats[$stat] += $se->value;
+                }
+            });
+        });
+
+        // Return an array of calculated stats
+        return $calculatedStats;
+    }
+
+    /**
      * Format the stats.
      */
     public function getStatsAttribute($value)
@@ -110,8 +149,29 @@ class PlayerUnit extends Model
      */
     public function getSkillsAttribute($value)
     {
-        // Decode the stats and return it
-        return !empty($value) ? json_decode($value, true) : null;
+        // Make a custom array
+        $skills = [];
+        $monsterDamageService = resolve('\Swarmfarm\Services\MonsterDamageService');
+
+        $rawSkills = json_decode($value, true);
+        $unitStats = $this->calculatedStats;
+
+        foreach ($rawSkills as $skill) {
+            $skill = GameMonsterSkill::find($skill['skill_id']);
+
+            if (!$skill) {
+                // @TODO couldnt find this skill
+                continue;
+            }
+
+            array_push($skills, [
+                'skill' => $skill->toArray(),
+                'estimated_damage' => $monsterDamageService->substituteStats($unitStats, $skill->multiplier_formula),
+            ]);
+        }
+
+        // Return the skills or null
+        return !empty($skills) ? $skills : null;
     }
 
     public function setSkillsAttribute($value)

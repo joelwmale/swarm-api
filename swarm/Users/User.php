@@ -24,6 +24,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'admin',
     ];
 
     /**
@@ -63,5 +64,15 @@ class User extends Authenticatable
     public function players(): HasMany
     {
         return $this->hasMany(Player::class);
+    }
+
+    /**
+     * Return true if the user is an admin
+     *
+     * @return bool
+     */
+    public function getIsAdminAttribute(): bool
+    {
+        return $this->admin;
     }
 }

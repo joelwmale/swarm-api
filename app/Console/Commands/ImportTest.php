@@ -48,7 +48,7 @@ class ImportTest extends Command
     public function handle()
     {
         // Get the import file
-        $rawJson = Storage::get('imports/squid.json');
+        $rawJson = Storage::get('imports/flaemin.json');
 
         // Conver the data into a collection
         $importData = collect(json_decode($rawJson, true));

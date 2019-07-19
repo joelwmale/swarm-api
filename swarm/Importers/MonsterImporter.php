@@ -16,7 +16,7 @@ class MonsterImporter
             $unit = collect($unit);
 
             // @TODO validate each unit
-            $monster = GameMonster::where('game_id', $unit->get('unit_master_id'))->first();
+            $monster = GameMonster::find($unit->get('unit_master_id'));
 
             if (!$monster) {
                 // Skip import

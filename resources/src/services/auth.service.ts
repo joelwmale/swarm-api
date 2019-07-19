@@ -21,7 +21,7 @@ interface IRegister {
 
 class AuthService {
   login(body: ILogin) {
-    return http.post('/auth/login', body);
+    return this.http.post('/auth/login', body);
   }
 
   logout() {

@@ -14,18 +14,22 @@ class CreateGameMonstersTable extends Migration
     public function up()
     {
         Schema::create('game_monsters', function (Blueprint $table) {
-            $table->bigIncrements('id');
-
+            $table->bigInteger('id')->unsigned();
             $table->unsignedBigInteger('attribute_id');
 
-            $table->bigInteger('game_id')->unsigned();
             $table->string('name');
+            $table->string('icon')->nullable();
+
+            $table->integer('skillups')->nullable();
+            $table->json('awaken_material')->nullable();
 
             $table->timestamps();
 
             $table->foreign('attribute_id')
                 ->references('id')->on('game_attributes')
                 ->onDelete('cascade');
+
+            $table->primary('id');
         });
     }
 

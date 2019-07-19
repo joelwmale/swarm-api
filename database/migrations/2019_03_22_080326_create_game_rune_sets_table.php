@@ -18,7 +18,7 @@ class CreateGameRuneSetsTable extends Migration
 
             $table->string('name');
             $table->tinyInteger('set_pieces');
-            $table->string('effect');
+            $table->string('effect')->nullable();
             $table->string('effect_percent');
             $table->string('effect_special')->nullable();
 

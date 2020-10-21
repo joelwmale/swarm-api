@@ -4,9 +4,9 @@ namespace App\Console\Commands;
 
 use Storage;
 use Illuminate\Support\Str;
-use Swarm\Game\GameMonster;
+use App\Models\Monster;
 use Illuminate\Console\Command;
-use Swarm\Game\GameMonsterSkill;
+use App\Models\MonsterSkill;
 
 class ImportBeastiaryData extends Command
 {
@@ -64,15 +64,15 @@ class ImportBeastiaryData extends Command
                 // Get the monster id
                 $monsterId = $data->get('is_awakened') ? $data->get('com2us_id') : substr($data->get('com2us_id'), 0, 3);
 
-                if (! $monster = GameMonster::find($monsterId)) {
+                if (! $monster = Monster::find($monsterId)) {
                     $this->line('Could not find monster with id: '.$monsterId);
                 }
 
-                if (! $monster = GameMonster::find($data->get('com2us_id'))) {
+                if (! $monster = Monster::find($data->get('com2us_id'))) {
                     $this->line('Still could not find monster');
 
                     // See if we should replace the family id
-                    if (! $monster = GameMonster::find($this->replaceFamilyId($data->get('com2us_id')))) {
+                    if (! $monster = Monster::find($this->replaceFamilyId($data->get('com2us_id')))) {
                         $this->line('Giving up on finding monster');
                         dd($data);
                         continue;
@@ -95,7 +95,7 @@ class ImportBeastiaryData extends Command
             }
 
             if ($type === 'skill') {
-                GameMonsterSkill::create($data->toArray());
+                MonsterSkill::create($data->toArray());
             }
         }
     }

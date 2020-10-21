@@ -4,8 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
-use Swarm\Services\SWExportImportService;
-use Swarm\Users\User;
+use App\Services\SWExportImportService;
+use App\Models\User;
 
 class ImportTest extends Command
 {
@@ -48,7 +48,7 @@ class ImportTest extends Command
     public function handle()
     {
         // Get the import file
-        $rawJson = Storage::get('imports/flaemin.json');
+        $rawJson = Storage::get('imports/squid.json');
 
         // Conver the data into a collection
         $importData = collect(json_decode($rawJson, true));

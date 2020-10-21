@@ -40,7 +40,7 @@ class CreatePlayerUnitsTable extends Migration
                 ->onDelete('cascade');
 
             $table->foreign('monster_id')
-                ->references('id')->on('game_monsters')
+                ->references('id')->on('monsters')
                 ->onDelete('cascade');
 
             $table->index(['player_id', 'unit_id', 'monster_id']);

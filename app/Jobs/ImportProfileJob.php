@@ -9,7 +9,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Storage;
 use Imtigger\LaravelJobStatus\Trackable;
-use Swarm\Users\User;
+use App\Models\User;
 
 class ImportProfileJob implements ShouldQueue
 {

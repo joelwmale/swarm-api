@@ -30,7 +30,7 @@ class CreatePlayerBuildingsTable extends Migration
                 ->onDelete('cascade');
 
             $table->foreign('building_id')
-                ->references('id')->on('game_buildings')
+                ->references('id')->on('buildings')
                 ->onDelete('cascade');
         });
     }

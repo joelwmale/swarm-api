@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -11,6 +14,6 @@
 |
 */
 
-Route::group(['prefix' => 'me'], function () {
-    Route::apiResource('teams', 'PlayerTeamController')->only(['index', 'show']);
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
 });

@@ -3,7 +3,7 @@
 namespace App\Importers;
 
 use Illuminate\Support\Collection;
-use Swarm\Maps\InventoryMapper;
+use App\Mappers\InventoryMapper;
 use App\Models\Player;
 
 class InventoryImporter

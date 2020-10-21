@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 use App\Models\RuneSet;
-use Swarm\Maps\RuneEffectMapper;
+use App\Mappers\RuneEffectMapper;
 use App\Traits\HasResource;
 
 class PlayerRune extends Model

@@ -3,7 +3,7 @@
 namespace Swarm\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Swarm\Maps\DungeonTeamMapper;
+use App\Mappers\DungeonTeamMapper;
 
 class PlayerTeamResource extends JsonResource
 {

@@ -11,7 +11,7 @@ use App\Models\Monster;
 use App\Models\RuneSet;
 use App\Traits\HasResource;
 use App\Models\MonsterSkill;
-use Swarm\Maps\RuneEffectMapper;
+use App\Mappers\RuneEffectMapper;
 
 class PlayerUnit extends Model
 {

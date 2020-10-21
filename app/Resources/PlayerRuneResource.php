@@ -17,8 +17,8 @@ class PlayerRuneResource extends JsonResource
     {
         return [
             'quality'           => $this->quality,
-            'primary_effects'   => $this->primary_effects,
-            'prefix_effects'    => $this->prefix_effects,
+            'primary_effect'   => $this->primary_effect,
+            'innate_effect'    => $this->innate_effect,
             'secondary_effects' => $this->secondary_effects,
             // Only merge occupied and occupied unit when we're requesting
             // the rune and not the teams

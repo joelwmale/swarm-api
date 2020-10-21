@@ -39,8 +39,8 @@ class CreatePlayerRunesTable extends Migration
             $table->bigInteger('sell_value');
 
             // Effects
-            $table->json('primary_effects');
-            $table->json('prefix_effects')->nullable();
+            $table->json('primary_effect');
+            $table->json('innate_effect')->nullable();
             $table->json('secondary_effects')->nullable();
 
             $table->timestamps();

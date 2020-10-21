@@ -35,8 +35,8 @@ class RuneImporter
                         'base_value' => $rune->get('base_value'),
                         'sell_value' => $rune->get('sell_value'),
 
-                        'primary_effects'   => $rune->get('pri_eff'),
-                        'prefix_effects'    => $rune->get('prefix_eff'),
+                        'primary_effect'   => $rune->get('pri_eff')[0],
+                        'innate_effect'    => $rune->get('prefix_eff') ? $rune->get('prefix_eff')[0] : null,
                         'secondary_effects' => $rune->get('sec_eff'),
                     ]
                 );

@@ -33,8 +33,8 @@ class PlayerRune extends Model
         'base_value',
         'sell_value',
 
-        'primary_effects',
-        'prefix_effects',
+        'primary_effect',
+        'innate_effect',
         'secondary_effects',
     ];
 
@@ -80,7 +80,7 @@ class PlayerRune extends Model
         return $runeQualities[$value];
     }
 
-    public function getPrimaryEffectsAttribute($value)
+    public function getPrimaryEffectAttribute($value)
     {
         $primaryEffects = collect();
 
@@ -100,7 +100,7 @@ class PlayerRune extends Model
      *
      * @param mixed $value
      */
-    public function setPrimaryEffectsAttribute($value)
+    public function setPrimaryEffectAttribute($value)
     {
         $effects = [];
 
@@ -112,10 +112,10 @@ class PlayerRune extends Model
             ]);
         }
 
-        $this->attributes['primary_effects'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['primary_effect'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 
-    public function getPrefixEffectsAttribute($value)
+    public function getInnateEffectAttribute($value)
     {
         $prefixEffects = collect();
 
@@ -135,7 +135,7 @@ class PlayerRune extends Model
      *
      * @param mixed $value
      */
-    public function setPrefixEffectsAttribute($value)
+    public function setInnateEffectAttribute($value)
     {
         $effects = [];
 
@@ -147,7 +147,7 @@ class PlayerRune extends Model
             ]);
         }
 
-        $this->attributes['prefix_effects'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
+        $this->attributes['innate_effect'] = !empty($value) && is_array($value) ? json_encode($effects) : null;
     }
 
     public function getSecondaryEffectsAttribute($value)

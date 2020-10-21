@@ -92,7 +92,7 @@ class PlayerUnit extends Model
         // Loop through each rune
         $runes->each(function ($rune) use ($calculatedStats) {
             // Calculate the primary effects
-            $rune->primary_effects->each(function ($pe) use ($calculatedStats) {
+            $rune->primary_effect->each(function ($pe) use ($calculatedStats) {
                 $stat = RuneEffectMapper::getStatForEffect($pe->effect_id);
 
                 if (isset($calculatedStats[$stat])) {

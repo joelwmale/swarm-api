@@ -77,18 +77,18 @@ class RuneEffectMapper
     public static function statEffects(): array
     {
         return [
-            0  => '',
-            1  => 'health',
-            // 2  => "HP: {$value}%",
-            3  => 'attack',
-            // 4  => "ATK: {$value}%",
-            5  => 'defence',
-            // 6  => "DEF: {$value}%",
+            0 => '',
+            1 => 'health',
+            2 => 'health_percent',
+            3 => 'attack',
+            4 => 'attack_percent',
+            5 => 'defence',
+            6 => 'defence_percent',
             8  => 'speed',
             9  => 'critical_rate',
             10 => 'critical_damage',
-            11 => 'resist',
-            // 12 => "Accuracy: {$value}%",
+            11 => 'resistance',
+            12 => 'accuracy'
         ];
     }
 }

@@ -18,11 +18,13 @@ class CreatePlayersTable extends Migration
             $table->unsignedBigInteger('user_id');
 
             $table->bigInteger('player_id');
-            $table->string('player_name');
-            $table->integer('player_level');
+            $table->string('name');
+            $table->integer('level');
+            $table->integer('unit_slots');
 
-            $table->bigInteger('player_mana')->nullable();
-            $table->bigInteger('player_crystal')->nullable();
+            $table->string('current_mana')->nullable();
+            $table->bigInteger('current_dimensional_hole_crystals')->nullable();
+            $table->string('current_crystals')->nullable();
 
             $table->integer('energy_max')->nullable();
             $table->double('energy_per_min', 2, 1)->nullable();

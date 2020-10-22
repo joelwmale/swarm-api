@@ -4,21 +4,21 @@
   "wizard_info": {
     "wizard_id": 26255250,
     "wizard_name": "Squidxd",
-    "wizard_mana": 12193346,
-    "wizard_crystal": 981,
+    "wizard_mana": 13834638,
+    "wizard_crystal": 999,
     "wizard_crystal_paid": 948,
-    "wizard_last_login": "2020-10-21 18:35:04",
+    "wizard_last_login": "2020-10-22 19:30:58",
     "wizard_last_country": "AU",
     "wizard_last_lang": "en",
     "wizard_level": 50,
     "experience": 3800000,
-    "wizard_energy": 9,
+    "wizard_energy": 146,
     "energy_max": 150,
     "energy_per_min": 0.254,
-    "next_energy_gain": 166,
+    "next_energy_gain": 78,
     "arena_energy": 8,
     "arena_energy_max": 10,
-    "arena_energy_next_gain": 534,
+    "arena_energy_next_gain": 258,
     "unit_slots": {
       "number": 120
     },
@@ -26,13 +26,13 @@
     "rep_assigned": 1,
     "pvp_event": 0,
     "mail_box_event": 0,
-    "social_point_current": 1510,
+    "social_point_current": 1850,
     "social_point_max": 3000,
-    "honor_point": 441,
-    "guild_point": 167,
-    "darkportal_energy": 3,
+    "honor_point": 507,
+    "guild_point": 303,
+    "darkportal_energy": 6,
     "darkportal_energy_max": 10,
-    "costume_point": 132,
+    "costume_point": 136,
     "costume_point_max": 9999,
     "honor_medal": 0,
     "honor_mark": 50,
@@ -1475,7 +1475,7 @@
         [
           1,
           3000000,
-          1783098
+          1802490
         ]
       ]
     },
@@ -2553,7 +2553,7 @@
         [
           1,
           200,
-          183
+          184
         ]
       ]
     },
@@ -2564,7 +2564,7 @@
         [
           1,
           300,
-          183
+          184
         ]
       ]
     },
@@ -2575,7 +2575,7 @@
         [
           1,
           365,
-          183
+          184
         ]
       ]
     },
@@ -3676,7 +3676,7 @@
       "pos_y": 17,
       "gain_per_hour": 420,
       "harvest_max": 2000,
-      "harvest_available": 944
+      "harvest_available": 180
     },
     {
       "building_id": 281828171,
@@ -3760,7 +3760,7 @@
       "gain_per_hour": 0.1,
       "harvest_max": 3,
       "harvest_available": 1,
-      "next_harvest": 33705
+      "next_harvest": 15951
     },
     {
       "building_id": 294579891,
@@ -3789,7 +3789,7 @@
       "pos_y": 4,
       "gain_per_hour": 540,
       "harvest_max": 3000,
-      "harvest_available": 1214
+      "harvest_available": 232
     },
     {
       "building_id": 295002215,
@@ -3836,7 +3836,7 @@
       "pos_y": 10,
       "gain_per_hour": 660,
       "harvest_max": 4000,
-      "harvest_available": 1484
+      "harvest_available": 284
     },
     {
       "building_id": 295166300,
@@ -3904,8 +3904,8 @@
       "pos_y": 22,
       "gain_per_hour": 5,
       "harvest_max": 60,
-      "harvest_available": 32,
-      "next_harvest": 151
+      "harvest_available": 31,
+      "next_harvest": 397
     }
   ],
   "deco_list": [
@@ -21259,6 +21259,52 @@
       "awakening_info": []
     },
     {
+      "unit_id": 16786154519,
+      "wizard_id": 26255250,
+      "island_id": 7,
+      "pos_x": 16,
+      "pos_y": 5,
+      "building_id": 0,
+      "unit_master_id": 24411,
+      "unit_level": 1,
+      "class": 4,
+      "con": 209,
+      "atk": 251,
+      "def": 168,
+      "spd": 105,
+      "resist": 15,
+      "accuracy": 25,
+      "critical_rate": 15,
+      "critical_damage": 50,
+      "experience": 0,
+      "exp_gained": 0,
+      "exp_gain_rate": 0,
+      "skills": [
+        [
+          14301,
+          1
+        ],
+        [
+          14306,
+          1
+        ],
+        [
+          14311,
+          1
+        ]
+      ],
+      "runes": [],
+      "artifacts": [],
+      "costume_master_id": 0,
+      "trans_items": [],
+      "attribute": 1,
+      "create_time": "2020-10-22 12:10:29",
+      "source": 5,
+      "homunculus": 0,
+      "homunculus_name": "",
+      "awakening_info": []
+    },
+    {
       "unit_id": 16736635388,
       "wizard_id": 26255250,
       "island_id": 7,
@@ -21391,6 +21437,52 @@
       "trans_items": [],
       "attribute": 2,
       "create_time": "2020-10-21 07:27:51",
+      "source": 5,
+      "homunculus": 0,
+      "homunculus_name": "",
+      "awakening_info": []
+    },
+    {
+      "unit_id": 16786155843,
+      "wizard_id": 26255250,
+      "island_id": 7,
+      "pos_x": 8,
+      "pos_y": 21,
+      "building_id": 0,
+      "unit_master_id": 14102,
+      "unit_level": 1,
+      "class": 4,
+      "con": 185,
+      "atk": 213,
+      "def": 178,
+      "spd": 104,
+      "resist": 15,
+      "accuracy": 0,
+      "critical_rate": 15,
+      "critical_damage": 50,
+      "experience": 0,
+      "exp_gained": 0,
+      "exp_gain_rate": 0,
+      "skills": [
+        [
+          5702,
+          1
+        ],
+        [
+          5707,
+          1
+        ],
+        [
+          5712,
+          1
+        ]
+      ],
+      "runes": [],
+      "artifacts": [],
+      "costume_master_id": 0,
+      "trans_items": [],
+      "attribute": 2,
+      "create_time": "2020-10-22 12:10:44",
       "source": 5,
       "homunculus": 0,
       "homunculus_name": "",
@@ -21720,6 +21812,158 @@
       "attribute": 4,
       "create_time": "2020-10-21 17:57:33",
       "source": 15,
+      "homunculus": 0,
+      "homunculus_name": "",
+      "awakening_info": []
+    },
+    {
+      "unit_id": 16785859680,
+      "wizard_id": 26255250,
+      "island_id": 7,
+      "pos_x": 18,
+      "pos_y": 4,
+      "building_id": 0,
+      "unit_master_id": 14314,
+      "unit_level": 25,
+      "class": 3,
+      "con": 4,
+      "atk": 4,
+      "def": 4,
+      "spd": 0,
+      "resist": 0,
+      "accuracy": 0,
+      "critical_rate": 0,
+      "critical_damage": 0,
+      "experience": 82182,
+      "exp_gained": 0,
+      "exp_gain_rate": 0,
+      "skills": [
+        [
+          99003,
+          1
+        ]
+      ],
+      "runes": [],
+      "artifacts": [],
+      "costume_master_id": 0,
+      "trans_items": [],
+      "attribute": 4,
+      "create_time": "2020-10-22 11:22:24",
+      "source": 15,
+      "homunculus": 0,
+      "homunculus_name": "",
+      "awakening_info": []
+    },
+    {
+      "unit_id": 16786198474,
+      "wizard_id": 26255250,
+      "island_id": 1,
+      "pos_x": 10,
+      "pos_y": 10,
+      "building_id": 0,
+      "unit_master_id": 14314,
+      "unit_level": 25,
+      "class": 3,
+      "con": 4,
+      "atk": 4,
+      "def": 4,
+      "spd": 0,
+      "resist": 0,
+      "accuracy": 0,
+      "critical_rate": 0,
+      "critical_damage": 0,
+      "experience": 82182,
+      "exp_gained": 0,
+      "exp_gain_rate": 0,
+      "skills": [
+        [
+          99003,
+          1
+        ]
+      ],
+      "runes": [],
+      "artifacts": [],
+      "costume_master_id": 0,
+      "trans_items": [],
+      "attribute": 4,
+      "create_time": "2020-10-22 12:18:00",
+      "source": 24,
+      "homunculus": 0,
+      "homunculus_name": "",
+      "awakening_info": []
+    },
+    {
+      "unit_id": 16786257741,
+      "wizard_id": 26255250,
+      "island_id": 1,
+      "pos_x": 10,
+      "pos_y": 10,
+      "building_id": 0,
+      "unit_master_id": 14314,
+      "unit_level": 25,
+      "class": 3,
+      "con": 4,
+      "atk": 4,
+      "def": 4,
+      "spd": 0,
+      "resist": 0,
+      "accuracy": 0,
+      "critical_rate": 0,
+      "critical_damage": 0,
+      "experience": 82182,
+      "exp_gained": 0,
+      "exp_gain_rate": 0,
+      "skills": [
+        [
+          99003,
+          1
+        ]
+      ],
+      "runes": [],
+      "artifacts": [],
+      "costume_master_id": 0,
+      "trans_items": [],
+      "attribute": 4,
+      "create_time": "2020-10-22 12:28:10",
+      "source": 24,
+      "homunculus": 0,
+      "homunculus_name": "",
+      "awakening_info": []
+    },
+    {
+      "unit_id": 16786296165,
+      "wizard_id": 26255250,
+      "island_id": 1,
+      "pos_x": 10,
+      "pos_y": 10,
+      "building_id": 0,
+      "unit_master_id": 14314,
+      "unit_level": 25,
+      "class": 3,
+      "con": 4,
+      "atk": 4,
+      "def": 4,
+      "spd": 0,
+      "resist": 0,
+      "accuracy": 0,
+      "critical_rate": 0,
+      "critical_damage": 0,
+      "experience": 82182,
+      "exp_gained": 0,
+      "exp_gain_rate": 0,
+      "skills": [
+        [
+          99003,
+          1
+        ]
+      ],
+      "runes": [],
+      "artifacts": [],
+      "costume_master_id": 0,
+      "trans_items": [],
+      "attribute": 4,
+      "create_time": "2020-10-22 12:34:51",
+      "source": 24,
       "homunculus": 0,
       "homunculus_name": "",
       "awakening_info": []
@@ -32462,7 +32706,7 @@
       16503,
       17803
     ],
-    "next_remained": 465896,
+    "next_remained": 376142,
     "third": [
       21501,
       14502,
@@ -32481,7 +32725,7 @@
       11403,
       11503
     ],
-    "third_remained": 1074296,
+    "third_remained": 984542,
     "fourth": [
       23101,
       13802,
@@ -32500,7 +32744,7 @@
       14903,
       10503
     ],
-    "fourth_remained": 1679096
+    "fourth_remained": 1589342
   },
   "island_info": [
     {
@@ -32547,7 +32791,7 @@
       "wizard_id": 26255250,
       "item_master_type": 9,
       "item_master_id": 2,
-      "item_quantity": 1
+      "item_quantity": 0
     },
     {
       "wizard_id": 26255250,
@@ -32583,7 +32827,7 @@
       "wizard_id": 26255250,
       "item_master_type": 9,
       "item_master_id": 8,
-      "item_quantity": 102
+      "item_quantity": 129
     },
     {
       "wizard_id": 26255250,
@@ -33165,7 +33409,7 @@
       "wizard_id": 26255250,
       "item_master_type": 29,
       "item_master_id": 2001,
-      "item_quantity": 1992
+      "item_quantity": 2055
     },
     {
       "wizard_id": 26255250,
@@ -33177,7 +33421,7 @@
       "wizard_id": 26255250,
       "item_master_type": 29,
       "item_master_id": 4001,
-      "item_quantity": 4130
+      "item_quantity": 4140
     },
     {
       "wizard_id": 26255250,
@@ -33225,19 +33469,19 @@
       "wizard_id": 26255250,
       "item_master_type": 29,
       "item_master_id": 6001,
-      "item_quantity": 96
+      "item_quantity": 312
     },
     {
       "wizard_id": 26255250,
       "item_master_type": 29,
       "item_master_id": 7001,
-      "item_quantity": 303
+      "item_quantity": 384
     },
     {
       "wizard_id": 26255250,
       "item_master_type": 29,
       "item_master_id": 5001,
-      "item_quantity": 114
+      "item_quantity": 656
     },
     {
       "wizard_id": 26255250,
@@ -33438,13 +33682,13 @@
   "wish_list": {
     "trial_remained": 1,
     "login_sequence": 15,
-    "wish_sequence": 9,
-    "next_update": 77096,
+    "wish_sequence": 10,
+    "next_update": 73742,
     "item_list": [
       {
         "wish_id": 1,
         "item_master_type": 25,
-        "item_master_id": 103,
+        "item_master_id": 104,
         "amount": 1
       },
       {
@@ -33474,7 +33718,7 @@
       {
         "wish_id": 6,
         "item_master_type": 25,
-        "item_master_id": 204,
+        "item_master_id": 202,
         "amount": 1
       },
       {
@@ -33499,7 +33743,7 @@
         "wish_id": 10,
         "item_master_type": 6,
         "item_master_id": 1,
-        "amount": 100
+        "amount": 50
       },
       {
         "wish_id": 11,
@@ -33514,7 +33758,7 @@
         "amount": 1
       }
     ],
-    "item_list_version": 2020102020
+    "item_list_version": 2020102120
   },
   "runes": [
     {
@@ -34031,6 +34275,43 @@
         ]
       ],
       "extra": 4
+    },
+    {
+      "rune_id": 33771020223,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 1,
+      "rank": 3,
+      "class": 6,
+      "set_id": 1,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 180690,
+      "sell_value": 13509,
+      "pri_eff": [
+        3,
+        22
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          4,
+          7,
+          0,
+          0
+        ],
+        [
+          8,
+          6,
+          0,
+          0
+        ]
+      ],
+      "extra": 3
     },
     {
       "rune_id": 33268836487,
@@ -37279,6 +37560,43 @@
       "extra": 4
     },
     {
+      "rune_id": 33767377295,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 5,
+      "rank": 3,
+      "class": 6,
+      "set_id": 1,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 152160,
+      "sell_value": 11376,
+      "pri_eff": [
+        1,
+        360
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          4,
+          7,
+          0,
+          0
+        ],
+        [
+          10,
+          7,
+          0,
+          0
+        ]
+      ],
+      "extra": 3
+    },
+    {
       "rune_id": 32551011966,
       "wizard_id": 26255250,
       "occupied_type": 2,
@@ -38113,6 +38431,49 @@
         ]
       ],
       "extra": 3
+    },
+    {
+      "rune_id": 33770504508,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 6,
+      "rank": 4,
+      "class": 6,
+      "set_id": 1,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 215560,
+      "sell_value": 16116,
+      "pri_eff": [
+        5,
+        22
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          8,
+          6,
+          0,
+          0
+        ],
+        [
+          12,
+          5,
+          0,
+          0
+        ],
+        [
+          9,
+          4,
+          0,
+          0
+        ]
+      ],
+      "extra": 4
     },
     {
       "rune_id": 33698919778,
@@ -42734,6 +43095,49 @@
         [
           4,
           6,
+          0,
+          0
+        ]
+      ],
+      "extra": 4
+    },
+    {
+      "rune_id": 33767320738,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 5,
+      "rank": 4,
+      "class": 6,
+      "set_id": 3,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 304320,
+      "sell_value": 20702,
+      "pri_eff": [
+        1,
+        360
+      ],
+      "prefix_eff": [
+        12,
+        4
+      ],
+      "sec_eff": [
+        [
+          5,
+          10,
+          0,
+          0
+        ],
+        [
+          10,
+          4,
+          0,
+          0
+        ],
+        [
+          2,
+          7,
           0,
           0
         ]
@@ -51770,6 +52174,43 @@
       "extra": 5
     },
     {
+      "rune_id": 33767242770,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 1,
+      "rank": 3,
+      "class": 6,
+      "set_id": 8,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 210805,
+      "sell_value": 15017,
+      "pri_eff": [
+        3,
+        22
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          8,
+          5,
+          0,
+          0
+        ],
+        [
+          4,
+          7,
+          0,
+          0
+        ]
+      ],
+      "extra": 3
+    },
+    {
       "rune_id": 32217125703,
       "wizard_id": 26255250,
       "occupied_type": 2,
@@ -54329,6 +54770,49 @@
       "extra": 3
     },
     {
+      "rune_id": 33767452275,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 4,
+      "rank": 4,
+      "class": 6,
+      "set_id": 8,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 256770,
+      "sell_value": 18291,
+      "pri_eff": [
+        6,
+        11
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          12,
+          5,
+          0,
+          0
+        ],
+        [
+          11,
+          4,
+          0,
+          0
+        ],
+        [
+          2,
+          5,
+          0,
+          0
+        ]
+      ],
+      "extra": 4
+    },
+    {
       "rune_id": 32174217401,
       "wizard_id": 26255250,
       "occupied_type": 2,
@@ -55641,6 +56125,86 @@
         ],
         [
           12,
+          5,
+          0,
+          0
+        ]
+      ],
+      "extra": 4
+    },
+    {
+      "rune_id": 33770078421,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 6,
+      "rank": 3,
+      "class": 6,
+      "set_id": 8,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 242505,
+      "sell_value": 17275,
+      "pri_eff": [
+        4,
+        11
+      ],
+      "prefix_eff": [
+        1,
+        224
+      ],
+      "sec_eff": [
+        [
+          12,
+          4,
+          0,
+          0
+        ],
+        [
+          11,
+          7,
+          0,
+          0
+        ]
+      ],
+      "extra": 3
+    },
+    {
+      "rune_id": 33770284417,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 6,
+      "rank": 4,
+      "class": 6,
+      "set_id": 8,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 242505,
+      "sell_value": 17275,
+      "pri_eff": [
+        2,
+        11
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          8,
+          5,
+          0,
+          0
+        ],
+        [
+          9,
+          4,
+          0,
+          0
+        ],
+        [
+          10,
           5,
           0,
           0
@@ -57097,6 +57661,43 @@
         ]
       ],
       "extra": 5
+    },
+    {
+      "rune_id": 33771205215,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 1,
+      "rank": 3,
+      "class": 6,
+      "set_id": 10,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 542070,
+      "sell_value": 27103,
+      "pri_eff": [
+        3,
+        22
+      ],
+      "prefix_eff": [
+        1,
+        354
+      ],
+      "sec_eff": [
+        [
+          10,
+          7,
+          0,
+          0
+        ],
+        [
+          12,
+          6,
+          0,
+          0
+        ]
+      ],
+      "extra": 3
     },
     {
       "rune_id": 32186148518,
@@ -63778,6 +64379,86 @@
       "extra": 5
     },
     {
+      "rune_id": 33771515810,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 1,
+      "rank": 3,
+      "class": 4,
+      "set_id": 19,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 97755,
+      "sell_value": 6571,
+      "pri_eff": [
+        3,
+        10
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          12,
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          6,
+          0,
+          0
+        ]
+      ],
+      "extra": 3
+    },
+    {
+      "rune_id": 33771840057,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 1,
+      "rank": 4,
+      "class": 5,
+      "set_id": 19,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 232560,
+      "sell_value": 13863,
+      "pri_eff": [
+        3,
+        15
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          9,
+          5,
+          0,
+          0
+        ],
+        [
+          1,
+          171,
+          0,
+          0
+        ],
+        [
+          10,
+          5,
+          0,
+          0
+        ]
+      ],
+      "extra": 4
+    },
+    {
       "rune_id": 33376600696,
       "wizard_id": 26255250,
       "occupied_type": 2,
@@ -64836,6 +65517,43 @@
       "extra": 5
     },
     {
+      "rune_id": 33774618255,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 3,
+      "rank": 3,
+      "class": 5,
+      "set_id": 22,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 160650,
+      "sell_value": 9576,
+      "pri_eff": [
+        5,
+        15
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          2,
+          6,
+          0,
+          0
+        ],
+        [
+          8,
+          5,
+          0,
+          0
+        ]
+      ],
+      "extra": 3
+    },
+    {
       "rune_id": 33419153773,
       "wizard_id": 26255250,
       "occupied_type": 2,
@@ -64914,6 +65632,49 @@
         ]
       ],
       "extra": 3
+    },
+    {
+      "rune_id": 33773962656,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 1,
+      "rank": 4,
+      "class": 6,
+      "set_id": 23,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 481840,
+      "sell_value": 25801,
+      "pri_eff": [
+        3,
+        22
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          2,
+          5,
+          0,
+          0
+        ],
+        [
+          9,
+          6,
+          0,
+          0
+        ],
+        [
+          11,
+          7,
+          0,
+          0
+        ]
+      ],
+      "extra": 4
     },
     {
       "rune_id": 33115499089,
@@ -65043,6 +65804,55 @@
         ]
       ],
       "extra": 4
+    },
+    {
+      "rune_id": 33774595016,
+      "wizard_id": 26255250,
+      "occupied_type": 2,
+      "occupied_id": 0,
+      "slot_no": 4,
+      "rank": 5,
+      "class": 5,
+      "set_id": 23,
+      "upgrade_limit": 15,
+      "upgrade_curr": 0,
+      "base_value": 275400,
+      "sell_value": 16417,
+      "pri_eff": [
+        5,
+        15
+      ],
+      "prefix_eff": [
+        0,
+        0
+      ],
+      "sec_eff": [
+        [
+          12,
+          4,
+          0,
+          0
+        ],
+        [
+          3,
+          8,
+          0,
+          0
+        ],
+        [
+          11,
+          4,
+          0,
+          0
+        ],
+        [
+          9,
+          5,
+          0,
+          0
+        ]
+      ],
+      "extra": 5
     },
     {
       "rune_id": 33416770679,
@@ -65383,6 +66193,22 @@
       "amount": 1
     },
     {
+      "craft_item_id": 140002235,
+      "wizard_id": 26255250,
+      "craft_type": 1,
+      "craft_type_id": 191204,
+      "sell_value": 30000,
+      "amount": 1
+    },
+    {
+      "craft_item_id": 140004774,
+      "wizard_id": 26255250,
+      "craft_type": 1,
+      "craft_type_id": 191103,
+      "sell_value": 24000,
+      "amount": 1
+    },
+    {
       "craft_item_id": 42964201,
       "wizard_id": 26255250,
       "craft_type": 2,
@@ -65604,7 +66430,7 @@
       "craft_type": 2,
       "craft_type_id": 200803,
       "sell_value": 13000,
-      "amount": 1
+      "amount": 2
     },
     {
       "craft_item_id": 108153753,
@@ -65868,7 +66694,7 @@
       "craft_type": 2,
       "craft_type_id": 200604,
       "sell_value": 16000,
-      "amount": 2
+      "amount": 3
     },
     {
       "craft_item_id": 137667590,
@@ -65876,6 +66702,46 @@
       "craft_type": 2,
       "craft_type_id": 160804,
       "sell_value": 16000,
+      "amount": 1
+    },
+    {
+      "craft_item_id": 140001437,
+      "wizard_id": 26255250,
+      "craft_type": 2,
+      "craft_type_id": 220403,
+      "sell_value": 13000,
+      "amount": 1
+    },
+    {
+      "craft_item_id": 140006341,
+      "wizard_id": 26255250,
+      "craft_type": 2,
+      "craft_type_id": 220804,
+      "sell_value": 16000,
+      "amount": 1
+    },
+    {
+      "craft_item_id": 140036512,
+      "wizard_id": 26255250,
+      "craft_type": 2,
+      "craft_type_id": 220603,
+      "sell_value": 13000,
+      "amount": 1
+    },
+    {
+      "craft_item_id": 140043694,
+      "wizard_id": 26255250,
+      "craft_type": 2,
+      "craft_type_id": 190804,
+      "sell_value": 16000,
+      "amount": 2
+    },
+    {
+      "craft_item_id": 140055389,
+      "wizard_id": 26255250,
+      "craft_type": 2,
+      "craft_type_id": 220203,
+      "sell_value": 13000,
       "amount": 1
     },
     {
@@ -68446,7 +69312,7 @@
       {
         "wizard_id": 26255250,
         "item_id": 901002,
-        "remained_time": 422696,
+        "remained_time": 332942,
         "purchase_count": 1
       },
       {
@@ -68506,7 +69372,7 @@
       {
         "wizard_id": 26255250,
         "item_id": 1200005,
-        "remained_time": 422696,
+        "remained_time": 332942,
         "purchase_count": 1
       },
       {
@@ -68518,7 +69384,7 @@
       {
         "wizard_id": 26255250,
         "item_id": 1200019,
-        "remained_time": 422696,
+        "remained_time": 332942,
         "purchase_count": 2
       },
       {
@@ -68599,7 +69465,7 @@
         "buy_cost": [
           300
         ],
-        "remained_time": 77095,
+        "remained_time": 73741,
         "reopen_count": 0,
         "notify": 0,
         "enable": 1,
@@ -68646,7 +69512,7 @@
         "buy_cost": [
           300
         ],
-        "remained_time": 77095,
+        "remained_time": 73741,
         "reopen_count": 0,
         "notify": 0,
         "enable": 1,
@@ -68767,7 +69633,7 @@
         "date_begin": "2020-10-19 08:00:00",
         "date_end": "2020-11-05 06:59:00",
         "purchase_limit": 1,
-        "remained_time": 1315436,
+        "remained_time": 1225682,
         "purchase_count_left": 1,
         "notify": 2,
         "enable": 1
@@ -68851,7 +69717,7 @@
         "buy_cost": [
           0
         ],
-        "remained_time": 149096,
+        "remained_time": 59342,
         "notify": 1,
         "enable": 1
       },
@@ -68904,7 +69770,7 @@
         "buy_cost": [
           0
         ],
-        "remained_time": 149096,
+        "remained_time": 59342,
         "notify": 1,
         "enable": 1
       },
@@ -68957,7 +69823,7 @@
         "buy_cost": [
           0
         ],
-        "remained_time": 149096,
+        "remained_time": 59342,
         "notify": 1,
         "enable": 1
       },
@@ -69010,7 +69876,7 @@
         "buy_cost": [
           0
         ],
-        "remained_time": 149096,
+        "remained_time": 59342,
         "notify": 1,
         "enable": 1
       },
@@ -69066,7 +69932,7 @@
         "date_begin": "2020-10-15 08:00:00",
         "date_end": "2020-10-26 07:59:00",
         "purchase_limit": 1,
-        "remained_time": 451436,
+        "remained_time": 361682,
         "purchase_count_left": 1,
         "notify": 2,
         "enable": 1
@@ -69123,7 +69989,7 @@
         "date_begin": "2020-10-15 02:45:00",
         "date_end": "2020-11-03 06:59:00",
         "purchase_limit": 1,
-        "remained_time": 1142636,
+        "remained_time": 1052882,
         "purchase_count_left": 1,
         "notify": 2,
         "enable": 1
@@ -69180,7 +70046,7 @@
         "date_begin": "2020-10-15 02:45:00",
         "date_end": "2020-11-03 06:59:00",
         "purchase_limit": 1,
-        "remained_time": 1142636,
+        "remained_time": 1052882,
         "purchase_count_left": 1,
         "notify": 2,
         "enable": 1
@@ -69237,7 +70103,7 @@
         "date_begin": "2020-10-15 02:45:00",
         "date_end": "2020-11-03 06:59:00",
         "purchase_limit": 1,
-        "remained_time": 1142636,
+        "remained_time": 1052882,
         "purchase_count_left": 1,
         "notify": 2,
         "enable": 1
@@ -69344,7 +70210,7 @@
         "date_begin": "2020-10-15 02:45:00",
         "date_end": "2020-11-03 06:59:00",
         "purchase_limit": 1,
-        "remained_time": 1142636,
+        "remained_time": 1052882,
         "purchase_count_left": 1,
         "notify": 2,
         "enable": 1
@@ -69481,7 +70347,7 @@
         "date_begin": "2020-09-27 23:45:00",
         "date_end": "2020-11-01 06:59:00",
         "purchase_limit": 1,
-        "remained_time": 969836,
+        "remained_time": 880082,
         "purchase_count_left": 1,
         "notify": 2,
         "enable": 1
@@ -69618,7 +70484,7 @@
         "date_begin": "2020-09-27 23:45:00",
         "date_end": "2020-11-01 06:59:00",
         "purchase_limit": 1,
-        "remained_time": 969836,
+        "remained_time": 880082,
         "purchase_count_left": 1,
         "notify": 2,
         "enable": 1
@@ -69725,7 +70591,7 @@
         "date_begin": "2020-09-27 23:45:00",
         "date_end": "2020-11-01 06:59:00",
         "purchase_limit": 3,
-        "remained_time": 969836,
+        "remained_time": 880082,
         "purchase_count_left": 3,
         "notify": 2,
         "enable": 1
@@ -83992,72 +84858,72 @@
       {
         "item_id": 1100019,
         "group_id": 1100019,
-        "displayed_time": 210904,
-        "remained_time": 1254236,
+        "displayed_time": 300658,
+        "remained_time": 1164482,
         "order": 300,
         "order_category": 3
       },
       {
         "item_id": 1100006,
         "group_id": 1100006,
-        "displayed_time": 556504,
-        "remained_time": 393836,
+        "displayed_time": 646258,
+        "remained_time": 304082,
         "order": 400,
         "order_category": 3
       },
       {
         "item_id": 1100380,
         "group_id": 1100380,
-        "displayed_time": 575404,
-        "remained_time": 1081436,
+        "displayed_time": 665158,
+        "remained_time": 991682,
         "order": 300,
         "order_category": 3
       },
       {
         "item_id": 1100378,
         "group_id": 1100378,
-        "displayed_time": 575404,
-        "remained_time": 1081436,
+        "displayed_time": 665158,
+        "remained_time": 991682,
         "order": 300,
         "order_category": 3
       },
       {
         "item_id": 1100377,
         "group_id": 1100377,
-        "displayed_time": 575404,
-        "remained_time": 1081436,
+        "displayed_time": 665158,
+        "remained_time": 991682,
         "order": 300,
         "order_category": 3
       },
       {
         "item_id": 1100379,
         "group_id": 1100379,
-        "displayed_time": 575404,
-        "remained_time": 1081436,
+        "displayed_time": 665158,
+        "remained_time": 991682,
         "order": 300,
         "order_category": 3
       },
       {
         "item_id": 1100372,
         "group_id": 1100372,
-        "displayed_time": 2055004,
-        "remained_time": 908636,
+        "displayed_time": 2144758,
+        "remained_time": 818882,
         "order": 250,
         "order_category": 3
       },
       {
         "item_id": 1100371,
         "group_id": 1100371,
-        "displayed_time": 2055004,
-        "remained_time": 908636,
+        "displayed_time": 2144758,
+        "remained_time": 818882,
         "order": 250,
         "order_category": 3
       },
       {
         "item_id": 1100370,
         "group_id": 1100370,
-        "displayed_time": 2055004,
-        "remained_time": 908636,
+        "displayed_time": 2144758,
+        "remained_time": 818882,
         "order": 250,
         "order_category": 3
       }
@@ -84071,7 +84937,7 @@
           1,
           1
         ],
-        "remain_time": 1315436
+        "remain_time": 1225682
       },
       {
         "item_id": 1100133,
@@ -84081,7 +84947,7 @@
           1,
           1
         ],
-        "remain_time": 149096
+        "remain_time": 59342
       },
       {
         "item_id": 1100018,
@@ -84091,7 +84957,7 @@
           1,
           1
         ],
-        "remain_time": 149096
+        "remain_time": 59342
       },
       {
         "item_id": 1100017,
@@ -84101,7 +84967,7 @@
           1,
           1
         ],
-        "remain_time": 149096
+        "remain_time": 59342
       },
       {
         "item_id": 1100016,
@@ -84111,7 +84977,7 @@
           1,
           1
         ],
-        "remain_time": 149096
+        "remain_time": 59342
       },
       {
         "item_id": 1100006,
@@ -84121,7 +84987,7 @@
           1,
           1
         ],
-        "remain_time": 451436
+        "remain_time": 361682
       },
       {
         "item_id": 1100377,
@@ -84131,7 +84997,7 @@
           1,
           1
         ],
-        "remain_time": 1142636
+        "remain_time": 1052882
       },
       {
         "item_id": 1100378,
@@ -84141,7 +85007,7 @@
           1,
           1
         ],
-        "remain_time": 1142636
+        "remain_time": 1052882
       },
       {
         "item_id": 1100379,
@@ -84151,7 +85017,7 @@
           1,
           1
         ],
-        "remain_time": 1142636
+        "remain_time": 1052882
       },
       {
         "item_id": 1100380,
@@ -84161,7 +85027,7 @@
           1,
           1
         ],
-        "remain_time": 1142636
+        "remain_time": 1052882
       },
       {
         "item_id": 1100372,
@@ -84171,7 +85037,7 @@
           1,
           1
         ],
-        "remain_time": 969836
+        "remain_time": 880082
       },
       {
         "item_id": 1100371,
@@ -84181,7 +85047,7 @@
           1,
           1
         ],
-        "remain_time": 969836
+        "remain_time": 880082
       },
       {
         "item_id": 1100370,
@@ -84191,7 +85057,7 @@
           1,
           1
         ],
-        "remain_time": 969836
+        "remain_time": 880082
       },
       {
         "item_id": 610006,
@@ -84383,7 +85249,7 @@
           1,
           1
         ],
-        "remain_time": 1315436
+        "remain_time": 1225682
       },
       {
         "item_id": 1100133,
@@ -84393,7 +85259,7 @@
           1,
           1
         ],
-        "remain_time": 149096
+        "remain_time": 59342
       },
       {
         "item_id": 1100018,
@@ -84403,7 +85269,7 @@
           1,
           1
         ],
-        "remain_time": 149096
+        "remain_time": 59342
       },
       {
         "item_id": 1100017,
@@ -84413,7 +85279,7 @@
           1,
           1
         ],
-        "remain_time": 149096
+        "remain_time": 59342
       },
       {
         "item_id": 1100016,
@@ -84423,7 +85289,7 @@
           1,
           1
         ],
-        "remain_time": 149096
+        "remain_time": 59342
       },
       {
         "item_id": 1100377,
@@ -84433,7 +85299,7 @@
           1,
           1
         ],
-        "remain_time": 1142636
+        "remain_time": 1052882
       },
       {
         "item_id": 1100378,
@@ -84443,7 +85309,7 @@
           1,
           1
         ],
-        "remain_time": 1142636
+        "remain_time": 1052882
       },
       {
         "item_id": 1100379,
@@ -84453,7 +85319,7 @@
           1,
           1
         ],
-        "remain_time": 1142636
+        "remain_time": 1052882
       },
       {
         "item_id": 1100380,
@@ -84463,7 +85329,7 @@
           1,
           1
         ],
-        "remain_time": 1142636
+        "remain_time": 1052882
       },
       {
         "item_id": 1100372,
@@ -84473,7 +85339,7 @@
           1,
           1
         ],
-        "remain_time": 969836
+        "remain_time": 880082
       },
       {
         "item_id": 1100371,
@@ -84483,7 +85349,7 @@
           1,
           1
         ],
-        "remain_time": 969836
+        "remain_time": 880082
       },
       {
         "item_id": 1100370,
@@ -84493,7 +85359,7 @@
           1,
           1
         ],
-        "remain_time": 969836
+        "remain_time": 880082
       },
       {
         "item_id": 610006,
@@ -84683,7 +85549,7 @@
           1,
           1
         ],
-        "remain_time": 451436
+        "remain_time": 361682
       }
     ],
     "shop_badge_list": [
@@ -84827,10 +85693,10 @@
       "comment": "We are a friendly and very laid back farming guild. 20+ 6* preferably. Set your defense and make sure to use your attack in all contents. Mon-Thu easy defense. Fri-Sat full defense. +6 rule in effect when applicable. Attack green>yellow>red. We will kick you out if you’re inactive or never contribute to the guild. Don’t be greedy and help each other!",
       "notice": "Do guild mission and check in everyday!",
       "level": 30,
-      "experience": 31372,
+      "experience": 31442,
       "recruit_status": 1,
       "arena_rating_id": 1001,
-      "last_market_refresh_auto": "2020-10-21 12:28:00",
+      "last_market_refresh_auto": "2020-10-22 12:28:00",
       "last_market_refresh_manual": "2020-10-16 04:28:00",
       "master_wizard_name": "Fizette",
       "master_wizard_level": 50,
@@ -84865,8 +85731,8 @@
           5
         ]
       },
-      "market_refresh_ts": 1603250880,
-      "next_market_refresh_auto_ts": 1603279680,
+      "market_refresh_ts": 1603337280,
+      "next_market_refresh_auto_ts": 1603366080,
       "next_market_refresh_manual_ts": 1602804480
     },
     "guild_members": {
@@ -84878,8 +85744,8 @@
         "wizard_name": "Xynigami",
         "wizard_level": 50,
         "rating_id": 2001,
-        "arena_score": 1102,
-        "last_login_timestamp": 1603269702,
+        "arena_score": 1103,
+        "last_login_timestamp": 1603349608,
         "join_timestamp": 1601777824
       },
       "2104575": {
@@ -84891,7 +85757,7 @@
         "wizard_level": 50,
         "rating_id": 1002,
         "arena_score": 1000,
-        "last_login_timestamp": 1603035867,
+        "last_login_timestamp": 1603303856,
         "join_timestamp": 1583670069
       },
       "2105271": {
@@ -84902,8 +85768,8 @@
         "wizard_name": "Fizette",
         "wizard_level": 50,
         "rating_id": 2001,
-        "arena_score": 1151,
-        "last_login_timestamp": 1603243275,
+        "arena_score": 1127,
+        "last_login_timestamp": 1603359696,
         "join_timestamp": 1517781884
       },
       "2340145": {
@@ -84926,8 +85792,8 @@
         "wizard_name": "NightWingIV",
         "wizard_level": 50,
         "rating_id": 1002,
-        "arena_score": 1034,
-        "last_login_timestamp": 1603264114,
+        "arena_score": 1027,
+        "last_login_timestamp": 1603317333,
         "join_timestamp": 1559037398
       },
       "3503127": {
@@ -84938,8 +85804,8 @@
         "wizard_name": "Rhinaght",
         "wizard_level": 50,
         "rating_id": 1002,
-        "arena_score": 1019,
-        "last_login_timestamp": 1603200877,
+        "arena_score": 1032,
+        "last_login_timestamp": 1603279994,
         "join_timestamp": 1586989365
       },
       "10410741": {
@@ -84951,7 +85817,7 @@
         "wizard_level": 50,
         "rating_id": 1002,
         "arena_score": 1000,
-        "last_login_timestamp": 1603121291,
+        "last_login_timestamp": 1603351725,
         "join_timestamp": 1600734865
       },
       "13075871": {
@@ -84963,7 +85829,7 @@
         "wizard_level": 50,
         "rating_id": 1003,
         "arena_score": 1076,
-        "last_login_timestamp": 1603230142,
+        "last_login_timestamp": 1603316460,
         "join_timestamp": 1517782411
       },
       "13170391": {
@@ -84974,8 +85840,8 @@
         "wizard_name": "-D.0ne-",
         "wizard_level": 50,
         "rating_id": 1003,
-        "arena_score": 1072,
-        "last_login_timestamp": 1603245581,
+        "arena_score": 1063,
+        "last_login_timestamp": 1603318025,
         "join_timestamp": 1518016637
       },
       "13820515": {
@@ -84985,9 +85851,9 @@
         "channel_uid": 1033253,
         "wizard_name": "Shinghost",
         "wizard_level": 50,
-        "rating_id": 1002,
-        "arena_score": 1038,
-        "last_login_timestamp": 1603269139,
+        "rating_id": 1003,
+        "arena_score": 1095,
+        "last_login_timestamp": 1603354950,
         "join_timestamp": 1601048860
       },
       "14400084": {
@@ -84999,7 +85865,7 @@
         "wizard_level": 50,
         "rating_id": 2001,
         "arena_score": 1168,
-        "last_login_timestamp": 1603249482,
+        "last_login_timestamp": 1603337254,
         "join_timestamp": 1600734972
       },
       "16359218": {
@@ -85010,8 +85876,8 @@
         "wizard_name": "Blowjo",
         "wizard_level": 50,
         "rating_id": 3002,
-        "arena_score": 1426,
-        "last_login_timestamp": 1603212514,
+        "arena_score": 1491,
+        "last_login_timestamp": 1603330853,
         "join_timestamp": 1600818408
       },
       "16897269": {
@@ -85021,9 +85887,9 @@
         "channel_uid": 162813021,
         "wizard_name": "iamh4217120168",
         "wizard_level": 50,
-        "rating_id": 2001,
-        "arena_score": 1156,
-        "last_login_timestamp": 1603262935,
+        "rating_id": 2002,
+        "arena_score": 1204,
+        "last_login_timestamp": 1603356986,
         "join_timestamp": 1543723943
       },
       "18513965": {
@@ -85058,8 +85924,8 @@
         "wizard_name": "whodat304",
         "wizard_level": 50,
         "rating_id": 1002,
-        "arena_score": 1038,
-        "last_login_timestamp": 1603240472,
+        "arena_score": 1048,
+        "last_login_timestamp": 1603326489,
         "join_timestamp": 1568081323
       },
       "19850553": {
@@ -85069,8 +85935,8 @@
         "channel_uid": 188446301,
         "wizard_name": "Allura_18",
         "wizard_level": 50,
-        "rating_id": 2003,
-        "arena_score": 1150,
+        "rating_id": 2001,
+        "arena_score": 1135,
         "last_login_timestamp": 1603011167,
         "join_timestamp": 1544747216
       },
@@ -85082,8 +85948,8 @@
         "wizard_name": "xichi",
         "wizard_level": 50,
         "rating_id": 2002,
-        "arena_score": 1215,
-        "last_login_timestamp": 1603224942,
+        "arena_score": 1217,
+        "last_login_timestamp": 1603321555,
         "join_timestamp": 1600951582
       },
       "19954322": {
@@ -85094,8 +85960,8 @@
         "wizard_name": "Krittlebug",
         "wizard_level": 50,
         "rating_id": 1003,
-        "arena_score": 1090,
-        "last_login_timestamp": 1603236759,
+        "arena_score": 1064,
+        "last_login_timestamp": 1603358000,
         "join_timestamp": 1600958537
       },
       "21064668": {
@@ -85118,8 +85984,8 @@
         "wizard_name": "Forcepath",
         "wizard_level": 50,
         "rating_id": 2002,
-        "arena_score": 1241,
-        "last_login_timestamp": 1603248075,
+        "arena_score": 1290,
+        "last_login_timestamp": 1603326639,
         "join_timestamp": 1600951585
       },
       "21979709": {
@@ -85131,7 +85997,7 @@
         "wizard_level": 50,
         "rating_id": 2001,
         "arena_score": 1170,
-        "last_login_timestamp": 1603270864,
+        "last_login_timestamp": 1603354511,
         "join_timestamp": 1591522924
       },
       "22516238": {
@@ -85154,8 +86020,8 @@
         "wizard_name": "RoddyV",
         "wizard_level": 50,
         "rating_id": 2001,
-        "arena_score": 1128,
-        "last_login_timestamp": 1603245102,
+        "arena_score": 1170,
+        "last_login_timestamp": 1603322335,
         "join_timestamp": 1601192086
       },
       "24328803": {
@@ -85165,9 +86031,9 @@
         "channel_uid": 184646080,
         "wizard_name": "Spellcaster03",
         "wizard_level": 50,
-        "rating_id": 2002,
-        "arena_score": 1206,
-        "last_login_timestamp": 1603271352,
+        "rating_id": 2001,
+        "arena_score": 1173,
+        "last_login_timestamp": 1603360506,
         "join_timestamp": 1543726330
       },
       "24682073": {
@@ -85178,8 +86044,8 @@
         "wizard_name": "DarkWillhO",
         "wizard_level": 50,
         "rating_id": 2001,
-        "arena_score": 1150,
-        "last_login_timestamp": 1603237239,
+        "arena_score": 1160,
+        "last_login_timestamp": 1603338054,
         "join_timestamp": 1570674366
       },
       "25199661": {
@@ -85190,8 +86056,8 @@
         "wizard_name": "Sideroca",
         "wizard_level": 50,
         "rating_id": 2001,
-        "arena_score": 1146,
-        "last_login_timestamp": 1603229241,
+        "arena_score": 1131,
+        "last_login_timestamp": 1603286355,
         "join_timestamp": 1593685101
       },
       "26255250": {
@@ -85201,9 +86067,9 @@
         "channel_uid": 156039350,
         "wizard_name": "Squidxd",
         "wizard_level": 50,
-        "rating_id": 2001,
-        "arena_score": 1118,
-        "last_login_timestamp": 1603272904,
+        "rating_id": 1003,
+        "arena_score": 1072,
+        "last_login_timestamp": 1603360430,
         "join_timestamp": 1601048863
       },
       "27654390": {
@@ -85213,9 +86079,9 @@
         "channel_uid": 142307988,
         "wizard_name": "bigbellydubs",
         "wizard_level": 50,
-        "rating_id": 2001,
-        "arena_score": 1119,
-        "last_login_timestamp": 1603244814,
+        "rating_id": 2002,
+        "arena_score": 1205,
+        "last_login_timestamp": 1603327859,
         "join_timestamp": 1555379772
       },
       "28589090": {
@@ -85225,9 +86091,9 @@
         "channel_uid": 186452300,
         "wizard_name": "Xopstix",
         "wizard_level": 50,
-        "rating_id": 1003,
-        "arena_score": 1077,
-        "last_login_timestamp": 1603262737,
+        "rating_id": 1002,
+        "arena_score": 1032,
+        "last_login_timestamp": 1603349017,
         "join_timestamp": 1593338648
       }
     },
@@ -85238,133 +86104,133 @@
         "wizard_id": 26255250,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 6650
+        "activity_score": 6840
       },
       {
         "rid": 4979781,
         "wizard_id": 21979709,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 6700
+        "activity_score": 7130
       },
       {
         "rid": 4984220,
         "wizard_id": 28589090,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 2720
+        "activity_score": 2940
       },
       {
         "rid": 4989172,
         "wizard_id": 14400084,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 6785
+        "activity_score": 7125
       },
       {
         "rid": 4993308,
         "wizard_id": 13820515,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 4310
+        "activity_score": 4410
       },
       {
         "rid": 5012403,
         "wizard_id": 27654390,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 7610
+        "activity_score": 7930
       },
       {
         "rid": 5012569,
         "wizard_id": 19954322,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 6785
+        "activity_score": 7125
       },
       {
         "rid": 5014318,
         "wizard_id": 2105271,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 9355
+        "activity_score": 9775
       },
       {
         "rid": 5017261,
         "wizard_id": 19440990,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 7255
+        "activity_score": 7575
       },
       {
         "rid": 5025083,
         "wizard_id": 3355581,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 1425
+        "activity_score": 1525
       },
       {
         "rid": 5029331,
         "wizard_id": 13170391,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 8080
+        "activity_score": 8420
       },
       {
         "rid": 5031369,
         "wizard_id": 13075871,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 5990
+        "activity_score": 6320
       },
       {
         "rid": 5032114,
         "wizard_id": 2104575,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 3290
+        "activity_score": 3390
       },
       {
         "rid": 5035081,
         "wizard_id": 19951957,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 9340
+        "activity_score": 9800
       },
       {
         "rid": 5046420,
         "wizard_id": 21095555,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 6005
+        "activity_score": 6225
       },
       {
         "rid": 5052582,
         "wizard_id": 22910281,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 6300
+        "activity_score": 6520
       },
       {
         "rid": 5056615,
         "wizard_id": 16359218,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 9885
+        "activity_score": 10085
       },
       {
         "rid": 5068921,
         "wizard_id": 24682073,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 3720
+        "activity_score": 3820
       },
       {
         "rid": 5095684,
         "wizard_id": 25199661,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 4075
+        "activity_score": 4175
       },
       {
         "rid": 5096179,
@@ -85378,21 +86244,21 @@
         "wizard_id": 24328803,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 5335
+        "activity_score": 5435
       },
       {
         "rid": 5107381,
         "wizard_id": 16897269,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 7165
+        "activity_score": 7265
       },
       {
         "rid": 5164586,
         "wizard_id": 10410741,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 2745
+        "activity_score": 3095
       },
       {
         "rid": 5168380,
@@ -85413,7 +86279,7 @@
         "wizard_id": 1995614,
         "guild_id": 233466,
         "yyyymm": 202010,
-        "activity_score": 4570
+        "activity_score": 4760
       },
       {
         "rid": 5246298,
@@ -85493,20 +86359,20 @@
   ],
   "guildwar_status": {
     "status": 2,
-    "prepare_remained": 336296,
-    "match_remained": 422696,
-    "reset_remained": 329096
+    "prepare_remained": 246542,
+    "match_remained": 332942,
+    "reset_remained": 239342
   },
   "guildwar_participation_info": {
     "guild_id": 233466,
     "league_type": 100,
     "member_count": 20,
-    "match_score": 1012,
-    "match_win": 1,
-    "match_lose": 3,
+    "match_score": 1031,
+    "match_win": 2,
+    "match_lose": 4,
     "participated": 1,
     "energy": 0,
-    "energy_regen_remained": 33896,
+    "energy_regen_remained": 30542,
     "energy_max": 6
   },
   "guildwar_member_list": [
@@ -85518,8 +86384,8 @@
       "wizard_name": "Xynigami",
       "wizard_level": 50,
       "rating_id": 2001,
-      "arena_score": 1102,
-      "last_login_timestamp": 1603269702,
+      "arena_score": 1103,
+      "last_login_timestamp": 1603349608,
       "join_timestamp": 1601777824
     },
     {
@@ -85530,8 +86396,8 @@
       "wizard_name": "Fizette",
       "wizard_level": 50,
       "rating_id": 2001,
-      "arena_score": 1151,
-      "last_login_timestamp": 1603243275,
+      "arena_score": 1127,
+      "last_login_timestamp": 1603359696,
       "join_timestamp": 1517781884
     },
     {
@@ -85554,8 +86420,8 @@
       "wizard_name": "Rhinaght",
       "wizard_level": 50,
       "rating_id": 1002,
-      "arena_score": 1019,
-      "last_login_timestamp": 1603200877,
+      "arena_score": 1032,
+      "last_login_timestamp": 1603279994,
       "join_timestamp": 1586989365
     },
     {
@@ -85566,8 +86432,8 @@
       "wizard_name": "-D.0ne-",
       "wizard_level": 50,
       "rating_id": 1003,
-      "arena_score": 1072,
-      "last_login_timestamp": 1603245581,
+      "arena_score": 1063,
+      "last_login_timestamp": 1603318025,
       "join_timestamp": 1518016637
     },
     {
@@ -85577,9 +86443,9 @@
       "channel_uid": 1033253,
       "wizard_name": "Shinghost",
       "wizard_level": 50,
-      "rating_id": 1002,
-      "arena_score": 1038,
-      "last_login_timestamp": 1603269139,
+      "rating_id": 1003,
+      "arena_score": 1095,
+      "last_login_timestamp": 1603354950,
       "join_timestamp": 1601048860
     },
     {
@@ -85591,7 +86457,7 @@
       "wizard_level": 50,
       "rating_id": 2001,
       "arena_score": 1168,
-      "last_login_timestamp": 1603249482,
+      "last_login_timestamp": 1603337254,
       "join_timestamp": 1600734972
     },
     {
@@ -85602,8 +86468,8 @@
       "wizard_name": "Blowjo",
       "wizard_level": 50,
       "rating_id": 3002,
-      "arena_score": 1426,
-      "last_login_timestamp": 1603212514,
+      "arena_score": 1491,
+      "last_login_timestamp": 1603330853,
       "join_timestamp": 1600818408
     },
     {
@@ -85613,9 +86479,9 @@
       "channel_uid": 162813021,
       "wizard_name": "iamh4217120168",
       "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1156,
-      "last_login_timestamp": 1603262935,
+      "rating_id": 2002,
+      "arena_score": 1204,
+      "last_login_timestamp": 1603356986,
       "join_timestamp": 1543723943
     },
     {
@@ -85626,8 +86492,8 @@
       "wizard_name": "whodat304",
       "wizard_level": 50,
       "rating_id": 1002,
-      "arena_score": 1038,
-      "last_login_timestamp": 1603240472,
+      "arena_score": 1048,
+      "last_login_timestamp": 1603326489,
       "join_timestamp": 1568081323
     },
     {
@@ -85637,8 +86503,8 @@
       "channel_uid": 188446301,
       "wizard_name": "Allura_18",
       "wizard_level": 50,
-      "rating_id": 2003,
-      "arena_score": 1150,
+      "rating_id": 2001,
+      "arena_score": 1135,
       "last_login_timestamp": 1603011167,
       "join_timestamp": 1544747216
     },
@@ -85650,8 +86516,8 @@
       "wizard_name": "xichi",
       "wizard_level": 50,
       "rating_id": 2002,
-      "arena_score": 1215,
-      "last_login_timestamp": 1603224942,
+      "arena_score": 1217,
+      "last_login_timestamp": 1603321555,
       "join_timestamp": 1600951582
     },
     {
@@ -85662,8 +86528,8 @@
       "wizard_name": "Krittlebug",
       "wizard_level": 50,
       "rating_id": 1003,
-      "arena_score": 1090,
-      "last_login_timestamp": 1603236759,
+      "arena_score": 1064,
+      "last_login_timestamp": 1603358000,
       "join_timestamp": 1600958537
     },
     {
@@ -85674,8 +86540,8 @@
       "wizard_name": "Forcepath",
       "wizard_level": 50,
       "rating_id": 2002,
-      "arena_score": 1241,
-      "last_login_timestamp": 1603248075,
+      "arena_score": 1290,
+      "last_login_timestamp": 1603326639,
       "join_timestamp": 1600951585
     },
     {
@@ -85687,7 +86553,7 @@
       "wizard_level": 50,
       "rating_id": 2001,
       "arena_score": 1170,
-      "last_login_timestamp": 1603270864,
+      "last_login_timestamp": 1603354511,
       "join_timestamp": 1591522924
     },
     {
@@ -85710,8 +86576,8 @@
       "wizard_name": "RoddyV",
       "wizard_level": 50,
       "rating_id": 2001,
-      "arena_score": 1128,
-      "last_login_timestamp": 1603245102,
+      "arena_score": 1170,
+      "last_login_timestamp": 1603322335,
       "join_timestamp": 1601192086
     },
     {
@@ -85721,9 +86587,9 @@
       "channel_uid": 184646080,
       "wizard_name": "Spellcaster03",
       "wizard_level": 50,
-      "rating_id": 2002,
-      "arena_score": 1206,
-      "last_login_timestamp": 1603271352,
+      "rating_id": 2001,
+      "arena_score": 1173,
+      "last_login_timestamp": 1603360506,
       "join_timestamp": 1543726330
     },
     {
@@ -85733,9 +86599,9 @@
       "channel_uid": 156039350,
       "wizard_name": "Squidxd",
       "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1118,
-      "last_login_timestamp": 1603272904,
+      "rating_id": 1003,
+      "arena_score": 1072,
+      "last_login_timestamp": 1603360430,
       "join_timestamp": 1601048863
     },
     {
@@ -85745,9 +86611,9 @@
       "channel_uid": 142307988,
       "wizard_name": "bigbellydubs",
       "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1119,
-      "last_login_timestamp": 1603244814,
+      "rating_id": 2002,
+      "arena_score": 1205,
+      "last_login_timestamp": 1603327859,
       "join_timestamp": 1555379772
     }
   ],
@@ -86414,35 +87280,11 @@
           {
             "wizard_id": 21095555,
             "battle_round": 1,
-            "pos_id": 1,
-            "unit_id": 16519671288
-          },
-          {
-            "wizard_id": 21095555,
-            "battle_round": 1,
-            "pos_id": 2,
-            "unit_id": 7917108136
-          },
-          {
-            "wizard_id": 21095555,
-            "battle_round": 1,
             "pos_id": 3,
             "unit_id": 11637426814
           }
         ],
         [
-          {
-            "wizard_id": 21095555,
-            "battle_round": 2,
-            "pos_id": 4,
-            "unit_id": 11510279626
-          },
-          {
-            "wizard_id": 21095555,
-            "battle_round": 2,
-            "pos_id": 5,
-            "unit_id": 8107935151
-          },
           {
             "wizard_id": 21095555,
             "battle_round": 2,
@@ -86807,26 +87649,26 @@
   ],
   "guildwar_ranking_info": {
     "league_type": 100,
-    "rank": 3211,
-    "match_score": 1012,
-    "rating_id": 3012,
-    "total_guild_count": 16880
+    "rank": 1476,
+    "match_score": 1031,
+    "rating_id": 4011,
+    "total_guild_count": 16862
   },
   "guildwar_ranking_stat": {
     "current": {
       "league_type": 100,
-      "rank": 3211,
-      "match_score": 1012,
-      "rating_id": 3012,
-      "total_guild_count": 16880,
+      "rank": 1476,
+      "match_score": 1031,
+      "rating_id": 4011,
+      "total_guild_count": 16862,
       "participation_id": 202043,
-      "ranking_rate": 19,
-      "attack_win_count": 1,
-      "attack_lose_count": 3,
-      "attack_win_ratio": 25,
-      "defense_win_count": 2,
+      "ranking_rate": 8.8,
+      "attack_win_count": 2,
+      "attack_lose_count": 4,
+      "attack_win_ratio": 33.4,
+      "defense_win_count": 3,
       "defense_lose_count": 1,
-      "defense_win_ratio": 66.7
+      "defense_win_ratio": 75
     },
     "prev": {
       "league_type": 100,
@@ -86867,212 +87709,214 @@
   },
   "guildwar_match_reserve": {
     "guild_id": 233466,
-    "status": 1,
-    "date_mod": "2020-10-21 04:08:03"
+    "status": 0,
+    "date_mod": "2020-10-22 18:43:29"
   },
   "guildwar_match_info": {
-    "match_id": 44700691,
-    "create_time": "2020-10-21 16:09:02",
+    "match_id": 44722711,
+    "create_time": "2020-10-22 16:04:01",
     "league_type": 100,
     "guild_id": 233466,
-    "guild_rating_id": 3013,
-    "opp_guild_id": 266824,
-    "opp_guild_hp_current": 190000,
-    "opp_guild_hp_max": 190000,
-    "opp_guild_hp_win_cond": 53200,
-    "member_count_current": 19,
+    "guild_rating_id": 4011,
+    "opp_guild_id": 236226,
+    "opp_guild_hp_current": 82201,
+    "opp_guild_hp_max": 100000,
+    "opp_guild_hp_win_cond": 15000,
+    "member_count_current": 10,
     "status": 100,
-    "win_wait_remained": 34438,
-    "end_remained": 34438,
+    "win_wait_remained": 30783,
+    "end_remained": 30783,
     "atk_num": 20,
-    "def_num": 19,
-    "create_timestamp": 1603264142,
-    "end_timestamp": 1603307342
+    "def_num": 10,
+    "create_timestamp": 1603350241,
+    "end_timestamp": 1603393441
   },
   "guildwar_my_dead_unit_id_list": [
-    16108373809,
-    12442996149,
-    16107150903,
-    16085179914,
+    13267706038,
     13331793951,
     16118769240
   ],
   "my_atkdef_list": [
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "atk_wizard_id": 26255250,
-      "def_wizard_id": 13382819
+      "def_wizard_id": 21717362
+    },
+    {
+      "match_id": 44722711,
+      "atk_wizard_id": 26255250,
+      "def_wizard_id": 12207655
     }
   ],
   "my_attack_list": [
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 1995614,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 2105271,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
-      "wizard_id": 2340145,
-      "guild_id": 233466,
-      "guild_point_var": 0,
-      "energy": 3
-    },
-    {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 3503127,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 13075871,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 13170391,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 13820515,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 14400084,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 16359218,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 16897269,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 19440990,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 19951957,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 19954322,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 21095555,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 21979709,
       "guild_id": 233466,
-      "guild_point_var": 0,
-      "energy": 3
+      "guild_point_var": 72,
+      "energy": 0
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 22516238,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 22910281,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 24328803,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 26255250,
       "guild_id": 233466,
-      "guild_point_var": 0,
-      "energy": 2
+      "guild_point_var": 26,
+      "energy": 1
     },
     {
-      "match_id": 44700691,
+      "match_id": 44722711,
       "wizard_id": 27654390,
+      "guild_id": 233466,
+      "guild_point_var": 0,
+      "energy": 3
+    },
+    {
+      "match_id": 44722711,
+      "wizard_id": 28589090,
       "guild_id": 233466,
       "guild_point_var": 0,
       "energy": 3
     }
   ],
   "opp_participation_info": {
-    "guild_id": 266824,
+    "guild_id": 236226,
     "league_type": 100,
-    "member_count": 19,
-    "match_score": 1019,
-    "match_win": 3,
-    "match_lose": 0,
+    "member_count": 10,
+    "match_score": 1031,
+    "match_win": 4,
+    "match_lose": 1,
     "participated": 1,
     "energy": 1,
-    "energy_regen_remained": 33896,
+    "energy_regen_remained": 30542,
     "energy_max": 6
   },
   "opp_guild_info": {
-    "guild_id": 266824,
-    "name": "SW*DELUX*",
-    "master_wizard_id": 18163140,
-    "member_now": 28,
+    "guild_id": 236226,
+    "name": "*StarDust*",
+    "master_wizard_id": 21444848,
+    "member_now": 15,
     "member_max": 30,
-    "comment": "VAMOS MUCHACHOS VAMOS A LUCHAR CONTRA LOS TEMIBLES MOUNSTROUS A PELEAR!!!\nA INTENTAR LA GLORIA ALCANZAR. A INTENTAR EL CIELO CONQUISTAR, UN GRANDIOSO VIAJE EMPEZARA HOY ES LA OPORTUNIDAD LUCHA HASTA EL FINAL!!!! \nHASTA LA VICTORIA SIEMPRE🤟",
-    "notice": "Regla max +6, quien haga más se rotara una war. Prioridad verdes luego amarillas",
+    "comment": "Welcome to *StarDust* !! We are a relaxed fun guild built by friends:)\nPlease have respect for one another and have fun!!\nDon’t be shy and enjoy :) LETS BATTLE:) \n***Please Read Below***\nSet HIGH defense for guild war and siege,be active for two battles daily and +321 attack rule always GREEN,YELLOW THEN RED⭐️✨⭐️✨⭐️",
+    "notice": "Remember always 321 attack rule and green>yellow>red",
     "level": 30,
-    "experience": 26052,
+    "experience": 26577,
     "recruit_status": 1,
-    "arena_rating_id": 901,
-    "last_market_refresh_auto": "2020-10-21 15:22:15",
-    "last_market_refresh_manual": "2020-10-18 23:22:15",
-    "master_wizard_name": "DannyWeap",
+    "arena_rating_id": 1001,
+    "last_market_refresh_auto": "2020-10-22 14:12:47",
+    "last_market_refresh_manual": "2020-02-11 14:12:47",
+    "master_wizard_name": "Somagicalright",
     "master_wizard_level": 50,
     "skill_info": {
       "1001": {
@@ -87105,485 +87949,260 @@
         5
       ]
     },
-    "market_refresh_ts": 1603261335,
-    "next_market_refresh_auto_ts": 1603290135,
-    "next_market_refresh_manual_ts": 1603045335
+    "market_refresh_ts": 1603343567,
+    "next_market_refresh_auto_ts": 1603372367,
+    "next_market_refresh_manual_ts": 1581412367
   },
   "opp_guild_member_list": [
     {
-      "guild_id": 266824,
-      "wizard_id": 132626,
+      "guild_id": 236226,
+      "wizard_id": 2717287,
       "grade": 2,
-      "channel_uid": 110413896,
-      "wizard_name": "midnight792",
+      "channel_uid": 120639120,
+      "wizard_name": "thuggyfresh",
       "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1150,
-      "last_login_timestamp": 1603255833,
-      "join_timestamp": 1552267296
+      "rating_id": 1003,
+      "arena_score": 1090,
+      "last_login_timestamp": 1603358985,
+      "join_timestamp": 1588513803
     },
     {
-      "guild_id": 266824,
-      "wizard_id": 532821,
+      "guild_id": 236226,
+      "wizard_id": 5926062,
       "grade": 2,
-      "channel_uid": 142351246,
-      "wizard_name": "☆》EDGAR《☆",
-      "wizard_level": 50,
-      "rating_id": 2002,
-      "arena_score": 1201,
-      "last_login_timestamp": 1603246604,
-      "join_timestamp": 1578096669
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 1541115,
-      "grade": 3,
-      "channel_uid": 112316739,
-      "wizard_name": "W34P0N5",
-      "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1130,
-      "last_login_timestamp": 1603252592,
-      "join_timestamp": 1571029346
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 5589585,
-      "grade": 2,
-      "channel_uid": 123710930,
-      "wizard_name": "۷ɛŋɬųཞą",
-      "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1182,
-      "last_login_timestamp": 1603252671,
-      "join_timestamp": 1599850459
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 6817984,
-      "grade": 2,
-      "channel_uid": 25970456,
-      "wizard_name": "banoide",
-      "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1107,
-      "last_login_timestamp": 1603252965,
-      "join_timestamp": 1552284356
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 6986982,
-      "grade": 2,
-      "channel_uid": 129307369,
-      "wizard_name": "llApololl",
-      "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1143,
-      "last_login_timestamp": 1603249582,
-      "join_timestamp": 1567994182
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 7594714,
-      "grade": 3,
-      "channel_uid": 131520098,
-      "wizard_name": "Kj.-",
-      "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1168,
-      "last_login_timestamp": 1603234587,
-      "join_timestamp": 1581893707
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 7789796,
-      "grade": 2,
-      "channel_uid": 132020502,
-      "wizard_name": "Gea-",
-      "wizard_level": 50,
-      "rating_id": 2001,
-      "arena_score": 1101,
-      "last_login_timestamp": 1603148210,
-      "join_timestamp": 1581893889
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 9641577,
-      "grade": 2,
-      "channel_uid": 137765820,
-      "wizard_name": "Br.-",
-      "wizard_level": 50,
-      "rating_id": 2003,
-      "arena_score": 1353,
-      "last_login_timestamp": 1603229428,
-      "join_timestamp": 1574706170
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 10290861,
-      "grade": 2,
-      "channel_uid": 138129205,
-      "wizard_name": "1MichaelDVA1",
+      "channel_uid": 124292107,
+      "wizard_name": "꧁署名する꧂",
       "wizard_level": 50,
       "rating_id": 1002,
       "arena_score": 1000,
-      "last_login_timestamp": 1603247045,
-      "join_timestamp": 1590525643
+      "last_login_timestamp": 1603310764,
+      "join_timestamp": 1597996653
     },
     {
-      "guild_id": 266824,
-      "wizard_id": 10515516,
+      "guild_id": 236226,
+      "wizard_id": 7495659,
       "grade": 2,
-      "channel_uid": 141026225,
-      "wizard_name": "Devil~Yusuke",
-      "wizard_level": 50,
-      "rating_id": 1003,
-      "arena_score": 1050,
-      "last_login_timestamp": 1603236142,
-      "join_timestamp": 1567986958
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 13382819,
-      "grade": 2,
-      "channel_uid": 147922164,
-      "wizard_name": "InnombrableXD",
-      "wizard_level": 50,
-      "rating_id": 2002,
-      "arena_score": 1206,
-      "last_login_timestamp": 1603260618,
-      "join_timestamp": 1583779957
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 14416329,
-      "grade": 2,
-      "channel_uid": 151113520,
-      "wizard_name": "0√3®.K!||.",
-      "wizard_level": 50,
-      "rating_id": 2002,
-      "arena_score": 1205,
-      "last_login_timestamp": 1603264242,
-      "join_timestamp": 1567981712
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 14906883,
-      "grade": 2,
-      "channel_uid": 153062833,
-      "wizard_name": "RonnieRBG",
-      "wizard_level": 50,
-      "rating_id": 1002,
-      "arena_score": 1028,
-      "last_login_timestamp": 1603221363,
-      "join_timestamp": 1568002086
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 16916407,
-      "grade": 2,
-      "channel_uid": 163316572,
-      "wizard_name": "Paulileiv",
-      "wizard_level": 50,
-      "rating_id": 2002,
-      "arena_score": 1213,
-      "last_login_timestamp": 1603249882,
-      "join_timestamp": 1589771486
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 17596152,
-      "grade": 2,
-      "channel_uid": 166406383,
-      "wizard_name": "LordGenos",
-      "wizard_level": 50,
-      "rating_id": 1002,
-      "arena_score": 1041,
-      "last_login_timestamp": 1603219666,
-      "join_timestamp": 1594138686
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 18163140,
-      "grade": 1,
-      "channel_uid": 166295722,
-      "wizard_name": "DannyWeap",
+      "channel_uid": 131318302,
+      "wizard_name": "Volstern",
       "wizard_level": 50,
       "rating_id": 2001,
       "arena_score": 1187,
-      "last_login_timestamp": 1603246787,
-      "join_timestamp": 1590525396
+      "last_login_timestamp": 1603354606,
+      "join_timestamp": 1599509705
     },
     {
-      "guild_id": 266824,
-      "wizard_id": 19449399,
+      "guild_id": 236226,
+      "wizard_id": 7728892,
       "grade": 2,
-      "channel_uid": 179458445,
-      "wizard_name": "torovic1991",
-      "wizard_level": 50,
-      "rating_id": 2002,
-      "arena_score": 1239,
-      "last_login_timestamp": 1603158838,
-      "join_timestamp": 1552276519
-    },
-    {
-      "guild_id": 266824,
-      "wizard_id": 25456195,
-      "grade": 2,
-      "channel_uid": 137975921,
-      "wizard_name": "Ventura°",
+      "channel_uid": 131857374,
+      "wizard_name": "Avariea",
       "wizard_level": 50,
       "rating_id": 2001,
-      "arena_score": 1125,
-      "last_login_timestamp": 1603250930,
-      "join_timestamp": 1592193684
+      "arena_score": 1169,
+      "last_login_timestamp": 1603340908,
+      "join_timestamp": 1601943203
+    },
+    {
+      "guild_id": 236226,
+      "wizard_id": 12207655,
+      "grade": 2,
+      "channel_uid": 48507429,
+      "wizard_name": "l2OBERT",
+      "wizard_level": 50,
+      "rating_id": 2001,
+      "arena_score": 1119,
+      "last_login_timestamp": 1603357249,
+      "join_timestamp": 1584603278
+    },
+    {
+      "guild_id": 236226,
+      "wizard_id": 13356531,
+      "grade": 3,
+      "channel_uid": 147863823,
+      "wizard_name": "JessicaPounce",
+      "wizard_level": 50,
+      "rating_id": 2003,
+      "arena_score": 1325,
+      "last_login_timestamp": 1603302516,
+      "join_timestamp": 1554090733
+    },
+    {
+      "guild_id": 236226,
+      "wizard_id": 21444848,
+      "grade": 1,
+      "channel_uid": 187154684,
+      "wizard_name": "Somagicalright",
+      "wizard_level": 50,
+      "rating_id": 2003,
+      "arena_score": 1340,
+      "last_login_timestamp": 1603323559,
+      "join_timestamp": 1534388292
+    },
+    {
+      "guild_id": 236226,
+      "wizard_id": 21717362,
+      "grade": 2,
+      "channel_uid": 187754524,
+      "wizard_name": "Sk501",
+      "wizard_level": 50,
+      "rating_id": 2001,
+      "arena_score": 1134,
+      "last_login_timestamp": 1603320443,
+      "join_timestamp": 1602021071
+    },
+    {
+      "guild_id": 236226,
+      "wizard_id": 22102794,
+      "grade": 2,
+      "channel_uid": 156677803,
+      "wizard_name": "Oogieboogey",
+      "wizard_level": 50,
+      "rating_id": 2001,
+      "arena_score": 1170,
+      "last_login_timestamp": 1603306071,
+      "join_timestamp": 1595367167
+    },
+    {
+      "guild_id": 236226,
+      "wizard_id": 29923004,
+      "grade": 2,
+      "channel_uid": 218938626,
+      "wizard_name": "F2PMax4miz",
+      "wizard_level": 50,
+      "rating_id": 1002,
+      "arena_score": 1021,
+      "last_login_timestamp": 1603320369,
+      "join_timestamp": 1573064901
     }
   ],
   "opp_defense_list": [
     {
-      "match_id": 44700691,
-      "wizard_id": 18163140,
-      "guild_id": 266824,
+      "match_id": 44722711,
+      "wizard_id": 13356531,
+      "guild_id": 236226,
       "hp_current": 10000,
       "hp_max": 10000,
       "guild_point_var": 0,
-      "last_arena_score": 1787,
-      "last_rating_id": 3002,
+      "last_arena_score": 1549,
+      "last_rating_id": 2003,
       "rank": 1,
       "guild_point_bonus": 3,
       "contrib_point": 0
     },
     {
-      "match_id": 44700691,
-      "wizard_id": 7594714,
-      "guild_id": 266824,
-      "hp_current": 10000,
+      "match_id": 44722711,
+      "wizard_id": 21717362,
+      "guild_id": 236226,
+      "hp_current": 2401,
       "hp_max": 10000,
       "guild_point_var": 0,
-      "last_arena_score": 1554,
-      "last_rating_id": 2003,
+      "last_arena_score": 1168,
+      "last_rating_id": 2001,
       "rank": 2,
       "guild_point_bonus": 3,
       "contrib_point": 0
     },
     {
-      "match_id": 44700691,
-      "wizard_id": 13382819,
-      "guild_id": 266824,
+      "match_id": 44722711,
+      "wizard_id": 7495659,
+      "guild_id": 236226,
+      "hp_current": 10000,
+      "hp_max": 10000,
+      "guild_point_var": 0,
+      "last_arena_score": 1324,
+      "last_rating_id": 2003,
+      "rank": 3,
+      "guild_point_bonus": 2,
+      "contrib_point": 0
+    },
+    {
+      "match_id": 44722711,
+      "wizard_id": 21444848,
+      "guild_id": 236226,
+      "hp_current": 10000,
+      "hp_max": 10000,
+      "guild_point_var": 0,
+      "last_arena_score": 1394,
+      "last_rating_id": 2003,
+      "rank": 4,
+      "guild_point_bonus": 2,
+      "contrib_point": 0
+    },
+    {
+      "match_id": 44722711,
+      "wizard_id": 7728892,
+      "guild_id": 236226,
+      "hp_current": 4900,
+      "hp_max": 10000,
+      "guild_point_var": 0,
+      "last_arena_score": 982,
+      "last_rating_id": 1001,
+      "rank": 5,
+      "guild_point_bonus": 2,
+      "contrib_point": 0
+    },
+    {
+      "match_id": 44722711,
+      "wizard_id": 12207655,
+      "guild_id": 236226,
       "hp_current": 10000,
       "hp_max": 10000,
       "guild_point_var": 2,
-      "last_arena_score": 1771,
-      "last_rating_id": 3002,
-      "rank": 3,
-      "guild_point_bonus": 3,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 532821,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1413,
-      "last_rating_id": 2003,
-      "rank": 4,
-      "guild_point_bonus": 3,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 5589585,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1511,
-      "last_rating_id": 2003,
-      "rank": 5,
-      "guild_point_bonus": 3,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 14416329,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1471,
-      "last_rating_id": 2003,
+      "last_arena_score": 1143,
+      "last_rating_id": 2001,
       "rank": 6,
-      "guild_point_bonus": 2,
+      "guild_point_bonus": 1,
       "contrib_point": 0
     },
     {
-      "match_id": 44700691,
-      "wizard_id": 6986982,
-      "guild_id": 266824,
+      "match_id": 44722711,
+      "wizard_id": 22102794,
+      "guild_id": 236226,
       "hp_current": 10000,
       "hp_max": 10000,
       "guild_point_var": 0,
-      "last_arena_score": 1441,
-      "last_rating_id": 2003,
+      "last_arena_score": 1259,
+      "last_rating_id": 2002,
       "rank": 7,
-      "guild_point_bonus": 2,
+      "guild_point_bonus": 1,
       "contrib_point": 0
     },
     {
-      "match_id": 44700691,
-      "wizard_id": 25456195,
-      "guild_id": 266824,
-      "hp_current": 10000,
+      "match_id": 44722711,
+      "wizard_id": 2717287,
+      "guild_id": 236226,
+      "hp_current": 4900,
       "hp_max": 10000,
       "guild_point_var": 0,
-      "last_arena_score": 1232,
-      "last_rating_id": 2002,
+      "last_arena_score": 1168,
+      "last_rating_id": 2001,
       "rank": 8,
-      "guild_point_bonus": 2,
+      "guild_point_bonus": 1,
       "contrib_point": 0
     },
     {
-      "match_id": 44700691,
-      "wizard_id": 6817984,
-      "guild_id": 266824,
+      "match_id": 44722711,
+      "wizard_id": 29923004,
+      "guild_id": 236226,
       "hp_current": 10000,
       "hp_max": 10000,
       "guild_point_var": 0,
-      "last_arena_score": 1252,
-      "last_rating_id": 2002,
+      "last_arena_score": 1027,
+      "last_rating_id": 1002,
       "rank": 9,
-      "guild_point_bonus": 2,
+      "guild_point_bonus": 0,
       "contrib_point": 0
     },
     {
-      "match_id": 44700691,
-      "wizard_id": 10290861,
-      "guild_id": 266824,
+      "match_id": 44722711,
+      "wizard_id": 5926062,
+      "guild_id": 236226,
       "hp_current": 10000,
       "hp_max": 10000,
       "guild_point_var": 0,
       "last_arena_score": 1000,
       "last_rating_id": 1002,
       "rank": 10,
-      "guild_point_bonus": 2,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 10515516,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1177,
-      "last_rating_id": 2001,
-      "rank": 11,
-      "guild_point_bonus": 1,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 1541115,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1283,
-      "last_rating_id": 2002,
-      "rank": 12,
-      "guild_point_bonus": 1,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 16916407,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1473,
-      "last_rating_id": 2003,
-      "rank": 13,
-      "guild_point_bonus": 1,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 9641577,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1417,
-      "last_rating_id": 2003,
-      "rank": 14,
-      "guild_point_bonus": 1,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 14906883,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1008,
-      "last_rating_id": 1002,
-      "rank": 15,
-      "guild_point_bonus": 0,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 132626,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1276,
-      "last_rating_id": 2002,
-      "rank": 16,
-      "guild_point_bonus": 0,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 17596152,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1190,
-      "last_rating_id": 2001,
-      "rank": 17,
-      "guild_point_bonus": 0,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 7789796,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1276,
-      "last_rating_id": 2002,
-      "rank": 18,
-      "guild_point_bonus": 0,
-      "contrib_point": 0
-    },
-    {
-      "match_id": 44700691,
-      "wizard_id": 19449399,
-      "guild_id": 266824,
-      "hp_current": 10000,
-      "hp_max": 10000,
-      "guild_point_var": 0,
-      "last_arena_score": 1360,
-      "last_rating_id": 2003,
-      "rank": 19,
       "guild_point_bonus": 0,
       "contrib_point": 0
     }
@@ -87905,8 +88524,8 @@
     32147376918
   ],
   "arena_shutdown_info": {
-    "remained_start": 415496,
-    "remained_end": 422696
+    "remained_start": 325742,
+    "remained_end": 332942
   },
   "invite_account": {
     "wizard_id": 26255250,
@@ -88280,7 +88899,7 @@
       "type": 6,
       "sub_type": 6,
       "unit_id_list": [
-        16108373809,
+        13267706038,
         12442996149,
         16107150903,
         16085179914,
@@ -88289,7 +88908,7 @@
         0,
         0
       ],
-      "leader_unit_id": 16108373809
+      "leader_unit_id": 13267706038
     },
     {
       "type": 7,
@@ -88797,7 +89416,7 @@
     "current_season": 15,
     "current_season_end": 1609398000,
     "next_season": 0,
-    "next_season_begin": 1603272904,
+    "next_season_begin": 1603362658,
     "display_end_time": 0,
     "display_begin_time": 0
   },
@@ -88811,9 +89430,9 @@
     "calculate_end": 1602471600,
     "next": 0,
     "next_rule": 1,
-    "next_begin": 1603272904,
+    "next_begin": 1603362658,
     "next_begin_display": 1,
-    "next_end": 1603272904,
+    "next_end": 1603362658,
     "icon_display_begin": 1601276400,
     "icon_display_end": 1603638000
   },
@@ -88930,7 +89549,7 @@
           ]
         }
       ],
-      "remained_time": 883495
+      "remained_time": 793741
     }
   ],
   "lobby_proud_unit_id_list": [
@@ -88954,9 +89573,9 @@
   "quiz_reward_info": {
     "rid": 52280,
     "wizard_id": 26255250,
-    "reward_count": 56,
-    "reward_last_date": "2020-10-20 08:18:37",
-    "reward_next_timestamp": 1603272904
+    "reward_count": 57,
+    "reward_last_date": "2020-10-22 13:32:24",
+    "reward_next_timestamp": 1603362658
   },
   "new_user_buff": {
     "end_time": 946652400
@@ -88980,11 +89599,11 @@
       "wizard_id": 793257,
       "wizard_level": 50,
       "wizard_name": "Maaarcus",
-      "arena_score": 1084,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1148,
+      "rating_id": 2001,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603267559,
+      "last_login_timestamp": 1603344755,
       "rep_unit_id": 6105562429,
       "rep_unit_master_id": 17413,
       "rep_unit_class": 6,
@@ -88995,11 +89614,11 @@
       "wizard_id": 1836062,
       "wizard_level": 50,
       "wizard_name": "Fretful1",
-      "arena_score": 1006,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "arena_score": 1087,
+      "rating_id": 1003,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603258020,
+      "last_login_timestamp": 1603329149,
       "rep_unit_id": 10425326478,
       "rep_unit_master_id": 14411,
       "rep_unit_class": 6,
@@ -89010,11 +89629,11 @@
       "wizard_id": 7259107,
       "wizard_level": 50,
       "wizard_name": "刀狩",
-      "arena_score": 1199,
+      "arena_score": 1152,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603254203,
+      "last_login_timestamp": 1603348398,
       "rep_unit_id": 2273768224,
       "rep_unit_master_id": 17411,
       "rep_unit_class": 6,
@@ -89025,11 +89644,11 @@
       "wizard_id": 7392225,
       "wizard_level": 50,
       "wizard_name": "dadsangel",
-      "arena_score": 1078,
+      "arena_score": 1089,
       "rating_id": 1003,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603262917,
+      "last_login_timestamp": 1603354793,
       "rep_unit_id": 2880436325,
       "rep_unit_master_id": 14512,
       "rep_unit_class": 6,
@@ -89040,11 +89659,11 @@
       "wizard_id": 7527958,
       "wizard_level": 50,
       "wizard_name": "sephiroth2020",
-      "arena_score": 1009,
+      "arena_score": 1002,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603266490,
+      "last_login_timestamp": 1603351384,
       "rep_unit_id": 2194344733,
       "rep_unit_master_id": 13811,
       "rep_unit_class": 6,
@@ -89057,9 +89676,9 @@
       "wizard_name": "TMNTrulz",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603235531,
+      "last_login_timestamp": 1603337583,
       "rep_unit_id": 10718742070,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
@@ -89070,9 +89689,9 @@
       "wizard_id": 8661075,
       "wizard_level": 50,
       "wizard_name": "Ludnyx",
-      "arena_score": 1063,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1047,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1603248641,
       "rep_unit_id": 9955065319,
@@ -89085,11 +89704,11 @@
       "wizard_id": 9257454,
       "wizard_level": 50,
       "wizard_name": "閃到吃腳指",
-      "arena_score": 1054,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1033,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603253133,
+      "last_login_timestamp": 1603341603,
       "rep_unit_id": 10349083856,
       "rep_unit_master_id": 14411,
       "rep_unit_class": 6,
@@ -89100,11 +89719,11 @@
       "wizard_id": 9754232,
       "wizard_level": 50,
       "wizard_name": "Adow~",
-      "arena_score": 1141,
+      "arena_score": 1152,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603265502,
+      "last_login_timestamp": 1603287242,
       "rep_unit_id": 9682990533,
       "rep_unit_master_id": 18611,
       "rep_unit_class": 6,
@@ -89115,11 +89734,11 @@
       "wizard_id": 11963421,
       "wizard_level": 50,
       "wizard_name": "HokieDV",
-      "arena_score": 1132,
+      "arena_score": 1110,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603245167,
+      "last_login_timestamp": 1603322555,
       "rep_unit_id": 8568636463,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
@@ -89130,11 +89749,11 @@
       "wizard_id": 14280787,
       "wizard_level": 50,
       "wizard_name": "LastThingUC",
-      "arena_score": 1135,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
+      "arena_score": 1087,
+      "rating_id": 1003,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603250494,
+      "last_login_timestamp": 1603335553,
       "rep_unit_id": 10192784480,
       "rep_unit_master_id": 17012,
       "rep_unit_class": 6,
@@ -89147,9 +89766,9 @@
       "wizard_name": "WintersLullaby",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603235256,
+      "last_login_timestamp": 1603319623,
       "rep_unit_id": 5879544721,
       "rep_unit_master_id": 14411,
       "rep_unit_class": 6,
@@ -89160,11 +89779,11 @@
       "wizard_id": 15370883,
       "wizard_level": 50,
       "wizard_name": "matykush420",
-      "arena_score": 1042,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "arena_score": 1113,
+      "rating_id": 2001,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603230498,
+      "last_login_timestamp": 1603325740,
       "rep_unit_id": 12014457370,
       "rep_unit_master_id": 21213,
       "rep_unit_class": 6,
@@ -89175,11 +89794,11 @@
       "wizard_id": 15509597,
       "wizard_level": 50,
       "wizard_name": "KirisutoX",
-      "arena_score": 1169,
+      "arena_score": 1161,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603248603,
+      "last_login_timestamp": 1603319259,
       "rep_unit_id": 11654705324,
       "rep_unit_master_id": 16611,
       "rep_unit_class": 6,
@@ -89190,11 +89809,11 @@
       "wizard_id": 16535184,
       "wizard_level": 50,
       "wizard_name": "light'ful",
-      "arena_score": 1145,
+      "arena_score": 1114,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603204032,
+      "last_login_timestamp": 1603315543,
       "rep_unit_id": 11318556843,
       "rep_unit_master_id": 13512,
       "rep_unit_class": 6,
@@ -89207,9 +89826,9 @@
       "wizard_name": "GerardoOz",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603253130,
+      "last_login_timestamp": 1603350135,
       "rep_unit_id": 13784035919,
       "rep_unit_master_id": 15715,
       "rep_unit_class": 6,
@@ -89220,9 +89839,9 @@
       "wizard_id": 19757202,
       "wizard_level": 50,
       "wizard_name": "xh_9513",
-      "arena_score": 1081,
+      "arena_score": 1064,
       "rating_id": 1003,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1603260185,
       "rep_unit_id": 15866459388,
@@ -89235,11 +89854,11 @@
       "wizard_id": 20664581,
       "wizard_level": 50,
       "wizard_name": "RiverboatRon",
-      "arena_score": 1160,
+      "arena_score": 1123,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603256500,
+      "last_login_timestamp": 1603312381,
       "rep_unit_id": 7637611850,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -89250,11 +89869,11 @@
       "wizard_id": 21999112,
       "wizard_level": 50,
       "wizard_name": "DibuiAJabiraca",
-      "arena_score": 1145,
+      "arena_score": 1138,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603230646,
+      "last_login_timestamp": 1603330692,
       "rep_unit_id": 14425786269,
       "rep_unit_master_id": 15035,
       "rep_unit_class": 6,
@@ -89265,11 +89884,11 @@
       "wizard_id": 22143346,
       "wizard_level": 50,
       "wizard_name": "€T€R|\\|AL",
-      "arena_score": 1019,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "arena_score": 1178,
+      "rating_id": 2001,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603219925,
+      "last_login_timestamp": 1603306562,
       "rep_unit_id": 12150747345,
       "rep_unit_master_id": 14412,
       "rep_unit_class": 6,
@@ -89282,7 +89901,7 @@
       "wizard_name": "R-Downey",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1603170161,
       "rep_unit_id": 13624634252,
@@ -89295,11 +89914,11 @@
       "wizard_id": 23510452,
       "wizard_level": 50,
       "wizard_name": "Poppydave69",
-      "arena_score": 1042,
+      "arena_score": 1027,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603126159,
+      "last_login_timestamp": 1603334143,
       "rep_unit_id": 16600432122,
       "rep_unit_master_id": 21212,
       "rep_unit_class": 6,
@@ -89310,13 +89929,13 @@
       "wizard_id": 25015631,
       "wizard_level": 50,
       "wizard_name": "sunshinesamii",
-      "arena_score": 1286,
+      "arena_score": 1246,
       "rating_id": 2002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603258377,
-      "rep_unit_id": 12101435480,
-      "rep_unit_master_id": 13811,
+      "last_login_timestamp": 1603346629,
+      "rep_unit_id": 13943397802,
+      "rep_unit_master_id": 16811,
       "rep_unit_class": 6,
       "rep_unit_level": 40
     },
@@ -89325,11 +89944,11 @@
       "wizard_id": 25148916,
       "wizard_level": 50,
       "wizard_name": "MikeyDeez",
-      "arena_score": 1289,
+      "arena_score": 1284,
       "rating_id": 2002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603265480,
+      "last_login_timestamp": 1603351669,
       "rep_unit_id": 14881518528,
       "rep_unit_master_id": 22212,
       "rep_unit_class": 6,
@@ -89342,9 +89961,9 @@
       "wizard_name": "gralid",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603223502,
+      "last_login_timestamp": 1603307149,
       "rep_unit_id": 13831460599,
       "rep_unit_master_id": 16611,
       "rep_unit_class": 6,
@@ -89355,11 +89974,11 @@
       "wizard_id": 25563089,
       "wizard_level": 50,
       "wizard_name": "Solitay33",
-      "arena_score": 1113,
+      "arena_score": 1106,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603257648,
+      "last_login_timestamp": 1603326050,
       "rep_unit_id": 14337082341,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
@@ -89372,7 +89991,7 @@
       "wizard_name": "ThwsRED",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1602291927,
       "rep_unit_id": 11881885925,
@@ -89385,11 +90004,11 @@
       "wizard_id": 25976951,
       "wizard_level": 50,
       "wizard_name": "TheLastGrixis",
-      "arena_score": 1251,
+      "arena_score": 1245,
       "rating_id": 2002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603272876,
+      "last_login_timestamp": 1603338811,
       "rep_unit_id": 11892018951,
       "rep_unit_master_id": 19213,
       "rep_unit_class": 6,
@@ -89400,11 +90019,11 @@
       "wizard_id": 26734418,
       "wizard_level": 50,
       "wizard_name": "Robertisaboss",
-      "arena_score": 1187,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
+      "arena_score": 1261,
+      "rating_id": 2002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603252217,
+      "last_login_timestamp": 1603346529,
       "rep_unit_id": 13231097044,
       "rep_unit_master_id": 16615,
       "rep_unit_class": 6,
@@ -89415,11 +90034,11 @@
       "wizard_id": 27309702,
       "wizard_level": 50,
       "wizard_name": "Blackei0r",
-      "arena_score": 1181,
+      "arena_score": 1135,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603244252,
+      "last_login_timestamp": 1603328118,
       "rep_unit_id": 14568407523,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
@@ -89432,9 +90051,9 @@
       "wizard_name": "liyn2",
       "arena_score": 1007,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603238067,
+      "last_login_timestamp": 1603322913,
       "rep_unit_id": 16348924790,
       "rep_unit_master_id": 11032,
       "rep_unit_class": 6,
@@ -89445,11 +90064,11 @@
       "wizard_id": 27411062,
       "wizard_level": 50,
       "wizard_name": "BlindyGuardian",
-      "arena_score": 1218,
+      "arena_score": 1206,
       "rating_id": 2002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603250936,
+      "last_login_timestamp": 1603340751,
       "rep_unit_id": 12513776150,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -89462,7 +90081,7 @@
       "wizard_name": "CoSummoners",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1601682415,
       "rep_unit_id": 13493547574,
@@ -89475,11 +90094,11 @@
       "wizard_id": 29438118,
       "wizard_level": 50,
       "wizard_name": "DaddySqyrl",
-      "arena_score": 999,
-      "rating_id": 1001,
-      "next_gift_time": 77096,
+      "arena_score": 1023,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603197897,
+      "last_login_timestamp": 1603319399,
       "rep_unit_id": 14041277285,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -89490,11 +90109,11 @@
       "wizard_id": 30056703,
       "wizard_level": 50,
       "wizard_name": "Broadway*",
-      "arena_score": 1102,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
+      "arena_score": 1043,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603270753,
+      "last_login_timestamp": 1603356823,
       "rep_unit_id": 16529892619,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
@@ -89505,11 +90124,11 @@
       "wizard_id": 30184784,
       "wizard_level": 50,
       "wizard_name": "Calkora",
-      "arena_score": 1099,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1225,
+      "rating_id": 2002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603255045,
+      "last_login_timestamp": 1603345757,
       "rep_unit_id": 14511306146,
       "rep_unit_master_id": 14513,
       "rep_unit_class": 6,
@@ -89520,9 +90139,9 @@
       "wizard_id": 31020016,
       "wizard_level": 50,
       "wizard_name": "PLDP",
-      "arena_score": 994,
+      "arena_score": 986,
       "rating_id": 1001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1603265091,
       "rep_unit_id": 15609153047,
@@ -89535,11 +90154,11 @@
       "wizard_id": 31487661,
       "wizard_level": 50,
       "wizard_name": "Minrot21",
-      "arena_score": 1017,
+      "arena_score": 1015,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603234014,
+      "last_login_timestamp": 1603321484,
       "rep_unit_id": 15241810852,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -89552,9 +90171,9 @@
       "wizard_name": "Mandala#612",
       "arena_score": 1011,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603269522,
+      "last_login_timestamp": 1603341350,
       "rep_unit_id": 16081704944,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
@@ -89565,11 +90184,11 @@
       "wizard_id": 32059691,
       "wizard_level": 50,
       "wizard_name": "kwazaii",
-      "arena_score": 1044,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "arena_score": 1105,
+      "rating_id": 2001,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603226034,
+      "last_login_timestamp": 1603356223,
       "rep_unit_id": 15700650749,
       "rep_unit_master_id": 23112,
       "rep_unit_class": 6,
@@ -89580,11 +90199,11 @@
       "wizard_id": 32252419,
       "wizard_level": 50,
       "wizard_name": "CaidenHawk",
-      "arena_score": 1010,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "arena_score": 1055,
+      "rating_id": 1003,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603241146,
+      "last_login_timestamp": 1603319976,
       "rep_unit_id": 15918290441,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -89597,7 +90216,7 @@
       "wizard_name": "ShuraCapricorn",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1601736210,
       "rep_unit_id": 16043001090,
@@ -89610,11 +90229,11 @@
       "wizard_id": 32684192,
       "wizard_level": 50,
       "wizard_name": "Inosang",
-      "arena_score": 1069,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1202,
+      "rating_id": 2002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603266326,
+      "last_login_timestamp": 1603319158,
       "rep_unit_id": 16472981228,
       "rep_unit_master_id": 13413,
       "rep_unit_class": 6,
@@ -89625,11 +90244,11 @@
       "wizard_id": 32819756,
       "wizard_level": 50,
       "wizard_name": "•Saranghae•",
-      "arena_score": 1191,
+      "arena_score": 1169,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603263847,
+      "last_login_timestamp": 1603357630,
       "rep_unit_id": 16340557111,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -89642,9 +90261,9 @@
       "wizard_name": "Jsoto191",
       "arena_score": 992,
       "rating_id": 1001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603254355,
+      "last_login_timestamp": 1603309421,
       "rep_unit_id": 16511114128,
       "rep_unit_master_id": 13413,
       "rep_unit_class": 6,
@@ -89653,61 +90272,16 @@
   ],
   "helper_list": [
     {
-      "channel_uid": 26445036,
-      "wizard_id": 7948226,
-      "wizard_level": 50,
-      "wizard_name": "TMNTrulz",
-      "arena_score": 1000,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
-      "next_assist_time": 0,
-      "last_login_timestamp": 1603235531,
-      "rep_unit_id": 10718742070,
-      "rep_unit_master_id": 1000111,
-      "rep_unit_class": 6,
-      "rep_unit_level": 40
-    },
-    {
       "channel_uid": 218283499,
       "wizard_id": 30056703,
       "wizard_level": 50,
       "wizard_name": "Broadway*",
-      "arena_score": 1102,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
+      "arena_score": 1043,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603270753,
+      "last_login_timestamp": 1603356823,
       "rep_unit_id": 16529892619,
-      "rep_unit_master_id": 1000111,
-      "rep_unit_class": 6,
-      "rep_unit_level": 40
-    },
-    {
-      "channel_uid": 204261785,
-      "wizard_id": 25563089,
-      "wizard_level": 50,
-      "wizard_name": "Solitay33",
-      "arena_score": 1113,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
-      "next_assist_time": 0,
-      "last_login_timestamp": 1603257648,
-      "rep_unit_id": 14337082341,
-      "rep_unit_master_id": 1000111,
-      "rep_unit_class": 6,
-      "rep_unit_level": 40
-    },
-    {
-      "channel_uid": 143856433,
-      "wizard_id": 11963421,
-      "wizard_level": 50,
-      "wizard_name": "HokieDV",
-      "arena_score": 1132,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
-      "next_assist_time": 0,
-      "last_login_timestamp": 1603245167,
-      "rep_unit_id": 8568636463,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
       "rep_unit_level": 40
@@ -89717,12 +90291,57 @@
       "wizard_id": 27309702,
       "wizard_level": 50,
       "wizard_name": "Blackei0r",
-      "arena_score": 1181,
+      "arena_score": 1135,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603244252,
+      "last_login_timestamp": 1603328118,
       "rep_unit_id": 14568407523,
+      "rep_unit_master_id": 1000111,
+      "rep_unit_class": 6,
+      "rep_unit_level": 40
+    },
+    {
+      "channel_uid": 204261785,
+      "wizard_id": 25563089,
+      "wizard_level": 50,
+      "wizard_name": "Solitay33",
+      "arena_score": 1106,
+      "rating_id": 2001,
+      "next_gift_time": 0,
+      "next_assist_time": 0,
+      "last_login_timestamp": 1603326050,
+      "rep_unit_id": 14337082341,
+      "rep_unit_master_id": 1000111,
+      "rep_unit_class": 6,
+      "rep_unit_level": 40
+    },
+    {
+      "channel_uid": 26445036,
+      "wizard_id": 7948226,
+      "wizard_level": 50,
+      "wizard_name": "TMNTrulz",
+      "arena_score": 1000,
+      "rating_id": 1002,
+      "next_gift_time": 0,
+      "next_assist_time": 0,
+      "last_login_timestamp": 1603337583,
+      "rep_unit_id": 10718742070,
+      "rep_unit_master_id": 1000111,
+      "rep_unit_class": 6,
+      "rep_unit_level": 40
+    },
+    {
+      "channel_uid": 143856433,
+      "wizard_id": 11963421,
+      "wizard_level": 50,
+      "wizard_name": "HokieDV",
+      "arena_score": 1110,
+      "rating_id": 2001,
+      "next_gift_time": 0,
+      "next_assist_time": 0,
+      "last_login_timestamp": 1603322555,
+      "rep_unit_id": 8568636463,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
       "rep_unit_level": 40
@@ -89734,9 +90353,9 @@
       "wizard_name": "Mandala#612",
       "arena_score": 1011,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603269522,
+      "last_login_timestamp": 1603341350,
       "rep_unit_id": 16081704944,
       "rep_unit_master_id": 1000111,
       "rep_unit_class": 6,
@@ -89747,11 +90366,11 @@
       "wizard_id": 32059691,
       "wizard_level": 50,
       "wizard_name": "kwazaii",
-      "arena_score": 1044,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "arena_score": 1105,
+      "rating_id": 2001,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603226034,
+      "last_login_timestamp": 1603356223,
       "rep_unit_id": 15700650749,
       "rep_unit_master_id": 23112,
       "rep_unit_class": 6,
@@ -89762,13 +90381,28 @@
       "wizard_id": 25148916,
       "wizard_level": 50,
       "wizard_name": "MikeyDeez",
-      "arena_score": 1289,
+      "arena_score": 1284,
       "rating_id": 2002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603265480,
+      "last_login_timestamp": 1603351669,
       "rep_unit_id": 14881518528,
       "rep_unit_master_id": 22212,
+      "rep_unit_class": 6,
+      "rep_unit_level": 40
+    },
+    {
+      "channel_uid": 154340774,
+      "wizard_id": 15370883,
+      "wizard_level": 50,
+      "wizard_name": "matykush420",
+      "arena_score": 1113,
+      "rating_id": 2001,
+      "next_gift_time": 0,
+      "next_assist_time": 0,
+      "last_login_timestamp": 1603325740,
+      "rep_unit_id": 12014457370,
+      "rep_unit_master_id": 21213,
       "rep_unit_class": 6,
       "rep_unit_level": 40
     },
@@ -89779,25 +90413,10 @@
       "wizard_name": "R-Downey",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1603170161,
       "rep_unit_id": 13624634252,
-      "rep_unit_master_id": 21213,
-      "rep_unit_class": 6,
-      "rep_unit_level": 40
-    },
-    {
-      "channel_uid": 154340774,
-      "wizard_id": 15370883,
-      "wizard_level": 50,
-      "wizard_name": "matykush420",
-      "arena_score": 1042,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
-      "next_assist_time": 0,
-      "last_login_timestamp": 1603230498,
-      "rep_unit_id": 12014457370,
       "rep_unit_master_id": 21213,
       "rep_unit_class": 6,
       "rep_unit_level": 40
@@ -89807,11 +90426,11 @@
       "wizard_id": 23510452,
       "wizard_level": 50,
       "wizard_name": "Poppydave69",
-      "arena_score": 1042,
+      "arena_score": 1027,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603126159,
+      "last_login_timestamp": 1603334143,
       "rep_unit_id": 16600432122,
       "rep_unit_master_id": 21212,
       "rep_unit_class": 6,
@@ -89822,9 +90441,9 @@
       "wizard_id": 8661075,
       "wizard_level": 50,
       "wizard_name": "Ludnyx",
-      "arena_score": 1063,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1047,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1603248641,
       "rep_unit_id": 9955065319,
@@ -89837,11 +90456,11 @@
       "wizard_id": 25976951,
       "wizard_level": 50,
       "wizard_name": "TheLastGrixis",
-      "arena_score": 1251,
+      "arena_score": 1245,
       "rating_id": 2002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603272876,
+      "last_login_timestamp": 1603338811,
       "rep_unit_id": 11892018951,
       "rep_unit_master_id": 19213,
       "rep_unit_class": 6,
@@ -89852,11 +90471,11 @@
       "wizard_id": 9754232,
       "wizard_level": 50,
       "wizard_name": "Adow~",
-      "arena_score": 1141,
+      "arena_score": 1152,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603265502,
+      "last_login_timestamp": 1603287242,
       "rep_unit_id": 9682990533,
       "rep_unit_master_id": 18611,
       "rep_unit_class": 6,
@@ -89869,7 +90488,7 @@
       "wizard_name": "CoSummoners",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1601682415,
       "rep_unit_id": 13493547574,
@@ -89882,11 +90501,11 @@
       "wizard_id": 793257,
       "wizard_level": 50,
       "wizard_name": "Maaarcus",
-      "arena_score": 1084,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1148,
+      "rating_id": 2001,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603267559,
+      "last_login_timestamp": 1603344755,
       "rep_unit_id": 6105562429,
       "rep_unit_master_id": 17413,
       "rep_unit_class": 6,
@@ -89897,11 +90516,11 @@
       "wizard_id": 7259107,
       "wizard_level": 50,
       "wizard_name": "刀狩",
-      "arena_score": 1199,
+      "arena_score": 1152,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603254203,
+      "last_login_timestamp": 1603348398,
       "rep_unit_id": 2273768224,
       "rep_unit_master_id": 17411,
       "rep_unit_class": 6,
@@ -89912,11 +90531,11 @@
       "wizard_id": 14280787,
       "wizard_level": 50,
       "wizard_name": "LastThingUC",
-      "arena_score": 1135,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
+      "arena_score": 1087,
+      "rating_id": 1003,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603250494,
+      "last_login_timestamp": 1603335553,
       "rep_unit_id": 10192784480,
       "rep_unit_master_id": 17012,
       "rep_unit_class": 6,
@@ -89927,9 +90546,9 @@
       "wizard_id": 31020016,
       "wizard_level": 50,
       "wizard_name": "PLDP",
-      "arena_score": 994,
+      "arena_score": 986,
       "rating_id": 1001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1603265091,
       "rep_unit_id": 15609153047,
@@ -89938,31 +90557,46 @@
       "rep_unit_level": 40
     },
     {
+      "channel_uid": 124675112,
+      "wizard_id": 25015631,
+      "wizard_level": 50,
+      "wizard_name": "sunshinesamii",
+      "arena_score": 1246,
+      "rating_id": 2002,
+      "next_gift_time": 0,
+      "next_assist_time": 0,
+      "last_login_timestamp": 1603346629,
+      "rep_unit_id": 13943397802,
+      "rep_unit_master_id": 16811,
+      "rep_unit_class": 6,
+      "rep_unit_level": 40
+    },
+    {
       "channel_uid": 198557667,
       "wizard_id": 26734418,
       "wizard_level": 50,
       "wizard_name": "Robertisaboss",
-      "arena_score": 1187,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
+      "arena_score": 1261,
+      "rating_id": 2002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603252217,
+      "last_login_timestamp": 1603346529,
       "rep_unit_id": 13231097044,
       "rep_unit_master_id": 16615,
       "rep_unit_class": 6,
       "rep_unit_level": 40
     },
     {
-      "channel_uid": 205386346,
-      "wizard_id": 25842618,
+      "channel_uid": 154546986,
+      "wizard_id": 15509597,
       "wizard_level": 50,
-      "wizard_name": "ThwsRED",
-      "arena_score": 1000,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "wizard_name": "KirisutoX",
+      "arena_score": 1161,
+      "rating_id": 2001,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1602291927,
-      "rep_unit_id": 11881885925,
+      "last_login_timestamp": 1603319259,
+      "rep_unit_id": 11654705324,
       "rep_unit_master_id": 16611,
       "rep_unit_class": 6,
       "rep_unit_level": 40
@@ -89974,25 +90608,25 @@
       "wizard_name": "gralid",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603223502,
+      "last_login_timestamp": 1603307149,
       "rep_unit_id": 13831460599,
       "rep_unit_master_id": 16611,
       "rep_unit_class": 6,
       "rep_unit_level": 40
     },
     {
-      "channel_uid": 154546986,
-      "wizard_id": 15509597,
+      "channel_uid": 205386346,
+      "wizard_id": 25842618,
       "wizard_level": 50,
-      "wizard_name": "KirisutoX",
-      "arena_score": 1169,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
+      "wizard_name": "ThwsRED",
+      "arena_score": 1000,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603248603,
-      "rep_unit_id": 11654705324,
+      "last_login_timestamp": 1602291927,
+      "rep_unit_id": 11881885925,
       "rep_unit_master_id": 16611,
       "rep_unit_class": 6,
       "rep_unit_level": 40
@@ -90004,9 +90638,9 @@
       "wizard_name": "GerardoOz",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603253130,
+      "last_login_timestamp": 1603350135,
       "rep_unit_id": 13784035919,
       "rep_unit_master_id": 15715,
       "rep_unit_class": 6,
@@ -90017,11 +90651,11 @@
       "wizard_id": 21999112,
       "wizard_level": 50,
       "wizard_name": "DibuiAJabiraca",
-      "arena_score": 1145,
+      "arena_score": 1138,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603230646,
+      "last_login_timestamp": 1603330692,
       "rep_unit_id": 14425786269,
       "rep_unit_master_id": 15035,
       "rep_unit_class": 6,
@@ -90032,9 +90666,9 @@
       "wizard_id": 19757202,
       "wizard_level": 50,
       "wizard_name": "xh_9513",
-      "arena_score": 1081,
+      "arena_score": 1064,
       "rating_id": 1003,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1603260185,
       "rep_unit_id": 15866459388,
@@ -90047,11 +90681,11 @@
       "wizard_id": 30184784,
       "wizard_level": 50,
       "wizard_name": "Calkora",
-      "arena_score": 1099,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1225,
+      "rating_id": 2002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603255045,
+      "last_login_timestamp": 1603345757,
       "rep_unit_id": 14511306146,
       "rep_unit_master_id": 14513,
       "rep_unit_class": 6,
@@ -90062,11 +90696,11 @@
       "wizard_id": 7392225,
       "wizard_level": 50,
       "wizard_name": "dadsangel",
-      "arena_score": 1078,
+      "arena_score": 1089,
       "rating_id": 1003,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603262917,
+      "last_login_timestamp": 1603354793,
       "rep_unit_id": 2880436325,
       "rep_unit_master_id": 14512,
       "rep_unit_class": 6,
@@ -90079,7 +90713,7 @@
       "wizard_name": "ShuraCapricorn",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
       "last_login_timestamp": 1601736210,
       "rep_unit_id": 16043001090,
@@ -90092,28 +90726,13 @@
       "wizard_id": 22143346,
       "wizard_level": 50,
       "wizard_name": "€T€R|\\|AL",
-      "arena_score": 1019,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "arena_score": 1178,
+      "rating_id": 2001,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603219925,
+      "last_login_timestamp": 1603306562,
       "rep_unit_id": 12150747345,
       "rep_unit_master_id": 14412,
-      "rep_unit_class": 6,
-      "rep_unit_level": 40
-    },
-    {
-      "channel_uid": 112724084,
-      "wizard_id": 1836062,
-      "wizard_level": 50,
-      "wizard_name": "Fretful1",
-      "arena_score": 1006,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
-      "next_assist_time": 0,
-      "last_login_timestamp": 1603258020,
-      "rep_unit_id": 10425326478,
-      "rep_unit_master_id": 14411,
       "rep_unit_class": 6,
       "rep_unit_level": 40
     },
@@ -90122,12 +90741,27 @@
       "wizard_id": 9257454,
       "wizard_level": 50,
       "wizard_name": "閃到吃腳指",
-      "arena_score": 1054,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1033,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603253133,
+      "last_login_timestamp": 1603341603,
       "rep_unit_id": 10349083856,
+      "rep_unit_master_id": 14411,
+      "rep_unit_class": 6,
+      "rep_unit_level": 40
+    },
+    {
+      "channel_uid": 112724084,
+      "wizard_id": 1836062,
+      "wizard_level": 50,
+      "wizard_name": "Fretful1",
+      "arena_score": 1087,
+      "rating_id": 1003,
+      "next_gift_time": 0,
+      "next_assist_time": 0,
+      "last_login_timestamp": 1603329149,
+      "rep_unit_id": 10425326478,
       "rep_unit_master_id": 14411,
       "rep_unit_class": 6,
       "rep_unit_level": 40
@@ -90139,26 +90773,11 @@
       "wizard_name": "WintersLullaby",
       "arena_score": 1000,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603235256,
+      "last_login_timestamp": 1603319623,
       "rep_unit_id": 5879544721,
       "rep_unit_master_id": 14411,
-      "rep_unit_class": 6,
-      "rep_unit_level": 40
-    },
-    {
-      "channel_uid": 124675112,
-      "wizard_id": 25015631,
-      "wizard_level": 50,
-      "wizard_name": "sunshinesamii",
-      "arena_score": 1286,
-      "rating_id": 2002,
-      "next_gift_time": 77096,
-      "next_assist_time": 0,
-      "last_login_timestamp": 1603258377,
-      "rep_unit_id": 12101435480,
-      "rep_unit_master_id": 13811,
       "rep_unit_class": 6,
       "rep_unit_level": 40
     },
@@ -90167,11 +90786,11 @@
       "wizard_id": 7527958,
       "wizard_level": 50,
       "wizard_name": "sephiroth2020",
-      "arena_score": 1009,
+      "arena_score": 1002,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603266490,
+      "last_login_timestamp": 1603351384,
       "rep_unit_id": 2194344733,
       "rep_unit_master_id": 13811,
       "rep_unit_class": 6,
@@ -90184,9 +90803,9 @@
       "wizard_name": "liyn2",
       "arena_score": 1007,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603238067,
+      "last_login_timestamp": 1603322913,
       "rep_unit_id": 16348924790,
       "rep_unit_master_id": 11032,
       "rep_unit_class": 6,
@@ -90197,11 +90816,11 @@
       "wizard_id": 32252419,
       "wizard_level": 50,
       "wizard_name": "CaidenHawk",
-      "arena_score": 1010,
-      "rating_id": 1002,
-      "next_gift_time": 77096,
+      "arena_score": 1055,
+      "rating_id": 1003,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603241146,
+      "last_login_timestamp": 1603319976,
       "rep_unit_id": 15918290441,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -90212,12 +90831,27 @@
       "wizard_id": 29438118,
       "wizard_level": 50,
       "wizard_name": "DaddySqyrl",
-      "arena_score": 999,
-      "rating_id": 1001,
-      "next_gift_time": 77096,
+      "arena_score": 1023,
+      "rating_id": 1002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603197897,
+      "last_login_timestamp": 1603319399,
       "rep_unit_id": 14041277285,
+      "rep_unit_master_id": 19811,
+      "rep_unit_class": 6,
+      "rep_unit_level": 40
+    },
+    {
+      "channel_uid": 185633824,
+      "wizard_id": 20664581,
+      "wizard_level": 50,
+      "wizard_name": "RiverboatRon",
+      "arena_score": 1123,
+      "rating_id": 2001,
+      "next_gift_time": 0,
+      "next_assist_time": 0,
+      "last_login_timestamp": 1603312381,
+      "rep_unit_id": 7637611850,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
       "rep_unit_level": 40
@@ -90227,11 +90861,11 @@
       "wizard_id": 31487661,
       "wizard_level": 50,
       "wizard_name": "Minrot21",
-      "arena_score": 1017,
+      "arena_score": 1015,
       "rating_id": 1002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603234014,
+      "last_login_timestamp": 1603321484,
       "rep_unit_id": 15241810852,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -90242,11 +90876,11 @@
       "wizard_id": 27411062,
       "wizard_level": 50,
       "wizard_name": "BlindyGuardian",
-      "arena_score": 1218,
+      "arena_score": 1206,
       "rating_id": 2002,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603250936,
+      "last_login_timestamp": 1603340751,
       "rep_unit_id": 12513776150,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
@@ -90257,27 +90891,12 @@
       "wizard_id": 32819756,
       "wizard_level": 50,
       "wizard_name": "•Saranghae•",
-      "arena_score": 1191,
+      "arena_score": 1169,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603263847,
+      "last_login_timestamp": 1603357630,
       "rep_unit_id": 16340557111,
-      "rep_unit_master_id": 19811,
-      "rep_unit_class": 6,
-      "rep_unit_level": 40
-    },
-    {
-      "channel_uid": 185633824,
-      "wizard_id": 20664581,
-      "wizard_level": 50,
-      "wizard_name": "RiverboatRon",
-      "arena_score": 1160,
-      "rating_id": 2001,
-      "next_gift_time": 77096,
-      "next_assist_time": 0,
-      "last_login_timestamp": 1603256500,
-      "rep_unit_id": 7637611850,
       "rep_unit_master_id": 19811,
       "rep_unit_class": 6,
       "rep_unit_level": 40
@@ -90287,11 +90906,11 @@
       "wizard_id": 16535184,
       "wizard_level": 50,
       "wizard_name": "light'ful",
-      "arena_score": 1145,
+      "arena_score": 1114,
       "rating_id": 2001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603204032,
+      "last_login_timestamp": 1603315543,
       "rep_unit_id": 11318556843,
       "rep_unit_master_id": 13512,
       "rep_unit_class": 6,
@@ -90304,9 +90923,9 @@
       "wizard_name": "Jsoto191",
       "arena_score": 992,
       "rating_id": 1001,
-      "next_gift_time": 77096,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603254355,
+      "last_login_timestamp": 1603309421,
       "rep_unit_id": 16511114128,
       "rep_unit_master_id": 13413,
       "rep_unit_class": 6,
@@ -90317,35 +90936,35 @@
       "wizard_id": 32684192,
       "wizard_level": 50,
       "wizard_name": "Inosang",
-      "arena_score": 1069,
-      "rating_id": 1003,
-      "next_gift_time": 77096,
+      "arena_score": 1202,
+      "rating_id": 2002,
+      "next_gift_time": 0,
       "next_assist_time": 0,
-      "last_login_timestamp": 1603266326,
+      "last_login_timestamp": 1603319158,
       "rep_unit_id": 16472981228,
       "rep_unit_master_id": 13413,
       "rep_unit_class": 6,
       "rep_unit_level": 40
     }
   ],
-  "helper_remained": 77096,
+  "helper_remained": 73742,
   "mentor_helper_list": [],
   "mentee_slot_list": [
     {
       "reward_status": 0,
-      "next_reward_time": 77096,
+      "next_reward_time": 73742,
       "remain_complete": 0,
       "slot_status": 0,
       "wizard_id": 32715927,
       "channel_uid": 225172558,
       "wizard_level": 37,
       "wizard_name": "MuRk3_r",
-      "last_login_timestamp": 1602909012,
+      "last_login_timestamp": 1603301668,
       "date_add": "2020-09-01 15:06:32"
     },
     {
       "reward_status": 0,
-      "next_reward_time": 77096,
+      "next_reward_time": 73742,
       "remain_complete": 0,
       "slot_status": 0,
       "wizard_id": 33066326,
@@ -90357,7 +90976,7 @@
     },
     {
       "reward_status": 0,
-      "next_reward_time": 77096,
+      "next_reward_time": 73742,
       "remain_complete": 0,
       "slot_status": 0,
       "wizard_id": 33161601,
@@ -90369,7 +90988,7 @@
     },
     {
       "reward_status": 0,
-      "next_reward_time": 77096,
+      "next_reward_time": 73742,
       "remain_complete": 0,
       "slot_status": 0,
       "wizard_id": 30932351,
@@ -90381,14 +91000,14 @@
     },
     {
       "reward_status": 0,
-      "next_reward_time": 77096,
+      "next_reward_time": 73742,
       "remain_complete": 0,
       "slot_status": 0,
       "wizard_id": 33059308,
       "channel_uid": 225438230,
       "wizard_level": 42,
       "wizard_name": "Jsoto191",
-      "last_login_timestamp": 1603254355,
+      "last_login_timestamp": 1603309421,
       "date_add": "2020-09-17 11:29:50"
     }
   ],
@@ -90849,8 +91468,8 @@
   "daily_reward_info": {
     "month": "2020-10-01",
     "is_checked": 1,
-    "check_count": 21,
-    "prev_last_check": "2020-10-21",
+    "check_count": 22,
+    "prev_last_check": "2020-10-22",
     "enable": 1
   },
   "daily_reward_unit_upgrade_info": {
@@ -90858,14 +91477,14 @@
   },
   "pvp_info": {
     "wizard_id": 26255250,
-    "arena_win": 2930,
-    "arena_lose": 2984,
-    "arena_score": 1118,
-    "attack_score": 1342,
+    "arena_win": 2937,
+    "arena_lose": 2996,
+    "arena_score": 1072,
+    "attack_score": 1362,
     "win_streak": 0,
-    "rating_id": 2001,
+    "rating_id": 1003,
     "win_streak_update_remained": 0,
-    "rating_remained": 422696,
+    "rating_remained": 332942,
     "is_new": 0,
     "prev_rating_id": 0
   },
@@ -90963,20 +91582,20 @@
     "open_remained_time": 0,
     "battle_start_time": "2020-10-20 10:55:00",
     "battle_end_time": "2020-10-26 16:10:00",
-    "dead_remained_time": 423296,
+    "dead_remained_time": 333542,
     "close_time": "2020-10-26 17:10:00",
-    "close_remained_time": 426896,
+    "close_remained_time": 337142,
     "base_hp": 0,
-    "hp_rate": 80.423496199899,
-    "daily_battle_init_remained_time": 77096,
+    "hp_rate": 65.409188472064,
+    "daily_battle_init_remained_time": 73742,
     "refresh_term": 300
   },
   "worldboss_used_unit": [],
   "my_worldboss_ranking": {
-    "ranking": 106548,
+    "ranking": 132593,
     "accumulate_damage": 2356988,
-    "rating_id": 1002,
-    "ranking_rate": 69.6,
+    "rating_id": 1001,
+    "ranking_rate": 75.6,
     "is_reward": 0
   },
   "my_worldboss_prev_ranking": {
@@ -91034,28 +91653,28 @@
   "rtpvp_reward_info": [],
   "rtpvp_contest_reward": [],
   "guild_attend_info": {
-    "reset_ts": 1603350000,
+    "reset_ts": 1603436400,
     "attend": 1,
     "attend_info": {
       "wizard_id": 26255250,
       "guild_id": 233466,
-      "date_attend": "2020-10-21",
-      "reward_state": 1
+      "date_attend": "2020-10-22",
+      "reward_state": 0
     }
   },
   "dimension_hole_info": {
     "rid": 338297,
     "wizard_id": 26255250,
-    "energy": 69,
-    "date_energy_gain_start": "2020-10-21 16:38:03",
+    "energy": 82,
+    "date_energy_gain_start": "2020-10-22 18:38:03",
     "date_add": "2019-07-20 13:53:55",
     "energy_max": 100,
     "energy_gain_term_sec": 7200,
-    "energy_gain_start_timestamp": 1603265883
+    "energy_gain_start_timestamp": 1603359483
   },
   "new_year_reward_info": {
     "wizard_id": 26255250,
-    "event_date_local": "2020-10-21",
+    "event_date_local": "2020-10-22",
     "last_reward_day": 0,
     "reward": 0,
     "day_reward_info": [
@@ -91137,8 +91756,8 @@
   "country": "AU",
   "tvaluelocal_next_monday": 1603695600,
   "wizard_id": 26255250,
-  "ts_val": 1136592448,
-  "tvalue": 1603272904,
-  "tvaluelocal": 1603215304,
+  "ts_val": 1136548330,
+  "tvalue": 1603362658,
+  "tvaluelocal": 1603305058,
   "tzone": "America/Los_Angeles"
 }

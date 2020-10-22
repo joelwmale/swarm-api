@@ -47,6 +47,7 @@ class SWExportImportService
 
         // Get wizard data
         $playerData = collect($data->get('wizard_info'));
+        $dimensionalHoleData = collect($data->get('dimension_hole_info'));
         $playerId = $playerData->get('wizard_id');
 
         $player = null;
@@ -55,15 +56,17 @@ class SWExportImportService
         if (!$player = $user->players->where('player_id', $playerId)->first()) {
             // Create a new wizard
             $player = $user->players()->create([
-                'player_id'      => $playerData->get('wizard_id'),
-                'player_name'    => $playerData->get('wizard_name'),
-                'player_level'   => $playerData->get('wizard_level'),
-                'player_mana'    => $playerData->get('wizard_mana'),
-                'player_crystal' => $playerData->get('wizard_crystal'),
-                'energy_max'     => $playerData->get('energy_max'),
+                'player_id' => $playerData->get('wizard_id'),
+                'name' => $playerData->get('wizard_name'),
+                'level' => $playerData->get('wizard_level'),
+                'unit_slots' => $playerData->get('unit_slots')['number'],
+                'current_crystals' => $playerData->get('wizard_crystal'),
+                'current_mana' => $playerData->get('wizard_mana'),
+                'current_dimensional_hole_crystals' => $dimensionalHoleData->get('energy'),
+                'energy_max' => $playerData->get('energy_max'),
                 'energy_per_min' => $playerData->get('energy_per_min'),
-                'rep_unit_id'    => $playerData->get('rep_unit_id'),
-                'last_login'     => $playerData->get('wizard_last_login'),
+                'rep_unit_id' => $playerData->get('rep_unit_id'),
+                'last_login' => $playerData->get('wizard_last_login'),
             ]);
         }
 

@@ -8,25 +8,29 @@ use App\Models\PlayerRune;
 
 class EfficiencyService
 {
-    const MAX_ROLLS = 4;
+    const MAX_ROLLS = 5;
 
     private $effectMaxRollMap = [
         6 => [
-            1 => 375,
-            2 => 8,
-            3 => 20,
-            4 => 8,
-            5 => 20,
-            6 => 7,
-            8 => 6,
-            9 => 6,
-            10 => 7,
-            11 => 8,
-            12 => 8
+            1 => 375, // flat hp
+            2 => 8, // hp %
+            3 => 20, // flat attack
+            4 => 8, // attack %
+            5 => 20, // defence
+            6 => 7, // defence %
+            8 => 6, // speed
+            9 => 6, // crit rate
+            10 => 7, // crit damage
+            11 => 8, // resistance
+            12 => 8 // accuracy
         ]
     ];
 
-
+    /**
+     * formula is:
+     *
+     * (foreach sub stat - work out their max possible roll (base * 5) and then divide that by their current stat) / 2.8
+     */
     public function __construct(RuneMainStatMapper $runeMainStatMapper, RuneSubStatMapper $runeSubStatMapper)
     {
         $this->runeMainStatMapper = $runeMainStatMapper;
@@ -64,19 +68,18 @@ class EfficiencyService
      * hp: 375
      * attack, def: 20
      */
-    public function determineRuneEfficiency(PlayerRune $rune)
+    public function determineCurrentRuneEfficiency(PlayerRune $rune)
     {
-        // dd($rune->primary_effect, $rune->innate_effect, $rune->secondary_effects);
-
-        $innateEffect = json_decode($rune->getRawOriginal('innate_effect'));
+        // $innateEffect = json_decode($rune->getRawOriginal('innate_effect'));
         $subEffects = json_decode($rune->getRawOriginal('secondary_effects'));
 
         $efficiencyMatrix = [];
 
+        // @TODO how to bake in the innate?
         // loop through the innate
-        foreach ($innateEffect as $effect) {
-            $efficiencyMatrix[] = $effect->value / ($this->effectMaxRollMap[$rune->rank][$effect->effect_id] * self::MAX_ROLLS);
-        }
+        // foreach ($innateEffect as $effect) {
+        //     $efficiencyMatrix[] = $effect->value / ($this->effectMaxRollMap[$rune->rank][$effect->effect_id] * self::MAX_ROLLS);
+        // }
 
         foreach ($subEffects as $effect) {
             $efficiencyMatrix[] = $effect->value / ($this->effectMaxRollMap[$rune->rank][$effect->effect_id] * self::MAX_ROLLS);

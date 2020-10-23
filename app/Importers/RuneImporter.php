@@ -16,6 +16,8 @@ class RuneImporter
 
             // @TODO validate each rune
 
+            // dd($rune->get('pri_eff'));
+
             $player->runes()->updateOrCreate(
                     ['rune_id' => $rune->get('rune_id')],
                     [
@@ -35,8 +37,8 @@ class RuneImporter
                         'base_value' => $rune->get('base_value'),
                         'sell_value' => $rune->get('sell_value'),
 
-                        'primary_effect'   => $rune->get('pri_eff')[0],
-                        'innate_effect'    => $rune->get('prefix_eff') ? $rune->get('prefix_eff')[0] : null,
+                        'primary_effect'   => $rune->get('pri_eff'),
+                        'innate_effect'    => $rune->get('prefix_eff') ? $rune->get('prefix_eff') : null,
                         'secondary_effects' => $rune->get('sec_eff'),
                     ]
                 );

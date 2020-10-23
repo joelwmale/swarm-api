@@ -42,6 +42,6 @@ class TestRuneEfficiency extends Command
         $lapis1Rune = PlayerRune::where('rune_id', 25635637476)->first();
         $janssen2Rune = PlayerRune::where('rune_id', 33116522141)->first();
 
-        dd($efficiencyService->determineRuneEfficiency($lapis1Rune));
+        dd($efficiencyService->determineCurrentRuneEfficiency($janssen2Rune));
     }
 }
